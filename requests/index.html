@@ -1,0 +1,4316 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Requests - StoreFront SDK Documentation</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Requests";
+    var mkdocs_page_input_path = "requests.md";
+    var mkdocs_page_url = "/requests/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/custom.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://citrix.github.io" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+			<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs"><a class="fa fa-search errspan" onclick="getElementById('rtd-search-form').submit()"></a></li>
+			</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<a class="fa fa-search" onclick="getElementById('rtd-search-form').submit()"></a>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="..">Overview</a>
+			
+		
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Web API</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../overview/">Overview</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../how-the-api-works/">How the API works</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+
+		<a class="current" style="width:272px;" href="./">Requests</a>
+			
+		
+        
+            <ul style="display:none">
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#requests" style="display: inline-table;padding-left: 3px;width:240px;">Requests</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#client-configuration">Client Configuration</a></li>
+                
+                    <li><a class="toctree-l4" href="#session-keep-alive">Session Keep Alive</a></li>
+                
+                    <li><a class="toctree-l4" href="#authentication-methods">Authentication Methods</a></li>
+                
+                    <li><a class="toctree-l4" href="#domain-pass-through-and-smart-card-authentication">Domain Pass-Through and Smart Card Authentication</a></li>
+                
+                    <li><a class="toctree-l4" href="#explicit-forms-authentication">Explicit Forms Authentication</a></li>
+                
+                    <li><a class="toctree-l4" href="#post-credentials-authentication">Post Credentials Authentication</a></li>
+                
+                    <li><a class="toctree-l4" href="#netscaler-gateway-single-sign-on">NetScaler Gateway Single Sign-On</a></li>
+                
+                    <li><a class="toctree-l4" href="#get-user-name">Get User Name</a></li>
+                
+                    <li><a class="toctree-l4" href="#log-off">Log Off</a></li>
+                
+                    <li><a class="toctree-l4" href="#resource-enumeration">Resource Enumeration</a></li>
+                
+                    <li><a class="toctree-l4" href="#ica-launch">ICA Launch</a></li>
+                
+                    <li><a class="toctree-l4" href="#icons">Icons</a></li>
+                
+                    <li><a class="toctree-l4" href="#machine-power-off">Machine Power Off</a></li>
+                
+                    <li><a class="toctree-l4" href="#resource-subscription">Resource Subscription</a></li>
+                
+                    <li><a class="toctree-l4" href="#session-enumeration">Session Enumeration</a></li>
+                
+                    <li><a class="toctree-l4" href="#session-launch">Session Launch</a></li>
+                
+                    <li><a class="toctree-l4" href="#session-disconnect-and-logoff">Session Disconnect and Logoff</a></li>
+                
+				</ul>
+				
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../using-configuration-elements/">Using configuration elements</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Store Service SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-sdk/">StoreFront Customization SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../getting-started-with-the-sdk/">Getting started with the SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-interfaces/">Customization interfaces</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues/">Known issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../samples/">Samples</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Authentication SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storefront-services-authentication-sdk/">Authentication Software Development Kit</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrix-common-forms-authentication-api/">Citrix Common Forms Authentication API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrixauth-authentication-scheme/">CitrixAuth Authentication Scheme</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../common-authentication-forms-language/">Citrix Common Authentication Forms Language</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../security-token-services-api/">Security Token Services API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../authentication-form-generation/">StoreFront Authentication Form Generation</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues-auth/">Known Issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storeFront-authentication-sdk-thirdparty/">Third Party Notices</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-certificate-identity-declaration/">Sample Certificate Identity Declaration</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../magic-word-sample/">Sample Magic Word</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-test-forms/">Sample Test Forms</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>StoreFront Web API &raquo;</li>
+        
+      
+    
+    <li>Requests</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <h1 id="requests"><a class="toclink" href="#requests">Requests</a></h1>
+<p>The following topics describe the requests available using the API. Each request is described, together with possible response codes and examples.</p>
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<p>In some examples, line breaks and white space have been added for readability.</p>
+</div>
+<h2 id="client-configuration"><a class="toclink" href="#client-configuration">Client Configuration</a></h2>
+<p>Use this request to obtain the client configuration settings for the site. These settings define the behavior of the client and provide Web Proxy URLs for other services such as authentication and resource enumeration.
+This request can be performed before authentication has taken place and before a web session has been established.</p>
+<h3 id="request"><a class="toclink" href="#request">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Home/Configuration</td>
+<td>GET</td>
+<td>Requests the client configuration, which is returned as an XML document</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>- Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>- Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content"><a class="toclink" href="#success-response-content">Success Response Content</a></h3>
+<p>If a successful response (HTTP status code 200 OK) is returned, the response body contains an XML document describing the Citrix Receiver for Web configuration settings for the client, with root node <code>clientSettings</code>. For more information about the various configuration elements and attributes, see Using configuration elements on page 81.</p>
+<h3 id="example-client-configuration"><a class="toclink" href="#example-client-configuration">Example: Client Configuration</a></h3>
+<h4 id="request_1"><a class="toclink" href="#request_1">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Home/Configuration HTTP/
+1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: 4F4F307CAEAB89EEA86EF511788B1BB1
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response"><a class="toclink" href="#response">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: CsrfToken=597E2BAC2A18AF3816B229D5022B6E2A; path=/
+Citrix/StoreWeb/
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 20 Sep 2013 15:03:40 GMT
+Content-Length: 1592
+&lt;clientSettings&gt;
+  &lt;session timeout=&quot;20&quot; userLanguages=&quot;en-US,en;q=0.5&quot; /&gt;
+  &lt;authManager getUsernameURL=&quot;Authentication/GetUserName&quot;
+               changeCredentialsURL=&quot;Authentication/
+GetChangeCredentialForm&quot;
+               logoffURL=&quot;Authentication/Logoff&quot;
+loginFormTimeout=&quot;5&quot; /&gt;
+  &lt;storeProxy keepAliveURL=&quot;Home/KeepAlive&quot;&gt;
+    &lt;resourcesProxy listURL=&quot;Resources/List&quot;
+resourceDetails=&quot;default&quot; /&gt;
+    &lt;sessionsProxy listAvailableURL=&quot;Sessions/ListAvailable&quot;
+                   disconnectURL=&quot;Sessions/Disconnect&quot;
+                   logoffURL=&quot;Sessions/Logoff&quot; /&gt;
+  &lt;/storeProxy&gt;
+  &lt;pluginAssistant enabled=&quot;true&quot; upgradeAtLogin=&quot;true&quot;&gt;
+    &lt;win32 path=&quot;http://
+downloadplugins.citrix.com.edgesuite.net/Windows/
+CitrixReceiverWeb.exe&quot; /&gt;
+    &lt;macOS path=http://
+downloadplugins.citrix.com.edgesuite.net/Mac/
+CitrixReceiverWeb.dmg
+           minimumSupportedOSVersion=&quot;10.6&quot; /&gt;
+    &lt;html5 enabled=&quot;Off&quot;
+           platforms=&quot;Firefox;Chrome;Version/([6-9]|\d
+\d).*Safari;MSIE \d\d;Trident;&quot;
+           launchURL=&quot;clients/HTML5Client/src/
+SessionWindow.html&quot;
+           preferences=&quot;&quot; singleTabLaunch=&quot;false&quot;
+chromeAppOrigins=&quot;chrome-extension://
+haiffjcadagjlijoggckpgfnoeiflnem|chrome-extension://
+bgiigkppjadidglloadcadeihlnbpagp&quot; /&gt;
+  &lt;/pluginAssistant&gt;
+  &lt;userInterface frameOptions=&quot;deny&quot; autoLaunchDesktop=&quot;true&quot;&gt;
+    &lt;workspaceControl enabled=&quot;true&quot;
+autoReconnectAtLogon=&quot;true&quot; logoffAction=&quot;disconnect&quot;
+                      showReconnectButton=&quot;true&quot;
+showDisconnectButton=&quot;true&quot; /&gt;
+    &lt;receiverConfiguration enabled=&quot;true&quot;
+                           downloadURL=&quot;ServiceRecord/
+GetDocument/receiverconfig.cr&quot; /&gt;
+    &lt;uiViews showDesktopsView=&quot;true&quot; showAppsView=&quot;true&quot;
+defaultView=&quot;desktops&quot; /&gt;
+    &lt;appShortcuts enabled=&quot;false&quot;
+allowSessionReconnect=&quot;false&quot; /&gt;
+  &lt;/userInterface&gt;
+&lt;/clientSettings&gt;</code></pre>
+
+
+<h2 id="session-keep-alive"><a class="toclink" href="#session-keep-alive">Session Keep Alive</a></h2>
+<p>Use this request to extend the duration of a session. The request can be performed before authentication takes place and before a web session is established. Simply contacting the server keeps the server-side session alive and resets the ASP.NET session idle timer. For example, if the session timeout is 20 minutes and this call is made after 15 minutes of idle time, the user is allowed a further 20 minutes before the session times out.</p>
+<h3 id="request_2"><a class="toclink" href="#request_2">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Home/KeepAlive</td>
+<td>HEAD</td>
+<td>Returns an empty response with an HTTP 200 status code. This is used by the client to extend the life of the HTTP session, which by default times out if no requests are received within a period of 20 minutes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response_1"><a class="toclink" href="#response_1">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_1"><a class="toclink" href="#success-response-content_1">Success Response Content</a></h3>
+<p>If a successful response (HTTP status code 200 OK) is returned, the response body is empty.</p>
+<h3 id="example-session-keep-alive"><a class="toclink" href="#example-session-keep-alive">Example: Session Keep Alive</a></h3>
+<h4 id="request_3"><a class="toclink" href="#request_3">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">HEAD http://webserver/Citrix/StoreWeb/Home/KeepAlive HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: text/plain, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: 4DE109CB32EBE310E1902D05D8DD5BDF
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+CsrfToken=4DE109CB32EBE310E1902D05D8DD5BDF;
+CtxsAuthId=B3C9A3C0D34C04EE7CC7C0C6B94A509D;
+ASP.NET_SessionId=jti1oxzixf5pvwisz5zw05wg; AGSSOHasOccurred=;
+PasswordChangeAllowed=
+Connection: keep-alive</code></pre>
+
+
+<h4 id="response_2"><a class="toclink" href="#response_2">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Length: 0
+Content-Type: text/html
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Mon, 23 Sep 2013 09:16:35 GMT</code></pre>
+
+
+<h2 id="authentication-methods"><a class="toclink" href="#authentication-methods">Authentication Methods</a></h2>
+<p>Use the following URL to determine which authentication methods are available, prior to initiating authentication.</p>
+<h3 id="request_4"><a class="toclink" href="#request_4">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative only)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Authentication/ GetAuthMethods</td>
+<td>POST</td>
+<td>Returns a list of available authentication methods in XML format.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The client must first make a POST request to /Resources/List. Since the user is not yet   authenticated, this returns a challenge in the form of a CitrixWebReceiver- Authenticate    header with the GetAuthMethods URL in the location field.</li>
+</ul>
+</div>
+<p>For example:</p>
+<pre class="codehilite"><code class="language-curl">CitrixWebReceiver-Authenticate:
+reason=&quot;TokenRequired&quot;,location=&quot;Authentication/
+GetAuthMethods&quot;`</code></pre>
+
+
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The client must not skip this request by hard-coding any of the authentication URLs, as   these may change from release to release.</li>
+<li>The available authentication methods are specified in the Citrix Receiver for Web     configuration file. The list of methods returned is the intersection of those configured    for the Citrix Receiver for Web site and those configured for the StoreFront    Authentication service.</li>
+<li>When Gateway authentication is available, use this in preference to (and to the   exclusion of) all other authentication methods. This is because Gateway authentication is   available only when the user is connecting to Citrix Receiver for Web externally through a  NetScaler Gateway, while the other authentication methods are intended only for intranet    use.</li>
+</ul>
+</div>
+<h3 id="response_3"><a class="toclink" href="#response_3">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XML</td>
+<td>application/xml</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_2"><a class="toclink" href="#success-response-content_2">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) is returned, the response body contains an XML document with root node authMethods and zero or more method child elements. Each method child element contains a name attribute identifying the authentication method and a url attribute that the client uses to initiate authentication using the given method. The possible authentication method names are:</p>
+<table>
+<thead>
+<tr>
+<th>Method name</th>
+<th>Typical URL (indicative only)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ExplicitForms</td>
+<td>ExplicitAuth/Login</td>
+<td>Explicit authentication with user-supplied credentials such as username, domain and password.</td>
+</tr>
+<tr>
+<td>IntegratedWindows</td>
+<td>DomainPassthroughAuth/ Login</td>
+<td>Domain pass-through authentication</td>
+</tr>
+<tr>
+<td>Certificate</td>
+<td>SmartcardAuth/Login</td>
+<td>Smart card (client certificate) authentication</td>
+</tr>
+<tr>
+<td>CitrixAGBasic</td>
+<td>GatewayAuth/Login</td>
+<td>Automatic authentication ("single-sign-on") to NetScaler Gateway</td>
+</tr>
+<tr>
+<td>PostCredentials</td>
+<td>PostCredentialsAuth/Login</td>
+<td>Authentication achieved by posting user credentials directly to the Web Proxy.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-get-auth-methods"><a class="toclink" href="#example-get-auth-methods">Example: Get Auth Methods</a></h3>
+<h4 id="request_5"><a class="toclink" href="#request_5">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Authentication/
+GetAuthMethods HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Csrf-Token: EE87320F00C8694137FBB9319DE3EE80
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=EE87320F00C8694137FBB9319DE3EE80;
+ASP.NET_SessionId=vo0ii2tbv2oaqcrko5zjjjlx
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_4"><a class="toclink" href="#response_4">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Wed, 15 Jan 2014 13:17:19 GMT
+Content-Length: 282
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;authMethods&gt;
+    &lt;method name=&quot;IntegratedWindows&quot;
+url=&quot;DomainPassthroughAuth/Login&quot;/&gt;
+    &lt;method name=&quot;Certificate&quot; url=&quot;SmartcardAuth/Login&quot;/&gt;
+    &lt;method name=&quot;ExplicitForms&quot; url=&quot;ExplicitAuth/Login&quot;/&gt;
+&lt;/authMethods&gt;</code></pre>
+
+
+<h2 id="domain-pass-through-and-smart-card-authentication"><a class="toclink" href="#domain-pass-through-and-smart-card-authentication">Domain Pass-Through and Smart Card Authentication</a></h2>
+<p>Use these requests to authenticate a user either using pass through authentication or a smart card device.</p>
+<h3 id="request_6"><a class="toclink" href="#request_6">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative only)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/DomainPassthroughAuth/ Login</td>
+<td>POST</td>
+<td>Authenticates the user using the credentials with which he or she logged on to the computer.</td>
+</tr>
+<tr>
+<td>/SmartcardAuth/Login</td>
+<td>POST</td>
+<td>Authenticates the user using a smart card connected to the user's client computer.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>Domain pass-through authentication requires the client browser to be running on   Microsoft Windows. The caller must check the client platform OS prior to initiating pass-   through authentication.</li>
+<li>The pass-through URL is configured in IIS to be protected by Integrated Windows   Authentication (IWA). The actual authentication takes place between the browser and IIS,    transparently to Citrix Receiver for Web.</li>
+<li>The smart card URL is configured in IIS to be accessible only via HTTPS and to require a  client certificate to be supplied by the browser.</li>
+<li>Both pass-through and smart card authentication require that the option 'Trust requests   to the XML Service' is enabled on the back-end XenDesktop/XenApp server.</li>
+<li>When pass-through authentication is used to authenticate to Citrix Receiver for Web, the  user's password is not available to StoreFront. For launches to work without the user   being prompted for credentials, configure Citrix Receiver as described in <a href="http://support.citrix.com/article/CTX133855">http://  support.citrix.com/article/CTX133855</a>.</li>
+<li>Smart card authentication requires two PIN prompts, one to authenticate to the web site   and another to authenticate to the remote session.</li>
+<li>If authentication fails, check the StoreFront event logs which may reveal further     information to assist with diagnosing the failure.</li>
+</ul>
+</div>
+<h3 id="response_5"><a class="toclink" href="#response_5">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success or failure.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized. Returned in the following situations:</td>
+</tr>
+<tr>
+<td></td>
+<td>* The user attempts pass-through authentication from a computer not joined to the StoreFront domain, and cancels the browser dialog prompting for domain credentials</td>
+</tr>
+<tr>
+<td></td>
+<td>* The user attempts smart card authentication and cancels one of the browser prompts to insert a card, select a certificate, or enter a PIN.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XML</td>
+<td>application/xml</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_3"><a class="toclink" href="#success-response-content_3">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) is returned, the response body contains an XML document with root node <code>AuthenticationStatus</code> and the following child elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element name</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Result</td>
+<td>Yes</td>
+<td>Value "success" or "failure".</td>
+</tr>
+<tr>
+<td>AuthType</td>
+<td>No</td>
+<td>The authentication type, one of the authentication method strings "ExplicitForms", "IntegratedWindows", "Certificate", "CitrixAGBasic", "PostCredentials". Only sent when authentication succeeds.</td>
+</tr>
+<tr>
+<td>LogMessage</td>
+<td>No</td>
+<td>An error id indicating the reason for the authentication failure. Typically the generic value "fatalerror" is returned, but "sessiontimeout" is returned if the Citrix Receiver for Web session has timed out. Only sent when authentication fails.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-successful-smart-card-authentication"><a class="toclink" href="#example-successful-smart-card-authentication">Example: Successful smart card authentication</a></h3>
+<h4 id="request_7"><a class="toclink" href="#request_7">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST https://webserver.domain.com/Citrix/StoreWeb/
+SmartcardAuth/Login HTTP/1.1
+Csrf-Token: C34A98583E032C5D26D4332A54738447
+Accept: application/xml, text/xml, */*; q=0.01
+X-Citrix-IsUsingHTTPS: Yes
+X-Requested-With: XMLHttpRequest
+Referer: https://webserver.domain.com/Citrix/StoreWeb/
+Accept-Language: en-GB
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3;
+WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR
+3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.3)
+Host: webserver.domain.com
+Content-Length: 0
+DNT: 1
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: CsrfToken=C34A98583E032C5D26D4332A54738447;
+ASP.NET_SessionId=aisncy3nsdcz2snnpc045y1h</code></pre>
+
+
+<h4 id="response_6"><a class="toclink" href="#response_6">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/7.5
+Set-Cookie: CtxsAuthId=5989E6314A2ADEB10D4F4A71093CAF6D; path=/
+Citrix/StoreWeb/; secure; HttpOnly
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 17 Jan 2014 17:39:44 GMT
+Content-Length: 255
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticationStatus&quot;&gt;
+  &lt;Result&gt;success&lt;/Result&gt;
+  &lt;AuthType&gt;Certificate&lt;/AuthType&gt;
+&lt;/AuthenticationStatus&gt;</code></pre>
+
+
+<h3 id="example-failed-pass-through-authentication"><a class="toclink" href="#example-failed-pass-through-authentication">Example: Failed pass-through authentication</a></h3>
+<p>In this example, the computer is off-domain, and the user cancels the browser prompt for domain credentials.</p>
+<h4 id="request_8"><a class="toclink" href="#request_8">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/DomainPassthroughAuth/
+Login HTTP/1.1
+Host: webserver
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Csrf-Token: 74F22328CCE9A0C62097A5A77FC7D58B
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=74F22328CCE9A0C62097A5A77FC7D58B;
+ASP.NET_SessionId=flz4othwj5g5sc0fw3ywtzos
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_7"><a class="toclink" href="#response_7">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 401 Unauthorized
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.5
+WWW-Authenticate: Negotiate
+WWW-Authenticate: NTLM
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 17 Jan 2014 17:44:14 GMT
+Content-Length: 1293
+Proxy-Support: Session-Based-Authentication
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;
+charset=iso-8859-1&quot;/&gt;
+&lt;title&gt;401 - Unauthorized: Access is denied due to invalid
+credentials.&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+body{margin:0;font-size:.7em;font-family:Verdana, Arial,
+Helvetica, sans-serif;background:#EEEEEE;}
+fieldset{padding:0 15px 10px 15px;}
+h1{font-size:2.4em;margin:0;color:#FFF;}
+h2{font-size:1.7em;margin:0;color:#CC0000;}
+h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;}
+#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-
+family:&quot;trebuchet MS&quot;, Verdana, sans-serif;color:#FFF;
+background-color:#555555;}
+#content{margin:0 0 0 2%;position:relative;}
+.content-container{background:#FFF;width:96%;margin-top:
+8px;padding:10px;position:relative;}
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;header&quot;&gt;&lt;h1&gt;Server Error&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+ &lt;div class=&quot;content-container&quot;&gt;&lt;fieldset&gt;
+ &lt;h2&gt;401 - Unauthorized: Access is denied due to invalid
+credentials.&lt;/h2&gt;
+  &lt;h3&gt;You do not have permission to view this directory or
+page using the credentials that you supplied.&lt;/h3&gt;
+ &lt;/fieldset&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+<h2 id="explicit-forms-authentication"><a class="toclink" href="#explicit-forms-authentication">Explicit Forms Authentication</a></h2>
+<p>Use this request to authenticate a user using explicit forms authentication. Explicit authentication, where the user enters credentials manually, is performed using the Citrix Common Forms Protocol. See the Citrix StoreFront API documentation for more information about Common Forms authentication.</p>
+<p>The client initiates a forms conversation by making a request to the Web Proxy Explicit Forms URL (returned by /Authentication/GetAuthMethods) to get the first form in a possible series of forms. The Web Proxy forwards form requests to the StoreFront Authentication service and relays replies back to the client. All forms are unmodified by the Web Proxy, with the sole exception that any post-back URLs are modified to point to Web Proxy URLs, so that the client never contacts the Authentication service directly.</p>
+<p>The forms are always returned as XML, which must be parsed by the client, transformed into corresponding HTML and displayed to the user. Once the user completes and submits a form, the client posts the form data back to a post-back URL provided in the original form XML. This may result in further forms being sent to the client to solicit additional information from the user. The client continues the process of rendering and submitting forms until either an authentication success or failure response is received.</p>
+<p>The client must not assume that the initial form returned represents a logon form. Typically, this is the case, but another form may be returned in certain circumstances; for example, a change password form is returned if password expiry is configured and the user's password has expired. Third parties may also use the StoreFront Authentication SDK to inject custom forms into the authentication process.</p>
+<h3 id="request_9"><a class="toclink" href="#request_9">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative only)</th>
+<th>Method</th>
+<th>Accepts POST data</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/ExplicitAuth/Login</td>
+<td>POST</td>
+<td>No</td>
+<td>Requests the first form in an explicit forms conversation. The URL is returned by / Authentication/ GetAuthMethods.</td>
+</tr>
+<tr>
+<td>/ExplicitAuth/ LoginAttempt</td>
+<td>POST</td>
+<td>Yes</td>
+<td>Attempts an explicit logon. The URL is returned as the PostBack element in a login form.</td>
+</tr>
+<tr>
+<td>/ExplicitAuth/ SendForm</td>
+<td>POST</td>
+<td>Yes</td>
+<td>Proxies a form back to the StoreFront Authentication service. The URL is returned as the PostBack element in a form.</td>
+</tr>
+<tr>
+<td>/ExplicitAuth/ GetChangeCredentialForm</td>
+<td>POST</td>
+<td>No</td>
+<td>Requests a change credential form. Used when elective change password support is enabled in the StoreFront Authentication service. The URL is supplied in the RfWeb configuration.</td>
+</tr>
+<tr>
+<td>/ExplicitAuth/ CancelForm</td>
+<td>POST</td>
+<td>No</td>
+<td>Cancels the current form. The URL is returned as the CancelPostBack element in a form.</td>
+</tr>
+</tbody>
+</table>
+<p>When the user submits a form (for example, by activating a Logon button), the client must process the user-supplied data as described in the section Processing Form Data of the document "Citrix Receiver Common Authentication Forms Language v2.0" in the Citrix StoreFront API documentation.</p>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>If the client omits to post any of the required data, the Authentication service rejects  the form, resulting in a failed logon.</li>
+<li>Once the user submits a form that results in successful authentication, the StoreFront    Authentication service returns a primary authentication token for the user. All tokens,     including the primary token plus any secondary tokens that are subsequently acquired for    other StoreFront services (for example, Resources service), are held at the Web Proxy on    behalf of the user, so that the client does not need to deal with the complexities of the   authentication system.</li>
+<li>Tokens are maintained in the Web Proxy in an ASP.NET session object, which is bound to    the user's browser session via the ASP.NET_SessionId cookie.</li>
+</ul>
+</div>
+<h3 id="response_8"><a class="toclink" href="#response_8">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success or failure or an XML form</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XML</td>
+<td>application/xml</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_4"><a class="toclink" href="#success-response-content_4">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) is returned, the response body contains an XML document where the root node is either AuthenticationStatus or AuthenticateResponse.</p>
+<p>An AuthenticationStatus response indicates either success or failure and contains the following child elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element name</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Result</td>
+<td>Yes</td>
+<td>Value "success" or "failure".</td>
+</tr>
+<tr>
+<td>AuthType</td>
+<td>No</td>
+<td>The authentication type, indicated by one of the authentication method strings "ExplicitForms", "IntegratedWindows", "Certificate", "CitrixAGBasic", "PostCredentials". Only sent when authentication succeeds.</td>
+</tr>
+<tr>
+<td>LogMessage</td>
+<td>No</td>
+<td>An error id indicating the reason for the authentication failure. Typically, the generic value "fatalerror" is returned, but "sessiontimeout" is returned if the Citrix Receiver for Web session has timed out. Only sent when authentication fails.</td>
+</tr>
+<tr>
+<td>IsChangePasswordEnabled</td>
+<td>No</td>
+<td>Value "true". Only sent when authentication succeeds and elective change password is enabled.</td>
+</tr>
+<tr>
+<td>IsExpiryNotificationEnabled</td>
+<td>No</td>
+<td>Value "true". Only sent when authentication succeeds, password expiry notification is enabled, and the user's password is due to expire within the configured time.</td>
+</tr>
+<tr>
+<td>TimeRemaining</td>
+<td>No</td>
+<td>The time remaining (in minutes) until the user's password expires. Only sent when authentication succeeds, password expiry notification is enabled and the user's password is due to expire within the configured time.</td>
+</tr>
+</tbody>
+</table>
+<p><code>AuthenticateResponse</code> is an XML description of a form that is displayed to the user to collect additional information required for the authentication operation (typically, logon on change password). See the Common Forms Authentication documentation for information about the various form elements.</p>
+<h3 id="example-explicit-authenticationlogon-form-returned"><a class="toclink" href="#example-explicit-authenticationlogon-form-returned">Example: Explicit Authentication—Logon Form Returned</a></h3>
+<h4 id="request_10"><a class="toclink" href="#request_10">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/ExplicitAuth/Login HTTP/
+1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Csrf-Token: 23E18D9002817048C931EA636E0D5C81
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CtxsAuthMethod=ExplicitForms;
+CsrfToken=23E18D9002817048C931EA636E0D5C81;
+ASP.NET_SessionId=hdqnxu21dz3p2nb2zcfo2sfs
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_9"><a class="toclink" href="#response_9">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/
+vnd.citrix.authenticateresponse-1+xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+X-Citrix-ExplicitAuthProtocol: ExplicitForms
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 17 Jan 2014 16:25:09 GMT
+Content-Length: 1555
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/
+response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;ExplicitAuth/LoginAttempt&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;ExplicitAuth/CancelForm&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;ID&gt;username&lt;/ID&gt;
+      &lt;SaveID&gt;ExplicitForms-Username&lt;/SaveID&gt;
+      &lt;Type&gt;username&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;User name:&lt;/Text&gt;
+      &lt;Type&gt;plain&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input&gt;
+      &lt;AssistiveText&gt;domain\user or user@domain.com&lt;/
+AssistiveText&gt;
+      &lt;Text&gt;
+        &lt;Secret&gt;false&lt;/Secret&gt;
+        &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+        &lt;InitialValue&gt;
+        &lt;/InitialValue&gt;
+        &lt;Constraint&gt;.+&lt;/Constraint&gt;
+      &lt;/Text&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;&lt;Credential&gt;
+      &lt;ID&gt;password&lt;/ID&gt;
+      &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+      &lt;Type&gt;password&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Password:&lt;/Text&gt;
+      &lt;Type&gt;plain&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input&gt;
+      &lt;Text&gt;
+        &lt;Secret&gt;true&lt;/Secret&gt;
+        &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+        &lt;InitialValue&gt;
+        &lt;/InitialValue&gt;
+        &lt;Constraint&gt;.+&lt;/Constraint&gt;
+      &lt;/Text&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;ID&gt;saveCredentials&lt;/ID&gt;
+      &lt;Type&gt;savecredentials&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Remember my password&lt;/Text&gt;
+      &lt;Type&gt;plain&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input&gt;
+      &lt;CheckBox&gt;
+        &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+      &lt;/CheckBox&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;ID&gt;loginBtn&lt;/ID&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input&gt;
+      &lt;Button&gt;Log On&lt;/Button&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p>The client transforms the XML form description into an HTML representation, which is then dynamically added to the web page DOM. The above XML results in an HTML form consisting of a <strong>User name</strong> label and text input field, a <strong>Password</strong> label and password input field, and a <strong>Log On</strong> button.</p>
+<p>The user types his or her credentials in the input fields and submits the form by clicking the <strong>Log On</strong> button.</p>
+<p>The client intercepts the form submission and follows the Common Forms Authentication rules to build the form data to send back to the Web Proxy (to be forwarded to the Authentication service). The form is submitted to the PostBack URL; in this case Authentication/LoginAttempt. However, the user mistypes their password which results in the Authentication service returning another logon form XML document, this time highlighting the error with an additional Requirements node.</p>
+<h3 id="example-explicit-authenticationincorrect-credentials-submitted"><a class="toclink" href="#example-explicit-authenticationincorrect-credentials-submitted">Example: Explicit Authentication—Incorrect Credentials Submitted</a></h3>
+<h4 id="request_11"><a class="toclink" href="#request_11">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/ExplicitAuth/
+LoginAttempt HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: E2FF5D342BA9193DF707062EA7A31C54
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 72
+Cookie: CtxsAuthMethod=ExplicitForms;
+CsrfToken=E2FF5D342BA9193DF707062EA7A31C54;
+ASP.NET_SessionId=1zfyotwrcjr3uzry3jbqcpvg
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+username=acmecorp%5Cuser1&amp;password=rubbish&amp;loginBtn=Log
++On&amp;StateContext=</code></pre>
+
+
+<h4 id="response_10"><a class="toclink" href="#response_10">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+Set-Cookie: CtxsAuthId=22BE25569A283D63B1C5668580119320; path=/
+Citrix/StoreWeb/; HttpOnly
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 17 Jan 2014 16:42:49 GMT
+Content-Length: 157
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticationStatus&gt;
+  &lt;Result&gt;success&lt;/Result&gt;
+  &lt;AuthType&gt;ExplicitForms&lt;/AuthType&gt;
+&lt;/AuthenticationStatus&gt;</code></pre>
+
+
+<h3 id="example-explicit-authenticationpassword-expired"><a class="toclink" href="#example-explicit-authenticationpassword-expired">Example: Explicit Authentication—Password Expired</a></h3>
+<p>If StoreFront is configured to allow users to change an expired password and a user attempts to log on when their password has expired, a change password XML form is returned when the user submits their credentials. This form includes a label to inform the user that their password must be changed, and text input fields (plus corresponding labels) for the user to enter the old password and to enter and confirm a new password. Note that the post-back URL is also updated to point back to the Web Proxy URL Authentication/ChangePassword.</p>
+<h4 id="request_12"><a class="toclink" href="#request_12">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/ExplicitAuth/
+LoginAttempt HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: A75AC234CA8C565EEEBE96FF81E495BA
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 70
+Cookie: CtxsAuthMethod=ExplicitForms;
+CsrfToken=A75AC234CA8C565EEEBE96FF81E495BA;
+ASP.NET_SessionId=ulemrewlolkvhallkgcbwm3l
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+username=acmecorp%5Cuser1&amp;password=mypassword&amp;loginBtn=Log
++On&amp;StateContext=</code></pre>
+
+
+<h4 id="response_11"><a class="toclink" href="#response_11">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/
+vnd.citrix.authenticateresponse-1+xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+X-Citrix-ExplicitAuthProtocol: ExplicitForms
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Mon, 20 Jan 2014 10:53:59 GMT
+Content-Length: 2111
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/
+response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;update-credentials&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;ExplicitAuth/SendForm&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;ExplicitAuth/CancelForm&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Change Password&lt;/Text&gt;
+      &lt;Type&gt;heading&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input /&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Your password has expired and must be changed.&lt;/
+Text&gt;
+      &lt;Type&gt;information&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input /&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+  &lt;Type&gt;username&lt;/Type&gt;
+&lt;/Credential&gt;
+&lt;Label&gt;
+  &lt;Text&gt;User name:&lt;/Text&gt;
+  &lt;Type&gt;plain&lt;/Type&gt;
+&lt;/Label&gt;
+&lt;Input&gt;
+  &lt;Text&gt;
+    &lt;Secret&gt;false&lt;/Secret&gt;
+    &lt;ReadOnly&gt;true&lt;/ReadOnly&gt;
+    &lt;InitialValue&gt;acmecorp\user1&lt;/InitialValue&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;
+  &lt;/Requirement&gt;
+  &lt;Requirement&gt;
+&lt;Credential&gt;
+  &lt;ID&gt;oldPassword&lt;/ID&gt;
+  &lt;Type&gt;password&lt;/Type&gt;
+&lt;/Credential&gt;
+&lt;Label&gt;
+  &lt;Text&gt;Old password:&lt;/Text&gt;
+  &lt;Type&gt;plain&lt;/Type&gt;
+&lt;/Label&gt;
+&lt;Input&gt;
+  &lt;Text&gt;
+    &lt;Secret&gt;true&lt;/Secret&gt;
+    &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+    &lt;InitialValue&gt;
+    &lt;/InitialValue&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;
+  &lt;/Requirement&gt;
+  &lt;Requirement&gt;
+&lt;Credential&gt;
+  &lt;ID&gt;newPassword&lt;/ID&gt;
+  &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+  &lt;Type&gt;newpassword&lt;/Type&gt;
+&lt;/Credential&gt;
+&lt;Label&gt;
+  &lt;Text&gt;New password:&lt;/Text&gt;
+  &lt;Type&gt;plain&lt;/Type&gt;
+&lt;/Label&gt;
+&lt;Input&gt;
+  &lt;Text&gt;
+    &lt;Secret&gt;true&lt;/Secret&gt;
+    &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+    &lt;InitialValue&gt;
+    &lt;/InitialValue&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;
+  &lt;/Requirement&gt;
+  &lt;Requirement&gt;
+&lt;Credential&gt;
+  &lt;ID&gt;confirmPassword&lt;/ID&gt;
+&lt;Type&gt;newpassword&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Confirm password:&lt;/Text&gt;
+      &lt;Type&gt;plain&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input&gt;
+      &lt;Text&gt;
+        &lt;Secret&gt;true&lt;/Secret&gt;
+        &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+        &lt;InitialValue&gt;
+        &lt;/InitialValue&gt;
+        &lt;Constraint&gt;.+&lt;/Constraint&gt;
+      &lt;/Text&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;ID&gt;changePasswordBtn&lt;/ID&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input&gt;
+      &lt;Button&gt;OK&lt;/Button&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p>When the user enters the requested information and submits the form, a further form is returned by the Authentication service for the user to confirm that their password has been successfully changed. Note that the request specifies the button id changePasswordBtn specified in the form above; failing to specify the correct button id results in the form being rejected. The confirmation form comprises simply of a text label and OK button.</p>
+<h4 id="request_13"><a class="toclink" href="#request_13">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/ExplicitAuth/SendForm
+HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 94FEF17799905C51ADD4599AC0056209
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 95
+Cookie: CtxsAuthMethod=ExplicitForms;
+CsrfToken=94FEF17799905C51ADD4599AC0056209;
+ASP.NET_SessionId=01omrcuoenllin1eugyr142j
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+oldPassword=mypassword&amp;newPassword=newpassword&amp;confirmPassword=
+newpassword&amp;changePasswordBtn=OK&amp;StateContext=</code></pre>
+
+
+<h4 id="response_12"><a class="toclink" href="#response_12">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/
+vnd.citrix.authenticateresponse-1+xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+X-Citrix-ExplicitAuthProtocol: ExplicitForms
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Mon, 20 Jan 2014 11:13:18 GMT
+Content-Length: 720
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/
+response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;ExplicitAuth/SendForm&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;
+    &lt;/CancelPostBack&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Your password has been changed successfully.&lt;/Text&gt;
+      &lt;Type&gt;confirmation&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input /&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;ID&gt;changePasswordConfirmBtn&lt;/ID&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input&gt;
+      &lt;Button&gt;OK&lt;/Button&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    nticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p>After the user clicks the OK button, the confirmation form is submitted and a successful authentication response is obtained.</p>
+<h4 id="request_14"><a class="toclink" href="#request_14">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/ExplicitAuth/SendForm
+HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 94FEF17799905C51ADD4599AC0056209
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 41
+Cookie: CtxsAuthMethod=ExplicitForms;
+CsrfToken=94FEF17799905C51ADD4599AC0056209;
+ASP.NET_SessionId=01omrcuoenllin1eugyr142j
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+changePasswordConfirmBtn=OK&amp;StateContext=</code></pre>
+
+
+<h4 id="response_13"><a class="toclink" href="#response_13">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+Set-Cookie: CtxsAuthId=7BFB98069F1D33A0FB4268F702B0C983; path=/
+Citrix/StoreWeb/; HttpOnly
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Mon, 20 Jan 2014 11:13:24 GMT
+Content-Length: 157
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticationStatus&gt;
+  &lt;Result&gt;success&lt;/Result&gt;
+  &lt;AuthType&gt;ExplicitForms&lt;/AuthType&gt;
+&lt;/AuthenticationStatus&gt;</code></pre>
+
+
+<h3 id="example-explicit-authenticationelective-change-password"><a class="toclink" href="#example-explicit-authenticationelective-change-password">Example: Explicit Authentication—Elective Change Password</a></h3>
+<p>If StoreFront is configured to allow users to change their password at any time and a user attempts to log on when their password is due to expire within the configured expiry period, a successful authentication response is returned. This response includes additional elements indicating that expiry notification is enabled and the number of days remaining until the password expires.</p>
+<h4 id="request_15"><a class="toclink" href="#request_15">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/ExplicitAuth/
+LoginAttempt HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 94FD74E2F4DF05D6B0642D25021F632A
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 70
+Cookie: CtxsAuthMethod=ExplicitForms;
+CsrfToken=94FD74E2F4DF05D6B0642D25021F632A;
+ASP.NET_SessionId=mgucndg5j24cgvymxgrjblr4
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+username=acmecorp%5Cuser1&amp;password=mypassword&amp;loginBtn=Log
++On&amp;StateContext=
+
+####Response
+```curl
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+Set-Cookie: CtxsAuthId=F431D32D995E3CF6A59F5728A0F54085; path=/
+Citrix/StoreWeb/; HttpOnly
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Mon, 20 Jan 2014 11:25:46 GMT
+Content-Length: 320
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticationStatus&gt;
+  &lt;Result&gt;success&lt;/Result&gt;
+  &lt;AuthType&gt;ExplicitForms&lt;/AuthType&gt;
+  &lt;IsChangePasswordEnabled&gt;true&lt;/IsChangePasswordEnabled&gt;
+  &lt;IsExpiryNotificationEnabled&gt;true&lt;/
+IsExpiryNotificationEnabled&gt;
+  TimeRemaining&gt;89&lt;/TimeRemaining&gt;
+&lt;/AuthenticationStatus&gt;</code></pre>
+
+
+<p>The client may then provide an interface for the user to initiate an elective change password request at any time using the changeCredentials URL obtained from the Citrix Receiver for Web configuration at XPath /clientSettings/authManager. Requesting this URL initiates a Common Forms protocol conversation, in a similar way to /ExplicitAuth/ Login. If the user submits the form after entering invalid data (or omitting required data), further forms may be generated. The client must be prepared to receive multiple forms in succession and process these until either a success or failure response is received. If the password change is successful, a password confirmation form is returned; when the confirmation form is submitted a successful AuthenticationStatus response is returned. In other words, the change password conversation proceeds exactly as described in the example for the case where the user's password has expired at logon time.</p>
+<h4 id="request_16"><a class="toclink" href="#request_16">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Authentication/
+GetChangeCredentialForm HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Csrf-Token: A4BF7CB3334846575421F41AD44EBA67
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CtxsAuthMethod=ExplicitForms;
+CsrfToken=A4BF7CB3334846575421F41AD44EBA67;
+CtxsAuthId=910C6BFC2C98184CA57F77556041E0D3;
+ASP.NET_SessionId=cxd25yc3xwq10qevwpxywyxu
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_14"><a class="toclink" href="#response_14">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/
+vnd.citrix.authenticateresponse-1+xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+X-Citrix-ExplicitAuthProtocol: ExplicitForms
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Mon, 20 Jan 2014 11:48:00 GMT
+Content-Length: 2097
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/
+response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;update-credentials&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;ExplicitAuth/SendForm&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;ExplicitAuth/CancelForm&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Change Password&lt;/Text&gt;
+      &lt;Type&gt;heading&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input /&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;Type&gt;none&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Enter your old and new passwords&lt;/Text&gt;
+      &lt;Type&gt;information&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input /&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;Type&gt;username&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;User name:&lt;/Text&gt;
+      &lt;Type&gt;plain&lt;/Type&gt;
+    &lt;/Label&gt;
+    &lt;Input&gt;
+      &lt;Text&gt;
+        &lt;Secret&gt;false&lt;/Secret&gt;
+        &lt;ReadOnly&gt;true&lt;/ReadOnly&gt;
+        &lt;InitialValue&gt;acmecorp\user1&lt;/InitialValue&gt;
+        &lt;Constraint&gt;.+&lt;/Constraint&gt;
+      &lt;/Text&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+    &lt;Credential&gt;
+      &lt;ID&gt;oldPassword&lt;/ID&gt;
+      &lt;Type&gt;password&lt;/Type&gt;
+    &lt;/Credential&gt;
+    &lt;Label&gt;
+      &lt;Text&gt;Old password:&lt;/Text&gt;
+      &lt;Type&gt;plain&lt;/Type&gt;
+    &lt;/Label&gt;
+&lt;Input&gt;
+&lt;Text&gt;
+    &lt;Secret&gt;true&lt;/Secret&gt;
+    &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+    &lt;InitialValue&gt;
+    &lt;/InitialValue&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;
+  &lt;/Requirement&gt;
+  &lt;Requirement&gt;
+&lt;Credential&gt;
+  &lt;ID&gt;newPassword&lt;/ID&gt;
+  &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+  &lt;Type&gt;newpassword&lt;/Type&gt;
+&lt;/Credential&gt;
+&lt;Label&gt;
+  &lt;Text&gt;New password:&lt;/Text&gt;
+  &lt;Type&gt;plain&lt;/Type&gt;
+&lt;/Label&gt;
+&lt;Input&gt;
+  &lt;Text&gt;
+    &lt;Secret&gt;true&lt;/Secret&gt;
+    &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+    &lt;InitialValue&gt;
+    &lt;/InitialValue&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;
+  &lt;/Requirement&gt;
+  &lt;Requirement&gt;
+&lt;Credential&gt;
+  &lt;ID&gt;confirmPassword&lt;/ID&gt;
+  &lt;Type&gt;newpassword&lt;/Type&gt;
+&lt;/Credential&gt;
+&lt;Label&gt;
+  &lt;Text&gt;Confirm password:&lt;/Text&gt;
+  &lt;Type&gt;plain&lt;/Type&gt;
+&lt;/Label&gt;
+&lt;Input&gt;
+  &lt;Text&gt;
+    &lt;Secret&gt;true&lt;/Secret&gt;
+    &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+    &lt;InitialValue&gt;
+    &lt;/InitialValue&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;
+  &lt;/Requirement&gt;
+  &lt;Requirement&gt;
+&lt;Credential&gt;
+  &lt;ID&gt;changePasswordBtn&lt;/ID&gt;
+  &lt;Type&gt;none&lt;/Type&gt;
+&lt;/Credential&gt;
+&lt;Label&gt;
+  &lt;Type&gt;none&lt;/Type&gt;
+&lt;/Label&gt;
+&lt;Input&gt;
+ &lt;Button&gt;OK&lt;/Button&gt;
+    &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p>With elective change password the user has already authenticated to Citrix Receiver for Web. Since the change password request is not essential to access the site, the client UI should provide a Cancel button on the form. If the user chooses to cancel, the Web Proxy cancel post-back URL in the above form must be used to relay to the Authentication service that the request has been cancelled.</p>
+<h4 id="request_17"><a class="toclink" href="#request_17">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/ExplicitAuth/CancelForm
+HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 3E5784A870D03FF16BF7A37415F9E0AB
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 73
+Cookie: CtxsAuthMethod=ExplicitForms;
+CsrfToken=3E5784A870D03FF16BF7A37415F9E0AB;
+CtxsAuthId=C389FA6A3BD8E1E3811C184C01918411;
+ASP.NET_SessionId=chgeeknlk5aiewkyyqfwp43p
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+oldPassword=&amp;newPassword=&amp;confirmPassword=&amp;cancelBtn=Cancel&amp;Sta
+teContext=</code></pre>
+
+
+<h4 id="response_15"><a class="toclink" href="#response_15">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/
+vnd.citrix.authenticateresponse-1+xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Mon, 20 Jan 2014 12:02:33 GMT
+Content-Length: 201
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/
+response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;cancelled&lt;/Result&gt;
+  &lt;StateContext /&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h2 id="post-credentials-authentication"><a class="toclink" href="#post-credentials-authentication">Post Credentials Authentication</a></h2>
+<p>With post credentials authentication, the client supplies the user's credentials directly using HTTP POST. This provides a simpler authentication mechanism than Explicit Forms because the client does not need to parse XML forms and handle the forms conversation. However, this method is less flexible than Explicit Forms authentication and does not support change password functionality, which uses the Common Forms protocol.</p>
+<h3 id="request_18"><a class="toclink" href="#request_18">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative only)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/PostCredentialsAuth/ Login</td>
+<td>POST</td>
+<td>Authenticates the user using the credentials supplied in the POST body. The URL is returned by / Authentication/ GetAuthMethods.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>POST parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>The username, including a domain specification if required, in either SAM or UPN format. For example, domain\fred or fred@some.domain</td>
+</tr>
+<tr>
+<td>password</td>
+<td>The password.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The Http Basic authentication method must be enabled for the Authentication service   because the Web Proxy internally uses HttpBasic to authenticate the user to StoreFront.</li>
+<li>A non-empty username string value must be supplied, but the password may be supplied  with an empty value.</li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success or failure</td>
+</tr>
+<tr>
+<td>400</td>
+<td>The username or password was not supplied.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XML</td>
+<td>application/xml</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_5"><a class="toclink" href="#success-response-content_5">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) is returned, the response body contains an XML document with root node AuthenticationStatus and the following child elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element name</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Result</td>
+<td>Yes</td>
+<td>Value "success" or "failure".</td>
+</tr>
+<tr>
+<td>AuthType</td>
+<td>No</td>
+<td>The authentication type, as indicated by one of the authentication method strings: "ExplicitForms", "IntegratedWindows", "Certificate", "CitrixAGBasic", "PostCredentials". Only sent when authentication succeeds.</td>
+</tr>
+<tr>
+<td>LogMessage</td>
+<td>No</td>
+<td>An error id indicating the reason for the authentication failure. Typically the generic value "fatalerror" is returned, but "sessiontimeout" is returned if the Citrix Receiver for Web session has timed out. When the credentials are rejected by the Authentication service, "loginfailed" is returned. Only sent when authentication fails.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-successful-post-credentials-authentication"><a class="toclink" href="#example-successful-post-credentials-authentication">Example: Successful Post Credentials Authentication</a></h3>
+<h4 id="request_19"><a class="toclink" href="#request_19">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/PostCredentialsAuth/
+Login HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 04416E5028580B5783E1A051732214B4
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/ApiExample.html
+Content-Length: 42
+Cookie: CsrfToken=04416E5028580B5783E1A051732214B4;
+ASP.NET_SessionId=m5utlgwykupmhhbq11c2gt0s
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+username=acmecorp%5Cuser1&amp;password=mypassword</code></pre>
+
+
+<h4 id="response_16"><a class="toclink" href="#response_16">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+Set-Cookie: CtxsAuthId=488731E2C57EF91E84729A3ECB3E5CAF; path=/
+Citrix/StoreWeb/; HttpOnly
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Tue, 28 Jan 2014 13:44:18 GMT
+Content-Length: 159
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticationStatus&gt;
+  &lt;Result&gt;success&lt;/Result&gt;
+  &lt;AuthType&gt;PostCredentials&lt;/AuthType&gt;
+&lt;/AuthenticationStatus&gt; </code></pre>
+
+
+<h2 id="netscaler-gateway-single-sign-on"><a class="toclink" href="#netscaler-gateway-single-sign-on">NetScaler Gateway Single Sign-On</a></h2>
+<p>Use this request to automatically authenticate a user who has authenticated to NetScaler Gateway.</p>
+<h3 id="request_20"><a class="toclink" href="#request_20">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/GatewayAuth/Login</td>
+<td>POST</td>
+<td>Authenticates the user using NetScaler Gateway single sign-on.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>When Citrix Receiver for Web is accessed through NetScaler Gateway, changing an expired   password during logon is dealt with by the Gateway.</li>
+<li>Since Citrix Receiver for Web is not involved in the explicit forms authentication, it    does not provide password expiry notification when a user's password expires soon.</li>
+<li>When elective change password is enabled and a user successfully changes their password,  the client must log the user off because there is no way to sync up with NetScaler  Gateway. The user then has to log onto the Gateway again.</li>
+<li>When authentication fails, the StoreFront event logs may reveal further information to    assist with diagnosing the failure.</li>
+</ul>
+</div>
+<h3 id="response_17"><a class="toclink" href="#response_17">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success or failure</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XML</td>
+<td>application/xml</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_6"><a class="toclink" href="#success-response-content_6">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) is returned, the response body contains an XML document with root node AuthenticationStatus with the same child elements as described for Explicit Authentication.</p>
+<h3 id="example-successful-netscaler-gateway-authentication"><a class="toclink" href="#example-successful-netscaler-gateway-authentication">Example: Successful NetScaler Gateway Authentication</a></h3>
+<h4 id="request_21"><a class="toclink" href="#request_21">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST https://gateway.acme.com/Citrix/StoreWeb/GatewayAuth/
+Login HTTP/1.1
+Host: gateway.acme.com
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:26.0) Gecko/
+20100101 Firefox/26.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-us,en;q=0.7,fr;q=0.3
+Accept-Encoding: gzip, deflate
+Csrf-Token: AD11BBE759D84186CE8753ABA4246FDD
+X-Citrix-IsUsingHTTPS: Yes
+X-Requested-With: XMLHttpRequest
+Referer: https://gateway.acme.com/Citrix/StoreWeb
+Cookie: CsrfToken=AD11BBE759D84186CE8753ABA4246FDD;
+NSC_AAAC=84dc5a2985fe2cdddcb18697f37d49ec0094e9e2145525d5f4f584
+55e445a4a42; ASP.NET_SessionId=rozslfqggjk32jbjggkwptpj
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_18"><a class="toclink" href="#response_18">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">Response
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/xml; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.5
+Set-Cookie: CtxsAuthId=9ADB4CFDA7CE38BEA0C64A64C5914145; path=/
+Citrix/StoreWeb/; secure; HttpOnly
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Mon, 20 Jan 2014 15:27:41 GMT
+Content-Length: 216
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticationStatus&gt;
+  &lt;Result&gt;success&lt;/Result&gt;
+  &lt;AuthType&gt;CitrixAGBasic&lt;/AuthType&gt;
+  &lt;IsChangePasswordEnabled&gt;true&lt;/IsChangePasswordEnabled&gt;
+&lt;/AuthenticationStatus&gt;</code></pre>
+
+
+<h2 id="get-user-name"><a class="toclink" href="#get-user-name">Get User Name</a></h2>
+<p>Use this request to obtain the full user name, as configured in Active Directory. If the full user name is unavailable, the user's logon name is returned instead.</p>
+<h3 id="request_22"><a class="toclink" href="#request_22">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Authentication/ GetUserName</td>
+<td>POST</td>
+<td>Returns the user name. Obtain the URL from the Citrix Receiver for Web configuration using the getUsernameURL attribute at XPath /clientSettings/ authManager</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>This request requires an authenticated session, indicated by the cookies  ASP.NET_SessionId and CtxsAuthId. When using an unauthenticated Store, no user has  actually logged on and an HTTP 403 response is returned.</li>
+<li>The Web Proxy uses the StoreFront Token Validation service to obtain the user name from   the authentication token.</li>
+</ul>
+</div>
+<h3 id="response_19"><a class="toclink" href="#response_19">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success or authentication challenge</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header w Invalid CtxsAuthId cookie</td>
+</tr>
+<tr>
+<td></td>
+<td>* Missing authentication token in server session, when the user has not yet logged on</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_7"><a class="toclink" href="#success-response-content_7">Success Response Content</a></h3>
+<p>If a successful response (HTTP status code 200 OK) is returned, the response body contains the user name as a string in plain text format, encoded as UTF-8.</p>
+<h3 id="example-get-user-name"><a class="toclink" href="#example-get-user-name">Example: Get User Name</a></h3>
+<h4 id="request_23"><a class="toclink" href="#request_23">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Authentication/
+GetUserName HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: text/plain, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: 128B2AA41FE56F42CA4550FEE88198CB
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=128B2AA41FE56F42CA4550FEE88198CB;
+CtxsAuthId=82221BEE46C4C14CAFD2405F9A3C600F;
+ASP.NET_SessionId=5cfuoz0dc0p3y0o2nidhglkh
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_20"><a class="toclink" href="#response_20">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: text; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 18 Oct 2013 13:43:17 GMT
+Content-Length: 9
+Joe Blogs</code></pre>
+
+
+<h2 id="log-off"><a class="toclink" href="#log-off">Log Off</a></h2>
+<p>Use this request to log off a user's web session.</p>
+<h3 id="request_24"><a class="toclink" href="#request_24">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Authentication/Logoff</td>
+<td>POST</td>
+<td>Terminates the user's web session. Obtain the URL from the Citrix Receiver for Web configuration using the logoffURL attribute at: XPath /clientSettings/ authManager.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>This request requires an authenticated session, indicated by the cookies  ASP.NET_SessionId and CtxsAuthId.</li>
+<li>The StoreFront Authentication service is called to destroy the user's primary token.</li>
+<li>The Web session is terminated and the following cookies are cleared: ASP.NET_SessionId,   CtxsAuthId, CsrfToken.</li>
+</ul>
+</div>
+<h3 id="response_21"><a class="toclink" href="#response_21">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header w Invalid CtxsAuthId cookie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_8"><a class="toclink" href="#success-response-content_8">Success Response Content</a></h3>
+<p>If a successful response (HTTP status code 200 OK) is returned, the response body is empty.</p>
+<h3 id="example-log-off"><a class="toclink" href="#example-log-off">Example: Log Off</a></h3>
+<h4 id="request_25"><a class="toclink" href="#request_25">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Authentication/Logoff
+HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: application/xml, text/xml, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: 128B2AA41FE56F42CA4550FEE88198CB
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=128B2AA41FE56F42CA4550FEE88198CB;
+CtxsAuthId=82221BEE46C4C14CAFD2405F9A3C600F;
+ASP.NET_SessionId=5cfuoz0dc0p3y0o2nidhglkh; AGSSOHasOccurred=;
+PasswordChangeAllowed=
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_22"><a class="toclink" href="#response_22">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/
+vnd.citrix.webreceiver.authenticationlogoffresponse+xml
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: CsrfToken=128B2AA41FE56F42CA4550FEE88198CB;
+expires=Tue, 18-Oct-1983 13:43:23 GMT; path=/Citrix/StoreWeb/
+Set-Cookie: CtxsAuthId=82221BEE46C4C14CAFD2405F9A3C600F;
+expires=Tue, 18-Oct-1983 13:43:23 GMT; path=/Citrix/StoreWeb/
+Set-Cookie: ASP.NET_SessionId=; path=/
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 18 Oct 2013 13:43:22 GMT
+Content-Length: 0</code></pre>
+
+
+<h2 id="resource-enumeration"><a class="toclink" href="#resource-enumeration">Resource Enumeration</a></h2>
+<p>Use this request to get a list of all the resources available for a user. </p>
+<h3 id="request_26"><a class="toclink" href="#request_26">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative only)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Resources/List</td>
+<td>POST</td>
+<td>Returns a list of all resources available for the user in JSON format</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>POST parameters</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resourcesDetails</td>
+<td>The resource details to include in the response. Use one of the following supported values:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Default—a default set of resource details (see below).</td>
+</tr>
+<tr>
+<td></td>
+<td>* Full—an extended set of resource details (see below).</td>
+</tr>
+<tr>
+<td></td>
+<td>If you do not specify the parameter, "Default" is assumed.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>Typically, this request requires an authenticated session, indicated by the cookies   ASP.NET_SessionId and CtxsAuthId. However, when the Web Proxy is configured to use an   unauthenticated Store, an authenticated session is not required.</li>
+<li>The Web Proxy always performs a fresh enumeration for the user by communicating with the  StoreFront Store service to pick up any changes that may have occurred.</li>
+</ul>
+</div>
+<h3 id="response_23"><a class="toclink" href="#response_23">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success or authentication challenge</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons: w Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header w Invalid CtxsAuthId cookie</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CtxsAuthId cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON</td>
+<td>application/json</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_9"><a class="toclink" href="#success-response-content_9">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) is returned, the response body contains a JSON object describing the resources that are available for the authenticated user. This object contains the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>JavaScript Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resources</td>
+<td>Object Array</td>
+<td>Details of each published resource available to the user. Each object in the array corresponds to a single resource and contains a set of fields, as described below.</td>
+</tr>
+<tr>
+<td>isSubscriptionEna bled</td>
+<td>Boolean</td>
+<td>Whether subscription operations are enabled for the Store or not.</td>
+</tr>
+<tr>
+<td>isUnauthenticated Store</td>
+<td>Boolean</td>
+<td>Whether or not the Store is accessible only without first authenticating.</td>
+</tr>
+</tbody>
+</table>
+<p>The resources field in the table above is an array of resource objects. Each resource object always contains the following set of fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>JavaScript Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clienttypes</td>
+<td>String Array</td>
+<td>An array of string values identifying the clients supported for launches. Known values include <strong>ica30</strong>, <strong>rade</strong>, <strong>rdp</strong> (XenApp/XenDesktop), <strong>application/ios</strong>, <strong>application/android</strong> (AppController), <strong>g2m</strong>, <strong>g2t</strong> etc. (Citrix Online Integration using Generic applications).</td>
+</tr>
+<tr>
+<td>iconurl</td>
+<td>String</td>
+<td>The URL to request the resource's icon image data.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>String</td>
+<td>Unique resource identifier, created by the Web Proxy.</td>
+</tr>
+<tr>
+<td>launchstatusurl</td>
+<td>String</td>
+<td>The URL to determine whether a resource is ready to launch or not (see ICA Launch).</td>
+</tr>
+<tr>
+<td>launchurl</td>
+<td>String</td>
+<td>The URL to make a launch request (see ICA Launch).</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>The user-friendly name of the resource.</td>
+</tr>
+<tr>
+<td>path</td>
+<td>String</td>
+<td>The path defined in the XenApp/XenDesktop site (farm) for the resource.</td>
+</tr>
+<tr>
+<td>shortcutvalidation url</td>
+<td>String</td>
+<td>The app shortcut validation URL, to confirm that an app may be launched using a shortcut.</td>
+</tr>
+<tr>
+<td>subscriptionstatus</td>
+<td>String</td>
+<td>The subscription status (see Resource Subscription).</td>
+</tr>
+</tbody>
+</table>
+<p>In addition, each resource object may contain the following optional fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>JavaScript Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>assigndesktopurl</td>
+<td>String</td>
+<td>Call this URL to assign a desktop to the user. Supplied only for XenDesktop assign-on-first-use desktops.</td>
+</tr>
+<tr>
+<td>content</td>
+<td>Boolean</td>
+<td>Supplied with value <em>true</em> if the resource represents a document as opposed to a published application/desktop, otherwise omitted.</td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td>A longer text description of the resource.</td>
+</tr>
+<tr>
+<td>desktopassignmenttype</td>
+<td>String</td>
+<td>The desktop assignment type: one of the values <em>shared</em>, <em>assign-on-first-use</em> or <em>assigned</em>. Supplied only for XenDesktop resources.</td>
+</tr>
+<tr>
+<td>desktophostname</td>
+<td>String</td>
+<td>The desktop host name, if known. Supplied only for XenDesktop assigned desktops.</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>Supplied with value <em>true</em> if the resource is not enabled, otherwise omitted.</td>
+</tr>
+<tr>
+<td>isdesktop</td>
+<td>Boolean</td>
+<td>Supplied with value <em>true</em> if the resource is a desktop, otherwise omitted.</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>String Array</td>
+<td>An array of string values identifying keywords associated with the resource.</td>
+</tr>
+<tr>
+<td>mandatory</td>
+<td>Boolean</td>
+<td>Supplied with value true if the resource is tagged by the back-end resource provider as mandatory, otherwise omitted.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>String</td>
+<td>A string representing the relative position of a subscribed resource in the Citrix Receiver for Web UI. Only generated for resources for which a position has already been defined.</td>
+</tr>
+<tr>
+<td>poweroffurl</td>
+<td>String</td>
+<td>The URL to make a machine power-off request. Only supplied if the resource can be powered- off, as reported by the StoreFront Resources service.</td>
+</tr>
+<tr>
+<td>prelaunchurl</td>
+<td>String</td>
+<td>The URL to call to contact the AppController pre-launch service to obtain an updated content URL for single sign-on.</td>
+</tr>
+<tr>
+<td>recommended</td>
+<td>Boolean</td>
+<td>Supplied with value true if the resource is tagged by the back-end resource provider as <strong>featured</strong> or <strong>recommended</strong>, otherwise omitted.</td>
+</tr>
+<tr>
+<td>requiresvpn</td>
+<td>Boolean</td>
+<td>Supplied with value true if the resource is marked (using the Resources Service VPN keyword,) as launchable remotely (with NetScaler Gatway) only when using a VPN, otherwise omitted.</td>
+</tr>
+<tr>
+<td>requiresworkflow</td>
+<td>Boolean</td>
+<td>Supplied with value true if workflow is enabled for the resource (typically due to the presence of the <strong>WFS</strong> keyword).</td>
+</tr>
+<tr>
+<td>subscriptionurl</td>
+<td>String</td>
+<td>The URL to make a subscription request (see Resource Subscription).</td>
+</tr>
+</tbody>
+</table>
+<p>When the <code>resourceDetails</code> request parameter specifies that a "Full" enumeration should be performed, the following additional, and optional fields may be returned:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>JavaScript Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>images</td>
+<td>Object Array</td>
+<td>An array of objects identifying the image sizes and color depths of the resource icon held by the StoreFront Services server (may be used to determine which image sizes are likely to give good results when requested by the client). Each object in the array contains a pair of integer fields named <strong>size</strong> and <strong>depth</strong>.</td>
+</tr>
+<tr>
+<td>playsfiletypes</td>
+<td>Object Array</td>
+<td>An array of objects describing the file extensions supported by the resource [Application only]. Each object in the array may contain the following fields:</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><em>name</em> (String): file type association name</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><em>description</em> (String): file type association description</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><em>isdefault</em> (Boolean): whether this is the default file type association or not</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><em>fileextensions</em> (String Array): array of file extensions that can be opened by this resource</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><em>mimetypes</em> (String Array): array of mime types supported by the resource</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><em>parameters</em> (String Array): array of parameters used for launching the resource</td>
+</tr>
+<tr>
+<td>properties</td>
+<td>Object Array</td>
+<td>Resource properties—an array of name value pairs associated with the resource and ultimately supplied by the resource provider. Each object in the array contains a string field name describing the property <em>name</em> and a string array field <em>values</em> describing a list of property values.</td>
+</tr>
+<tr>
+<td>publishername</td>
+<td>String</td>
+<td>The name of the publisher (the farm name for XenApp).</td>
+</tr>
+<tr>
+<td>shortcuturl</td>
+<td>String</td>
+<td>The app shortcut URL, to use when embedding a link to the resource in a portal page.</td>
+</tr>
+<tr>
+<td>subscriptionproperties</td>
+<td>Object Array</td>
+<td>Subscription properties — an array of name value pairs associated with the resource subscription and stored in the subscription database. Each object in the array contains a string field name for the property <em>name</em> and an optional string array field <em>values</em> for the list of property values. For more information, see Resource Subscription.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>The resource type, typically one of the following values:</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* Citrix.MPS.Application</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* Citrix.MPS.Desktop</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* Citrix.MPS.Document</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>The iconurl value encodes a particular icon size, as configured in the Web.config site    configuration file (resourcesService section, within serverSettings). The StoreFront Store  service returns the icon that best matches the requested size.</li>
+<li>The iconurl represents image data at the point that the enumeration was performed. If     the icon for a resource subsequently changes, the URL will not point to the updated image.  However, the URL is persistent because it always points to the same icon, although it may   return 404 after the icon has been updated on the XenApp/XenDesktop server.</li>
+<li>The subscriptionUrl is used for both subscribing to and unsubscribing from a resource,    with the operation selected by a POST parameter.</li>
+</ul>
+</div>
+<h3 id="example-request-all-resources"><a class="toclink" href="#example-request-all-resources">Example: Request all resources</a></h3>
+<h4 id="request_27"><a class="toclink" href="#request_27">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Resources/List HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: EC8A9490C8D32616B21C3EED398FE9EE
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 32
+Cookie: CsrfToken=EC8A9490C8D32616B21C3EED398FE9EE;
+CtxsAuthId=BB8B836131AA35C54DF588E631838946;
+ASP.NET_SessionId=jel5evcolmhl4bcm1i31exqo; AGSSOHasOccurred=;
+PasswordChangeAllowed=
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+format=json&amp;resourceDetails=Default</code></pre>
+
+
+<h4 id="response_24"><a class="toclink" href="#response_24">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Tue, 24 Sep 2013 11:03:37 GMT
+Content-Length: xxxxx
+{&quot;resources&quot;:[
+  {&quot;clienttypes&quot;:[&quot;ica30&quot;,&quot;rdp&quot;],
+   &quot;description&quot;:&quot;&quot;,
+   &quot;iconurl&quot;:&quot;Resources\/Icon\/
+NUM2RDNDRDU1QzdBMUE0RjU0NjA4NjRBNTkwMzY0NzQyMEM2OTQ3QQ--\/48&quot;,
+   &quot;id&quot;:&quot;Q29udHJvbGxlci4hJCVeJl8rLQ--&quot;,
+   &quot;launchurl&quot;:&quot;Resources\/LaunchIca\/
+Q29udHJvbGxlci4hJCVeJl8rLQ--&quot;,
+   &quot;name&quot;:&quot;Microsoft Word&quot;,
+   &quot;path&quot;:&quot;\\Office Apps\\&quot;,
+   &quot;shortcutvalidationurl&quot;:&quot;Resources\/
+ValidateAppShortcutLaunch\/Q29udHJvbGxlci4hJCVeJl8rLQ--&quot;,
+   &quot;subscriptionstatus&quot;:null,
+   &quot;subscriptionurl&quot;:&quot;Resources\/Subscription\/
+Q29udHJvbGxlci4hJCVeJl8rLQ--&quot;
+  },
+  {&quot;clienttypes&quot;:[&quot;ica30&quot;,&quot;rdp&quot;],
+   &quot;description&quot;:&quot;&quot;,
+   &quot;disabled&quot;:true,
+   &quot;iconurl&quot;:&quot;Resources\/Icon\/
+NUM2RDNDRDU1QzdBMUE0RjU0NjA4NjRBNTkwMzY0NzQyMEM2OTQ3QQ--\/48&quot;,
+   &quot;id&quot;:&quot;Q29udHJvbGxlci4hJF4kJV4-&quot;,
+   &quot;launchurl&quot;:&quot;Resources\/LaunchIca\/
+Q29udHJvbGxlci4hJF4kJV4-&quot;,
+   &quot;name&quot;:&quot;!$^$%^&quot;,
+   &quot;path&quot;:&quot;\\Yabba\\&quot;,
+   &quot;shortcutvalidationurl&quot;:&quot;Resources\/
+ValidateAppShortcutLaunch\/Q29udHJvbGxlci4hJF4kJV4-&quot;,
+   &quot;subscriptionstatus&quot;:null,
+   &quot;subscriptionurl&quot;:&quot;Resources\/Subscription\/
+Q29udHJvbGxlci4hJF4kJV4-&quot;
+   },
+... ],
+ &quot;subscriptionsEnabled&quot;:true,
+}</code></pre>
+
+
+<h3 id="example-request-all-resources-full-enumeration"><a class="toclink" href="#example-request-all-resources-full-enumeration">Example: Request all resources (full enumeration)</a></h3>
+<h4 id="request_28"><a class="toclink" href="#request_28">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Resources/List HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 1062D9DA90BA01931DB472C09D61A6EB
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 56
+Cookie: CsrfToken=1062D9DA90BA01931DB472C09D61A6EB;
+CtxsAuthId=FEB9E833C66E9D7B4124E04AEC12C3B5;
+ASP.NET_SessionId=2zsqy14dgxdctivbs351fmvo
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+format=json&amp;resourceDetails=Default&amp;resourceDetails=Full</code></pre>
+
+
+<h4 id="response_25"><a class="toclink" href="#response_25">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Tue, 24 Sep 2013 11:03:37 GMT
+Content-Length: xxxxx
+{&quot;categories&quot;:[],
+ &quot;resources&quot;:[
+  {
+    &quot;type&quot;: &quot;Citrix.MPS.Application&quot;,
+    &quot;subscriptionurl&quot;: &quot;Resources\/Subscription\/
+X83heiDGddg1ldasf87asdfg--&quot;,
+    &quot;shortcutvalidationurl&quot;: &quot;Resources\/
+ValidateAppShortcutLaunch\/X83heiDGddg1ldasf87asdfg--&quot;,
+    &quot;shortcuturl&quot;: &quot;http:\/\/kontiki\/Citrix\/StoreWeb\/#\/
+launch\/Notepad&quot;,
+    &quot;publishername&quot;: &quot;foobar-ic6659&quot;,
+    &quot;path&quot;: &quot;\\&quot;,
+    &quot;name&quot;: &quot;Notepad&quot;,
+    &quot;launchurl&quot;: &quot;Resources\/LaunchIca\/
+X83heiDGddg1ldasf87asdfg--&quot;,
+    &quot;launchstatusurl&quot;: &quot;Resources\/GetLaunchStatus\/
+X83heiDGddg1ldasf87asdfg--&quot;,
+    &quot;images&quot;: [
+{
+&quot;size&quot;: 48,
+&quot;depth&quot;: 4 },
+{
+&quot;size&quot;: 32,
+&quot;depth&quot;: 4 },
+{
+&quot;size&quot;: 48,
+&quot;depth&quot;: 8 },
+{
+&quot;size&quot;: 32,
+&quot;depth&quot;: 8 },
+       {
+         &quot;size&quot;: 256,
+         &quot;depth&quot;: 32
+       },
+{
+&quot;size&quot;: 48,
+         &quot;depth&quot;: 32
+       },
+{
+&quot;size&quot;: 32,
+         &quot;depth&quot;: 32
+       },
+     ],
+    &quot;id&quot;: &quot;X83heiDGddg1ldasf87asdfg--&quot;,
+    &quot;iconurl&quot;: &quot;Resources\/Icon\/
+NUM2RDNDRDU1QzdBMUE0RjU0NjA4NjRBNTkwMzY0NzQyMEM2OTQ3QQ--?
+size=48&quot;,
+    &quot;description&quot;: &quot;Take note!&quot;,
+    &quot;clienttypes&quot;: [
+&quot;ica30&quot;,
+&quot;rdp&quot; ]
+},
+... ],
+ &quot;subscriptionsEnabled&quot;:true,
+}</code></pre>
+
+
+<h2 id="ica-launch"><a class="toclink" href="#ica-launch">ICA Launch</a></h2>
+<p>Use this request to check if a resource is ready to launch, or to get an ICA file for launching a resource.</p>
+<h3 id="request_29"><a class="toclink" href="#request_29">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative only)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Resources/ GetLaunchStatus/{id}</td>
+<td>POST</td>
+<td>Request whether the specified resource is ready to launch or not.</td>
+</tr>
+<tr>
+<td>/Resources/LaunchIca/{id}</td>
+<td>GET</td>
+<td>Request an ICA file for launching the specified resource.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{id}</td>
+<td>Unique identifier for a particular resource. Note, this parameter is a component of the URL.</td>
+</tr>
+<tr>
+<td>displayNameDesktopTitle</td>
+<td>The desktop display name. This is inserted in the generated ICA file as the value for the Title setting. This name is then displayed in the title bar of the Desktop Viewer. Note: this is a POST parameter for GetLaunchStatus and a query string parameter for LaunchIca.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>Typically, these requests require an authenticated session, indicated by the cookies  ASP.NET_SessionId and CtxsAuthId. However, when the Web Proxy is configured to use an   unauthenticated Store, an authenticated session is not required.</li>
+<li>The URLs given above are for illustrative purposes; the actual URLs used by a client  must be taken from the result of an earlier enumeration request to /Resources/List.</li>
+<li>LaunchIca is a GET instead of a POST so that it can be loaded by a browser in a hidden    iframe (using the iframe's src="url" attribute) to trigger a launch via file-type   association.</li>
+<li>GetLaunchStatus makes a launch request to the Store Service to determine whether the  specified resource is ready to launch or not. If this returns an ICA file, the ICA file is  cached for up to 90 seconds. If a subsequent call is made to LaunchIca within this time,    the cached ICA file is returned without making an additional launch request to the Store    Service.</li>
+<li>For LaunchIca, clients must append a query string key with a random value to prevent  browsers from returning a cached response when making multiple launch requests for the  same resource. See the launchId query string parameter in the examples below.</li>
+<li>Calling GetResourceStatus can trigger a desktop VM to start up.</li>
+</ul>
+</div>
+<h3 id="response_26"><a class="toclink" href="#response_26">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success/Retry required/failure, or authentication challenge.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header (only required for the POST request)</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CtxsAuthId cookie</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Resource identified by {id} was not known to the Web Proxy.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON</td>
+<td>application/json or text/plain (see below)</td>
+</tr>
+<tr>
+<td>ICA File</td>
+<td>application/octet-stream</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_10"><a class="toclink" href="#success-response-content_10">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) for GetLaunchStatus is returned, the response body contains a JSON string describing whether the supplied resource is ready to be launched or not, with the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>JavaScript Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>Yes</td>
+<td>One of the following strings:</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>* success: the resource is ready to be launched.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>* retry: currently, the resource is not ready to be launched (for example, a desktop VM that first needs to be powered on before a connection can be made to it), but the launch attempt may be retried later.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>* failure: the attempt to retrieve launch information failed.</td>
+</tr>
+<tr>
+<td>pollTimeout</td>
+<td>Number</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>errorId</td>
+<td>String</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>suggestRestart</td>
+<td>Boolean</td>
+<td>No</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>When a successful response for LaunchIca is returned, the response body can be either a JSON string, as described above, for GetLaunchStatus or, if the resource is ready to launch, an ICA file. Clients typically load the LaunchIca URL into an iframe to obtain an ICA file and trigger a launch via file type association. If LaunchIca returns a JSON response instead of an ICA file, the content type is set to "text/plain" because Internet Explorer does not render an "application/json" response into the iframe document and instead prompts the user to Open or Save it. If the client is using jQuery, the JSON text response can be deserialized to a JavaScript object by calling $.parseJSON(responseData).</p>
+<h3 id="example-successful-ica-launch"><a class="toclink" href="#example-successful-ica-launch">Example: Successful ICA launch</a></h3>
+<h4 id="request_30"><a class="toclink" href="#request_30">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">GET http://webserver/Citrix/StoreWeb/Resources/LaunchIca/
+Q29udHJvbGxlci5EZXNrdG9w.ica?
+CsrfToken=85E9295DFD9CF333F31F0A53B769D915&amp;launchId=13800307750
+58&amp;displayNameDesktopTitle=Desktop HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: text/html,application/xhtml+xml,application/
+xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=85E9295DFD9CF333F31F0A53B769D915;
+CtxsAuthId=5A0B7A991C8136CE17A0D43113C00740;
+ASP.NET_SessionId=jel5evcolmhl4bcm1i31exqo
+Connection: keep-alive</code></pre>
+
+
+<h4 id="response_27"><a class="toclink" href="#response_27">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: private, max-age=0, s-maxage=0
+Content-Type: application/octet-stream; charset=utf-8
+Expires: Tue, 24 Sep 2013 13:52:55 GMT
+Last-Modified: Tue, 24 Sep 2013 13:52:55 GMT
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Tue, 24 Sep 2013 13:52:55 GMT
+Content-Length: 1263
+[Encoding]
+InputEncoding=UTF8
+[WFClient]
+ProxyFavorIEConnectionSetting=Yes
+ProxyTimeout=30000
+ProxyType=Auto
+ProxyUseFQDN=Off
+RemoveICAFile=yes
+TransportReconnectEnabled=On
+&lt;... etc. &gt;</code></pre>
+
+
+<h3 id="example-failed-ica-launch"><a class="toclink" href="#example-failed-ica-launch">Example: Failed ICA launch</a></h3>
+<h4 id="request_31"><a class="toclink" href="#request_31">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Resources/
+GetLaunchStatus/Q29udHJvbGxlci5Db3B5IG9mIFdvcmRQYWQz HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: 2730933D4A9C7EFCDA52BD89EC345DD5
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=2730933D4A9C7EFCDA52BD89EC345DD5;
+CtxsAuthId=669C20DF67B0ABC5C0E1F35451EF02A5;
+ASP.NET_SessionId=jel5evcolmhl4bcm1i31exqo; AGSSOHasOccurred=;
+PasswordChangeAllowed=
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_28"><a class="toclink" href="#response_28">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Tue, 24 Sep 2013 15:49:50 GMT
+Content-Length: 77
+{&quot;status&quot;:&quot;failure&quot;}</code></pre>
+
+
+<h3 id="example-ica-launch-with-retry"><a class="toclink" href="#example-ica-launch-with-retry">Example: ICA launch with retry</a></h3>
+<h4 id="request_32"><a class="toclink" href="#request_32">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Resources/
+GetLaunchStatus/Q29udHJvbGxlci5GaXNoY2FrZSE- HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: 0035B0DB846D2399576612132C95AF33
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=0035B0DB846D2399576612132C95AF33;
+CtxsAuthId=421E99814A2B99CFA57BB146EE036710;
+ASP.NET_SessionId=vmia5swazanokecxwjefwvub
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0
+displayNameDesktopTitle=Desktop+Two!</code></pre>
+
+
+<h4 id="response_29"><a class="toclink" href="#response_29">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Tue, 15 Oct 2013 16:22:51 GMT
+Content-Length: 34
+{&quot;status&quot;:&quot;retry&quot;,&quot;pollTimeout&quot;:5}</code></pre>
+
+
+<h2 id="icons"><a class="toclink" href="#icons">Icons</a></h2>
+<p>Use this request to retrieve icon image data relating to one or more resources. This uses the concept of a 'thumbprint' to allow sharing of image data for resources with equivalent images. The 'thumbprint' is designed to be the same for images with the same content.</p>
+<h3 id="request_33"><a class="toclink" href="#request_33">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative only)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Resources/Icon/ {thumbprint}?size={size}</td>
+<td>GET</td>
+<td>Returns the specified icon image. For more information about the format and details of the response, see below.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{thumbprint}</td>
+<td>The thumbprint for the icon image. This value is included in the iconurl returned from an earlier enumeration request.</td>
+</tr>
+<tr>
+<td>{size}</td>
+<td>The pixel size of the icon image to return. Only the values 16, 24, 32, 48, 64, 96, 128, 256 and 512 are supported. This value is included in the iconurl returned from an earlier enumeration request, based on the image size configured in the Citrix Receiver for Web site configuration file (defaults to 48).</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>This request requires an authenticated session, indicated by the cookies  ASP.NET_SessionId and CtxsAuthId.</li>
+<li>A CSRF token is not required, nor is the X-Citrix-IsUsingHTTPS header, allowing the icon  URL to be directly fetched by a browser (HTTP GET) when specified as the src for an HTML    img element.</li>
+<li>The URLs above are for illustrative purposes only; the actual URLs used by a client must  be taken from the result of an earlier enumeration request, which provides a separate icon  URL for each resource.</li>
+<li>The thumbprint represents the image data for the resource at the time of enumeration and  so may be different in a subsequent enumeration if the image data has changed.</li>
+<li>The response image is always returned in PNG format, with the Content-Type set to image/  png.</li>
+<li>The Web Proxy uses the StoreFront Resources API to obtain icon images. The image data is  cached to disk as a performance optimization by default, unless persistent caching is   disabled in the Citrix Receiver for Web configuration file.</li>
+<li>Caching headers are set in the response to indicate that the icon image may be cached by  the client for one year.</li>
+</ul>
+</div>
+<h3 id="response_30"><a class="toclink" href="#response_30">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200 (OK)</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>304 (Not Modified)</td>
+<td>The request is a 'conditional GET', indicated by the presence of an If-Modified-Since header. If the image has been changed at the back-end, this is only discovered at the next enumeration.</td>
+</tr>
+<tr>
+<td>400 (Bad Request)</td>
+<td>The specified size does not match one of the supported icon sizes.</td>
+</tr>
+<tr>
+<td>403 (Forbidden)</td>
+<td>Forbidden, due to an invalid <code>CtxsAuthId</code> cookie.</td>
+</tr>
+<tr>
+<td>404 (Not Found)</td>
+<td>Returned for the following cases:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Unknown/missing thumbprint</td>
+</tr>
+<tr>
+<td></td>
+<td>* The requested size does not match the size configured for the Citrix Receiver for Web site</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept /Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PNG</td>
+<td>image/png</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-successful-request-for-a-48x48-image"><a class="toclink" href="#example-successful-request-for-a-48x48-image">Example: Successful request for a 48x48 image</a></h3>
+<h4 id="request_34"><a class="toclink" href="#request_34">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">GET http://webserver/Citrix/StoreWeb/Resources/Icon/
+RjczNDEyMzc3ODlENzE5REZDRUQ4MDczQ0QxMDBGRjI4MDY5MDg2RQ--/48
+HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=A902FEE631743C79C5B125FE4BC4DB56;
+CtxsAuthId=5E4A8BF161FBBBC90F64241E40A7D849;
+ASP.NET_SessionId=tzqrwypgtof5fnna1fh1jmme
+Connection: keep-alive</code></pre>
+
+
+<h4 id="response_31"><a class="toclink" href="#response_31">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: private, max-age=31536000, s-maxage=0
+Content-Type: image/png
+Expires: Thu, 25 Sep 2014 12:28:46 GMT
+Last-Modified: Wed, 25 Sep 2013 12:28:46 GMT
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Wed, 25 Sep 2013 12:28:46 GMT
+Content-Length: 3184
+... 48 x 48 png image data ...</code></pre>
+
+
+<h2 id="machine-power-off"><a class="toclink" href="#machine-power-off">Machine Power Off</a></h2>
+<p>Use this request to trigger a power off operation for the specified resource. Only certain resources support this action, and typically only for a limited set of users. If the power off operation does not occur within the time-limit defined on the XenDesktop server, an error response may be returned even if the power off is successful.</p>
+<h3 id="request_35"><a class="toclink" href="#request_35">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative only)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Resources/PowerOff/{id}</td>
+<td>POST</td>
+<td>Attempts to power off the specified resource.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{id}</td>
+<td>Unique identifier for a particular resource.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>This request requires an authenticated session, indicated by the cookies  ASP.NET_SessionId and CtxsAuthId.</li>
+<li>The URL above is for illustrative purposes only; the actual URL used in a request must    be taken from the result of an earlier enumeration request to /Resources/List.</li>
+</ul>
+</div>
+<h3 id="response_32"><a class="toclink" href="#response_32">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>PowerOff request sent to machine leading to success/ failure of power off operation, or authentication challenge.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CtxsAuthId cookie</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Resource identified by {id} was not found or the power- off action did not exist or was not enabled for that resource for the current user.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON</td>
+<td>application/json</td>
+</tr>
+</tbody>
+</table>
+<p>The response returns a simple JSON object containing the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>JavaScript Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>"success" if the power off operation was reported to have completed successfully, otherwise "failure".</td>
+</tr>
+<tr>
+<td>errorId</td>
+<td>String</td>
+<td>A string providing a reason for a power off failure (see below).</td>
+</tr>
+</tbody>
+</table>
+<p>If the power off operation fails, the error reason is indicated by one of the following error id strings:</p>
+<table>
+<thead>
+<tr>
+<th>Error Id</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in-maintenance-mode</td>
+<td>The requested operation could not be performed because the machine is in maintenance mode.</td>
+</tr>
+<tr>
+<td>no-machine</td>
+<td>No assigned machines were found for the user in the specified machine group.</td>
+</tr>
+<tr>
+<td>not-supported</td>
+<td>The requested operation is not supported on the requested machine group type.</td>
+</tr>
+<tr>
+<td>operation-in-progress</td>
+<td>The server is busy with a control operation on the specified machine and cannot handle another request at this time.</td>
+</tr>
+<tr>
+<td>timed-out</td>
+<td>The server timed out waiting for the request to complete. Note: the power off operation may have succeeded, but not within the timeout period defined on the XenDesktop server.</td>
+</tr>
+<tr>
+<td>not-trusted</td>
+<td>The client is not trusted to perform the requested operation. This does not indicate whether the supplied credentials are valid or not.</td>
+</tr>
+<tr>
+<td>unspecified</td>
+<td>Error condition not covered by the other values.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-successful-power-off"><a class="toclink" href="#example-successful-power-off">Example: Successful Power Off</a></h3>
+<h4 id="request_36"><a class="toclink" href="#request_36">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Resources/PowerOff/
+Q29udHJvbGxlci5NaWtlQiBEZXNrdG9wIEdyb3VwICRTMS0x HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: 5798C908E45771AD767E66F1D176E2D1
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=5798C908E45771AD767E66F1D176E2D1;
+CtxsAuthId=01FBA1051F0D45129D308C6E2F2C303D;
+ASP.NET_SessionId=j3xcfc2fdvmjuynowgqlpad4
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_33"><a class="toclink" href="#response_33">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Thu, 17 Oct 2013 09:12:53 GMT
+Content-Length: 43
+{&quot;status&quot;:&quot;success&quot;}</code></pre>
+
+
+<h2 id="resource-subscription"><a class="toclink" href="#resource-subscription">Resource Subscription</a></h2>
+<p>Use these requests to perform resource subscription and unsubscription, and to update the relative position (as shown in the UI) of subscribed resources. Subscribed resources are displayed on the Receiver for Web "Home" screen, visible when the user logs on. These represent a list of "favorites" for quick access. Receiver for Web requires that application resources are subscribed before they can be launched, although no such restriction exists in the protocol. Desktop resources are treated as a special case and are always displayed by Receiver for Web (on a separate UI tab), regardless of subscription state.</p>
+<h3 id="request_37"><a class="toclink" href="#request_37">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Resources/Subscription/ {id}</td>
+<td>POST</td>
+<td>Action depends upon the operation attribute value specified in the POST parameters:</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* <strong>subscribe</strong>—attempt to subscribe to the resource. This may create a new subscription (if one does not already exist) and, by default, sets the subscription to the subscribed state.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* <strong>unsubscribe</strong>—attempt to unsubscribe from the resource. This may delete the subscription and, by default, set the subscription to the notSubscribed state.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* <strong>update</strong>—updates the subscription properties for the resource.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>POST parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>Unique identifier for a particular resource. Note: this parameter is a component of the URL.</td>
+</tr>
+<tr>
+<td>operation</td>
+<td>The subscription operation to perform: either <strong>subscribe</strong>, <strong>unsubscribe</strong>, or <strong>update</strong>.</td>
+</tr>
+<tr>
+<td>updateMode</td>
+<td>Whether any supplied subscription properties are to be merged with existing properties, or if the batch of supplied properties will completely replace any existing properties; either <strong>merge</strong> or <strong>replace</strong>.</td>
+</tr>
+<tr>
+<td><em>subscription properties</em></td>
+<td>Other key=value pairs supplied as request parameters are taken to represent subscription properties.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>This request requires an authenticated session, indicated by the cookies <code>ASP . NET _     SessionId</code> and <code>CtxsAuthId</code>.</li>
+<li>The URL above is for illustrative purposes only; the actual URLs used in a request must   be taken from the result of an earlier enumeration request to /Resources/List.</li>
+<li>When the Web Proxy is configured to use an unauthenticated Store, subscription    operations are unavailable and these URLs are omitted from the resource enumeration     response. They are also omitted for resources that are configured at XenApp or XenDesktop   to be mandatory resources, which are always displayed to all users.</li>
+<li>Subscription information is persisted in the Store Service's subscription store and is    returned during enumeration, allowing subscriptions to remain intact across a Citrix    Receiver for Web session and be visible to other Receivers.</li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th>Response Code (and friendly name)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200 (OK)</td>
+<td>Resource subscribed or unsubscribed successfully, or authentication challenge.</td>
+</tr>
+<tr>
+<td>400 (Bad Request)</td>
+<td>An unsupported value was supplied for operation or updateMode.</td>
+</tr>
+<tr>
+<td>403 (Forbidden)</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CtxsAuthId cookie</td>
+</tr>
+<tr>
+<td>404 (Not Found)</td>
+<td>Resource identified by {id} was not found.</td>
+</tr>
+<tr>
+<td>503 (Service Unavailable)</td>
+<td>Subscription operations are unavailable for the specified resource, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* No subscription URL was returned for the requested resource when the previous enumeration request was made, indicating that the StoreFront subscription service was unavailable when that enumeration was performed</td>
+</tr>
+<tr>
+<td></td>
+<td>* The Store Service subscription database is currently unavailable</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_11"><a class="toclink" href="#success-response-content_11">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) is returned, the response body contains a JSON object containing one of the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>JavaScript Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>The new subscription status for the resource, as indicated by one of the following values: "subscribed", "unsubscribed", "pending", "approved", "denied", "pendingunsubscribe", "subscribedpendingunsubsc ribe", "failure". The first two values are returned for successful operations, when subscriptions are not associated with workflow. The "failure" value indicates the subscription request was not successfully proxied to the Store service. The other values relate to workflow scenarios.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept /Response Content- Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON</td>
+<td>application/json</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-successful-subscription"><a class="toclink" href="#example-successful-subscription">Example: Successful subscription</a></h3>
+<h4 id="request_38"><a class="toclink" href="#request_38">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Resources/Subscription/
+Q29udHJvbGxlci5Xb3JkUGFk HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 35D3DAC189174D65DC6D843C9FDAB46A
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 42
+Cookie: CsrfToken=35D3DAC189174D65DC6D843C9FDAB46A;
+CtxsAuthId=535CF2577B2FF0DF53F76D3C2D994B92;
+ASP.NET_SessionId=0eu5dnpqapdgeu2j1n3sz4zh
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+operation=subscribe&amp;position=B</code></pre>
+
+
+<h4 id="response_34"><a class="toclink" href="#response_34">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Wed, 25 Sep 2013 15:58:41 GMT
+Content-Length: 23
+{&quot;status&quot;:&quot;subscribed&quot;}</code></pre>
+
+
+<h3 id="example-unsuccessful-unsubscription"><a class="toclink" href="#example-unsuccessful-unsubscription">Example: Unsuccessful unsubscription</a></h3>
+<h4 id="request_39"><a class="toclink" href="#request_39">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Resources/Subscription/
+Q29udHJvbGxlci5Xb3JkUGFk HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 35D3DAC189174D65DC6D843C9FDAB46A
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 33
+Cookie: CsrfToken=35D3DAC189174D65DC6D843C9FDAB46A;
+CtxsAuthId=535CF2577B2FF0DF53F76D3C2D994B92;
+ASP.NET_SessionId=0eu5dnpqapdgeu2j1n3sz4zh
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+operation=unsubscribe</code></pre>
+
+
+<h4 id="response_35"><a class="toclink" href="#response_35">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Wed, 25 Sep 2013 16:00:23 GMT
+Content-Length: 20
+{&quot;status&quot;:&quot;failure&quot;}</code></pre>
+
+
+<h3 id="example-successful-update-of-subscription-properties"><a class="toclink" href="#example-successful-update-of-subscription-properties">Example: Successful update of subscription properties</a></h3>
+<p>This is an example of a successful update of the data associated with a subscription. The property ids and values are arbitrary from the perspective of the Resources service. Note that the 'bar' property key is repeated to specify a multi-valued property.</p>
+<h4 id="request_40"><a class="toclink" href="#request_40">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Resources/Subscription/
+Q29udHJvbGxlci5GaXNoY2FrZSE- HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: 48C7A008D81F87116B4BDE418FB63B3C
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 24
+Cookie: CsrfToken=48C7A008D81F87116B4BDE418FB63B3C;
+CtxsAuthId=1AA0681CE60D7E625A504BA0B1E70824;
+ASP.NET_SessionId=stoi5utb5zfam1xtfqkjklfd
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+operation=update&amp;updateMode=replace&amp;foo=fooValue&amp;bar=barValue&amp;b
+ar=barValue2</code></pre>
+
+
+<h4 id="response_36"><a class="toclink" href="#response_36">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Tue, 15 Oct 2013 17:12:49 GMT
+Content-Length: 23
+{&quot;status&quot;:&quot;subscribed&quot;}</code></pre>
+
+
+<h2 id="session-enumeration"><a class="toclink" href="#session-enumeration">Session Enumeration</a></h2>
+<p>Use this request to enumerate the authenticated user's ICA sessions that are not connected to by the current client, regardless of whether the sessions are disconnected or active on another client. Once enumerated, these sessions can be reconnected using the session launch API.</p>
+<h3 id="request_41"><a class="toclink" href="#request_41">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Sessions/ListAvailable</td>
+<td>POST</td>
+<td>Returns a list of all available sessions for the user in JSON format.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>POST parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resourceTypes</td>
+<td>The types of resource to include in the response, one of the following values: Citrix.MPS.Application - to request application sessions. Citrix.MPS.Desktop - to request desktop sessions.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>This request requires an authenticated session, indicated by the cookies  ASP.NET_SessionId and CtxsAuthId. When the Web Proxy is configured to use an    unauthenticated Store, an empty session list is returned.</li>
+<li>Sessions initiated by the current client, as indicated by the DeviceId, are not included  in the returned list of sessions.</li>
+<li>The downstream request to enumerate sessions from the StoreFront Store Service always     adds the parameter to include active sessions.</li>
+<li>When used with previous versions of XenApp and XenDesktop, this request also disconnects  any active sessions. This issue was fixed in XenDesktop 7.</li>
+<li>The expected usage pattern is for clients to enumerate all available sessions (possibly   for a particular type of resource) and then launch each one in succession. This is how the  Citrix Receiver for Web "auto reconnect at logon" functionality is implemented.</li>
+</ul>
+</div>
+<h3 id="response_37"><a class="toclink" href="#response_37">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code (and friendly name)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200 (OK)</td>
+<td>List of available sessions (possibly empty), or authentication challenge.</td>
+</tr>
+<tr>
+<td>403 (Forbidden)</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header w Invalid CtxsAuthId cookie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_12"><a class="toclink" href="#success-response-content_12">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) is returned, the response body contains a JSON array of objects, each containing the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>JavaScript Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>launchurl</td>
+<td>String</td>
+<td>The URL to make a launch request (see ICA Launch on page 57)</td>
+</tr>
+<tr>
+<td>launchstatusurl</td>
+<td>String</td>
+<td>The URL to determine whether a resource is ready to launch (see ICA Launch on page 57)</td>
+</tr>
+<tr>
+<td>initialApp</td>
+<td>String</td>
+<td>The name of a previously launched app that that caused the session to initially be created.</td>
+</tr>
+<tr>
+<td>publishername</td>
+<td>String</td>
+<td>The name of the publisher (the farm name for XA).</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON</td>
+<td>application/json</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-session-enumeration"><a class="toclink" href="#example-session-enumeration">Example: Session Enumeration</a></h3>
+<p>In this example, all sessions are requested by not qualifying the server and client types. </p>
+<h4 id="request_42"><a class="toclink" href="#request_42">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Sessions/ListAvailable
+HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Csrf-Token: BC8E733316E514C1C1E31541D9E44AF9
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Content-Length: 36
+Cookie: CtxsDeviceId=WR_AjT2owY5yJ4ED0J-x;
+CsrfToken=BC8E733316E514C1C1E31541D9E44AF9;
+CtxsAuthId=35037C55868C4C1AEE3A24488062C3BD;
+ASP.NET_SessionId=ltutfqnaollcehgvre25mwip
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+resourceTypes=Citrix.MPS.Application</code></pre>
+
+
+<h4 id="response_38"><a class="toclink" href="#response_38">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 18 Oct 2013 09:25:45 GMT
+Content-Length: 191
+[
+ {
+  &quot;initialapp&quot;:&quot;Notepad&quot;,
+  &quot;launchstatusurl&quot;:&quot;Sessions\/GetLaunchStatus\/
+Q29udHJvbGxlci4xODM5MC4y&quot;,
+  &quot;launchurl&quot;:&quot;Sessions\/LaunchIca\/Q29udHJvbGxlci4xODM5MC4y&quot;,
+  &quot;publishername&quot;:&quot;johnc-ic6659&quot;
+ }
+]</code></pre>
+
+
+<h2 id="session-launch"><a class="toclink" href="#session-launch">Session Launch</a></h2>
+<p>Use this request to attempt to reconnect to an existing session (either disconnected or active on another client), as specified by session id.</p>
+<h3 id="request_43"><a class="toclink" href="#request_43">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Sessions/Launch/{id}</td>
+<td>GET</td>
+<td>Request whether the specified session is ready to launch or not.</td>
+</tr>
+<tr>
+<td>/Sessions/ GetLaunchStatus/{id}</td>
+<td>POST</td>
+<td>Request an ICA file for launching the specified session.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>URL Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{id}</td>
+<td>Unique identifier for a particular session.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>These requests require an authenticated session, indicated by the cookies <code>ASP . NET _    SessionId</code> and <code>CtxsAuthId</code>.</li>
+<li>The URLs above are for illustrative purposes only; the actual URLs used by a client must  be taken from the result of an earlier session enumeration request to / Sessions/   ListAvailable. When the Web Proxy is configured to use an unauthenticated Store, session    enumeration returns an empty list and session launch is therefore unavailable.</li>
+<li>Launch is a GET instead of a POST so that it can be loaded by a browser in a hidden   iframe (using the iframe's src="url" attribute) to trigger a launch via file-type   association.</li>
+<li>GetLaunchStatus makes a launch request to the Store Service to determine whether the  specified resource is ready to launch or not. If this returns an ICA file, the ICA file is  cached for up to 90 seconds. If a subsequent call is made to LaunchIca within this time,    the cached ICA file is returned without making an additional launch request to the Store    Service.</li>
+<li>For LaunchIca, clients must append a query string key with a random value to prevent  browsers from returning a cached response when making multiple launch requests for the  same resource. See the launchId query string parameter in the examples below.</li>
+</ul>
+</div>
+<h3 id="response_39"><a class="toclink" href="#response_39">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success/Retry required/failure, or authentication challenge.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons: a) Invalid CSRF token b) Invalid <code>X-Citrix-IsUsingHTTPS</code> header c) Invalid <code>CtxsAuthId</code> cookie</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Resource identified by {id} was not found.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON</td>
+<td>application/json</td>
+</tr>
+<tr>
+<td>ICA File</td>
+<td>application/octet-stream</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_13"><a class="toclink" href="#success-response-content_13">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) for GetLaunchStatus is returned, the response body contains a JSON object describing whether the supplied resource is ready to be launched, with the following possible fields:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>Yes</td>
+<td>One of the following strings:</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* success—the resource is ready to be launched</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* retry—the resource is not currently ready to be launched (for example, a desktop VM that first needs to be powered on before a connection can be made to it), but the launch attempt may be retried later.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>* failure—the attempt to retrieve launch information failed</td>
+</tr>
+<tr>
+<td>pollTimeout</td>
+<td>No</td>
+<td>Only supplied when status is <strong>retry</strong>, the number of seconds to wait before retrying the launch request.</td>
+</tr>
+<tr>
+<td>errorId</td>
+<td>No</td>
+<td>Only supplied when status is <strong>failure</strong> , an error code as described in the Launch section of the StoreFront Store Services API specification.</td>
+</tr>
+<tr>
+<td>suggestRestart</td>
+<td>No</td>
+<td>Only supplied when status is <strong>failure</strong> , a <strong>true</strong> or <strong>false</strong> value indicating whether the Store service included a "remedy hint" that a failed desktop launch could potentially be resolved by restarting the desktop.</td>
+</tr>
+</tbody>
+</table>
+<p>When a successful response for LaunchIca is returned, the response body can be either a JSON string as described above for <code>GetLaunchStatus</code> or, if the resource is ready to launch, an ICA file.</p>
+<h3 id="example-session-get-launch-status-success"><a class="toclink" href="#example-session-get-launch-status-success">Example: Session Get Launch Status Success</a></h3>
+<h4 id="request_44"><a class="toclink" href="#request_44">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Sessions/GetLaunchStatus/
+Q29udHJvbGxlci4xODM5MC4y HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: BC8E733316E514C1C1E31541D9E44AF9
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=BC8E733316E514C1C1E31541D9E44AF9;
+CtxsAuthId=35037C55868C4C1AEE3A24488062C3BD;
+ASP.NET_SessionId=ltutfqnaollcehgvre25mwip
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_40"><a class="toclink" href="#response_40">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 18 Oct 2013 09:25:45 GMT
+Content-Length: 20
+{&quot;status&quot;:&quot;success&quot;}</code></pre>
+
+
+<h3 id="example-session-launch-success"><a class="toclink" href="#example-session-launch-success">Example: Session Launch Success</a></h3>
+<h4 id="request_45"><a class="toclink" href="#request_45">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">GET http://webserver/Citrix/StoreWeb/Sessions/Launch/
+Q29udHJvbGxlci4xODM5MC41.ica?
+CsrfToken=0068C0184E13600DE24B6C1469952BEB&amp;launchId=13801992004
+94 HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: text/html,application/xhtml+xml,application/
+xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=0068C0184E13600DE24B6C1469952BEB;
+CtxsAuthId=6E4966414BE6CE4E46D791655730672B;
+ASP.NET_SessionId=kxh5cmlkkjbm5njp22feodrt
+Connection: keep-alive</code></pre>
+
+
+<h4 id="response_41"><a class="toclink" href="#response_41">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/x-ica; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Thu, 26 Sep 2013 12:40:00 GMT
+Content-Length: 1279
+[Encoding]
+InputEncoding=UTF8
+[WFClient]
+ProxyFavorIEConnectionSetting=Yes
+ProxyTimeout=30000
+ProxyType=Auto
+&lt;etc...&gt;</code></pre>
+
+
+<h2 id="session-disconnect-and-logoff"><a class="toclink" href="#session-disconnect-and-logoff">Session Disconnect and Logoff</a></h2>
+<p>Use these requests to disconnect or logoff a user's currently connected sessions at the server.</p>
+<h3 id="request_46"><a class="toclink" href="#request_46">Request</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Sessions/Disconnect</td>
+<td>POST</td>
+<td>Disconnects the user's sessions.</td>
+</tr>
+<tr>
+<td>/Sessions/Logoff</td>
+<td>POST</td>
+<td>Logs off the user's sessions.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>These requests require an authenticated session, indicated by the cookies <code>ASP .NET_  SessionId</code> and <code>CtxsAuthId</code>.</li>
+<li>When the Web Proxy is configured to use an unauthenticated Store, there is no associated  user for whom sessions can be disconnected, and session disconnect has no effect.</li>
+<li>These requests operate only on sessions that were initiated from the current client, as   indicated by the DeviceId cookie.</li>
+</ul>
+</div>
+<h3 id="response_42"><a class="toclink" href="#response_42">Response</a></h3>
+<table>
+<thead>
+<tr>
+<th>URL (indicative)</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Sessions/Disconnect</td>
+<td>POST</td>
+<td>Disconnects the user's sessions.</td>
+</tr>
+<tr>
+<td>/Sessions/Logoff</td>
+<td>POST</td>
+<td>Logs off the user's sessions.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>Success/failure, or authentication challenge.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden, due to one of the following reasons:</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CSRF token</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid X-Citrix-IsUsingHTTPS header</td>
+</tr>
+<tr>
+<td></td>
+<td>* Invalid CtxsAuthId cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Response Format</th>
+<th>Request Accept/Response Content-Type Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON</td>
+<td>application/json</td>
+</tr>
+</tbody>
+</table>
+<h3 id="success-response-content_14"><a class="toclink" href="#success-response-content_14">Success Response Content</a></h3>
+<p>When a successful response (HTTP status code 200) for Disconnect or Logoff is returned, the response body contains a JSON object with a single JavaScript String field "status" with one of the values: "success", "failure", "partial" indicating whether the user's sessions were successfully disconnected or not. The value "partial" means that some of the user's sessions were successfully disconnected while others were not.</p>
+<h3 id="example-session-disconnect"><a class="toclink" href="#example-session-disconnect">Example: Session Disconnect</a></h3>
+<h4 id="request_47"><a class="toclink" href="#request_47">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Sessions/Disconnect HTTP/
+1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:23.0) Gecko/
+20100101 Firefox/23.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: D6E47EE6160CA2121C3797D0E850FFA0
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=D6E47EE6160CA2121C3797D0E850FFA0;
+CtxsAuthId=BC5CC0F3EC36E6577B3810A12063280C;
+ASP.NET_SessionId=jzvwqr2uh1ksws4c3bd2x4gp
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_43"><a class="toclink" href="#response_43">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Thu, 26 Sep 2013 14:23:56 GMT
+Content-Length: 20
+{&quot;status&quot;:&quot;success&quot;}</code></pre>
+
+
+<h3 id="example-session-logoff"><a class="toclink" href="#example-session-logoff">Example: Session Logoff</a></h3>
+<h4 id="request_48"><a class="toclink" href="#request_48">Request</a></h4>
+<pre class="codehilite"><code class="language-curl">POST http://webserver/Citrix/StoreWeb/Sessions/Logoff HTTP/1.1
+Host: kontiki
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/
+20100101 Firefox/24.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Csrf-Token: EA871815F7B33602B391EA5F85757FE8
+X-Citrix-IsUsingHTTPS: No
+X-Requested-With: XMLHttpRequest
+Referer: http://webserver/Citrix/StoreWeb/
+Cookie: CsrfToken=EA871815F7B33602B391EA5F85757FE8;
+CtxsAuthId=C1796CE16F1841181ABFD7DC5DC3E7E2;
+ASP.NET_SessionId=zegkvwsdy0hqglxkgtgdcxda
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0</code></pre>
+
+
+<h4 id="response_44"><a class="toclink" href="#response_44">Response</a></h4>
+<pre class="codehilite"><code class="language-curl">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Content-Type: application/json
+Expires: -1
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+X-Citrix-Application: Receiver for Web
+Date: Fri, 18 Oct 2013 11:12:19 GMT
+Content-Length: 20
+{&quot;status&quot;:&quot;success&quot;}</code></pre>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../how-the-api-works/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../using-configuration-elements/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

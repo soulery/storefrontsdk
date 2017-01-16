@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Citrix Common Forms Authentication API - StoreFront SDK Documentation</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Citrix Common Forms Authentication API";
+    var mkdocs_page_input_path = "citrix-common-forms-authentication-api.md";
+    var mkdocs_page_url = "/citrix-common-forms-authentication-api/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/custom.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://citrix.github.io" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+			<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs"><a class="fa fa-search errspan" onclick="getElementById('rtd-search-form').submit()"></a></li>
+			</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<a class="fa fa-search" onclick="getElementById('rtd-search-form').submit()"></a>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="..">Overview</a>
+			
+		
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Web API</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../overview/">Overview</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../how-the-api-works/">How the API works</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../requests/">Requests</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../using-configuration-elements/">Using configuration elements</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Store Service SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-sdk/">StoreFront Customization SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../getting-started-with-the-sdk/">Getting started with the SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-interfaces/">Customization interfaces</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues/">Known issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../samples/">Samples</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Authentication SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storefront-services-authentication-sdk/">Authentication Software Development Kit</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+
+		<a class="current" style="width:272px;" href="./">Citrix Common Forms Authentication API</a>
+			
+		
+        
+            <ul style="display:none">
+            
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#introduction" style="display: inline-table;padding-left: 3px;width:240px;">Introduction</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#scope">Scope</a></li>
+                
+                    <li><a class="toctree-l4" href="#background">Background</a></li>
+                
+                    <li><a class="toctree-l4" href="#references">References</a></li>
+                
+				</ul>
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#storefront-conversation" style="display: inline-table;padding-left: 3px;width:240px;">StoreFront Conversation</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#conversation-start">Conversation Start</a></li>
+                
+                    <li><a class="toctree-l4" href="#client-response-to-a-form">Client Response to a Form</a></li>
+                
+                    <li><a class="toctree-l4" href="#conversation-cancel">Conversation Cancel</a></li>
+                
+                    <li><a class="toctree-l4" href="#conversation-end">Conversation End</a></li>
+                
+                    <li><a class="toctree-l4" href="#client-persistent-storage">Client Persistent Storage</a></li>
+                
+				</ul>
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#client-responses-for-form-input" style="display: inline-table;padding-left: 3px;width:240px;">Client Responses for Form Input</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#general-user-agent-processing">General User Agent Processing</a></li>
+                
+                    <li><a class="toctree-l4" href="#buttons">Buttons</a></li>
+                
+                    <li><a class="toctree-l4" href="#text-based-input">Text-Based Input</a></li>
+                
+                    <li><a class="toctree-l4" href="#check-box">Check box</a></li>
+                
+                    <li><a class="toctree-l4" href="#save-credentials-control">Save Credentials Control</a></li>
+                
+                    <li><a class="toctree-l4" href="#radio-buttons">Radio Buttons</a></li>
+                
+                    <li><a class="toctree-l4" href="#combo-boxes">Combo Boxes</a></li>
+                
+                    <li><a class="toctree-l4" href="#multi-combo-boxes">Multi-Combo Boxes</a></li>
+                
+                    <li><a class="toctree-l4" href="#x509-certificates">X509 Certificates</a></li>
+                
+				</ul>
+				
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrixauth-authentication-scheme/">CitrixAuth Authentication Scheme</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../common-authentication-forms-language/">Citrix Common Authentication Forms Language</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../security-token-services-api/">Security Token Services API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../authentication-form-generation/">StoreFront Authentication Form Generation</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues-auth/">Known Issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storeFront-authentication-sdk-thirdparty/">Third Party Notices</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-certificate-identity-declaration/">Sample Certificate Identity Declaration</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../magic-word-sample/">Sample Magic Word</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-test-forms/">Sample Test Forms</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>StoreFront Authentication SDK &raquo;</li>
+        
+      
+    
+    <li>Citrix Common Forms Authentication API</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <h1 id="citrix-common-forms-authentication-api"><a class="toclink" href="#citrix-common-forms-authentication-api">Citrix Common Forms Authentication API</a></h1>
+<h1 id="introduction"><a class="toclink" href="#introduction">Introduction</a></h1>
+<h2 id="scope"><a class="toclink" href="#scope">Scope</a></h2>
+<p>The purpose of this document is to describe the StoreFront Common Forms Authentication Application Programming Interface.</p>
+<h2 id="background"><a class="toclink" href="#background">Background</a></h2>
+<p>Citrix has devised a common authentication protocol that is implemented by its next generation services and gateway platforms, referred to here as StoreFront Services and NetScaler Gateway. Citrix is implementing client support, in Receiver and Worx, for this common authentication protocol in native user agents for the major device platforms, notably Windows, Mac, iOS, Android, Linux, and in Receiver for Web for browser user agents. See StoreFront Token Services v2.0 [1] for more details.</p>
+<p>An important part of the common authentication protocol is a generic forms language, designed to allow third parties to express a wide range of authentication forms using a set of user interface constructs that are similar to basic HTML forms; see RFC 1867 [http://www.ietf.org/rfc/rfc1867.txt] and 2388 [http://www.ietf.org/rfc/rfc2388.txt] for more details.</p>
+<p>Third parties are able to extend the authentication methods supported by StoreFront Services and NetScaler Gateway by implementing server logic that emits and consumes the Common Forms language; see StoreFront Services Authentication SDK v2.6 [2] for more details.</p>
+<p>The Common Forms protocol represents a secure conversation between the server and the user agent on the client, where forms are generated by the server, rendered by the useragent, completed by the user, and returned to the server by the user agent. Whilst the forms generated may be the same, the start and end of the conversations differ between StoreFront Service and NetScaler Gateway, representing their different needs. </p>
+<p>The form generation and handling can be delegated from NetScaler Gateway to a StoreFront server by means of the Delegated Forms Authentication Protocol [3]. This allows a third party to create one customization that can be used in both StoreFront and NetScaler Gateway.</p>
+<p>This document details the StoreFront Services v2.6 conversation, specifying the messages at the HTTP level.</p>
+<h2 id="references"><a class="toclink" href="#references">References</a></h2>
+<p>1.StoreFront Token Services v2.0</p>
+<p>2.StoreFront Services Authentication SDK v2.6</p>
+<p>3.Delegated Forms Authentication Protocol</p>
+<p>4.Receiver Common Authentication Forms Language v2.6</p>
+<h1 id="storefront-conversation"><a class="toclink" href="#storefront-conversation">StoreFront Conversation</a></h1>
+<p>For maximum interoperability, the protocol is a REST API, that is, XML forms transmitted over HTTPS. The flow of forms and responses constitutes a conversation that can have state associated with the overall conversation through the use of HTTP sessions.</p>
+<p>The convesations require HTTP state management, as described by RFC 2109 [http://www.ietf.org/rfc/rfc2109.txt], in particular correct handling of cookies.</p>
+<p>Note: In the following sections, the definition of HTTP headers uses the notation defined in RFC 2616 [http://tools.ietf.org/html/rfc2616].</p>
+<p>Note to client implementors: Implementors of long-lived clients should ensure that the session cookie is cleared at the end of the conversation.</p>
+<p>The conversation contains sensitive information, such as passwords, so confidentiality and integrity are required. The expectation is that SS/TLS will be used between the client and the server to both maintain confidentiality and also for server identification, to ensure that the user agent sends confidential information only to trusted servers.</p>
+<p>For StoreFront, the conversation starts with a Request Security Token (RST) message [1] to an endpoint obtained from the client as part of the Protocol Choices message [1]. A successful conversation ends with a Request Security Token Response (RSTR) message [1]. The conversation can also end with a failure form, an HTTP status code other than 200, or a network failure.</p>
+<p>For the rest of the conversation the server returns authentication forms described in Receiver Common Authentication Forms Language v2.0 [4].</p>
+<p>Note to client implementors: Because a client does not know when a conversation will end, it should always set the HTTP Accept header to include both the Form and RSTR types.</p>
+<h2 id="conversation-start"><a class="toclink" href="#conversation-start">Conversation Start</a></h2>
+<ul>
+<li>URL: Usually obtained from the Protocol Choices data</li>
+<li>HTTP Method: POST</li>
+<li>Authentication: None</li>
+<li>Request Content-Type: application/vnd.citrix.requesttoken+xml</li>
+<li>Accept:<ul>
+<li>application/vnd.citrix.requesttokenresponse+xml, </li>
+<li>application/vnd.citrix.authenticateresponse-1+xml</li>
+</ul>
+</li>
+</ul>
+<p>Because the conversation persists over several HTTP requests, the initial conversation start may include a Set-Cookie header. The usual HTTP semantics apply to this cookie, as described above. In addition, various aspects of the conversation are negotiated at the start of the conversation through the use of HTTP headers, as discussed below:</p>
+<p><strong><em>Credential Type Negotiation</em></strong></p>
+<p>The Common Forms Language [4] contains a “soft” enumeration for the credential types, which means that new credential types can be added without breaking the schema. The behavior of user agents is to reject forms with unknown credential types. Hence credential types need to be negotiated between the client and server using the following HTTP header:</p>
+<pre class="codehilite"><code>credential-Types-Header = &quot;X-Citrix-AM-CredentialTypes&quot; &quot;:&quot; field-value
+field-value = *LWS credential-types-value *LWS
+credential-types-value = 1#( credential-type-value )
+credential-type-value = *TEXT</code></pre>
+
+
+<p>The credential types header is a comma-separated list of credential types that the client supports.</p>
+<pre class="codehilite"><code>Example: 
+       X-Citrix-AM-CredentialTypes: none, username, domain, password, newpassword,
+                                passcode, savecredentials, textcredential</code></pre>
+
+
+<p>New clients will use the above HTTP header to signal the credential types that are known in a comma-separated list. Older clients do not set this header, so if the header is missing then the following credential types will be assumed: none, username, domain, password, newpassword, passcode, savecredentials, textcredential.
+If a client does not support a required credential type, then the behavior is defined by the form implementation on the server, which may choose to terminate the conversation, or supply a simplified form that the client can process.</p>
+<p><strong><em>Label Type Negotiation</em></strong></p>
+<p>The Common Forms Language [4] contains a “soft” enumeration for the label types, which means that new label types can be added without breaking the schema. Label types can be negotiated between the client and server using the following HTTP header:</p>
+<pre class="codehilite"><code>label-Types-Header = &quot;X-Citrix-AM-LabelTypes&quot; &quot;:&quot; field-value
+field-value = *LWS label-types-value *LWS
+label-types-value = 1#( label-type )
+label-type = *TEXT</code></pre>
+
+
+<p>The label types header is a comma-separated list of label values that the client supports.</p>
+<p>Example: </p>
+<pre class="codehilite"><code>       X-Citrix-AM-LabelTypes: none, plain, heading, information, warning,
+                           error, confirmation</code></pre>
+
+
+<p>New clients will use the above HTTP header to signal the label types that are known in a comma-separated list. Older clients do not set this header, so if the header is missing then the following label types shall be assumed: none, plain, heading, information, warning, error, confirmation.
+If a client does not support a required label type, then the behavior is defined by the form implementation on the server, which may choose to terminate the conversation, or supply a simplified form that the client can process.
+Notes regarding images:</p>
+<ul>
+<li>The default list of label types does not contain image. This is because none of the known legacy clients supported rendering images.</li>
+<li>Images are intended for authentication purposes, such as captcha images, and are not intended for generic branding.</li>
+<li>The image data supplied in the form is to be interpreted as a Data URI as defined by RFC 2397, [http://tools.ietf.org/html/rfc2397]</li>
+</ul>
+<p><strong><em>Language Negotiation</em></strong></p>
+<p>The textual data displayed in the form is defined by the StoreFront Server. In order to supply text in the appropriate language for the user, the server supports the standard HTTP language negotiation mechanism through the use of the Accept-Language header as described in RFC 2616 [http://tools.ietf.org/html/rfc2616].</p>
+<pre class="codehilite"><code>Accept-Language-Header = &quot;Accept-Language&quot; &quot;:&quot; field-value
+field-value = *LWS accept-language-value *LWS
+accept-language-value = 1#( language-range [ &quot;;&quot; &quot;q&quot; &quot;=&quot; qvalue ] )
+language-range  = ( ( 1*8ALPHA *( &quot;-&quot; 1*8ALPHA ) ) | &quot;*&quot; )</code></pre>
+
+
+<p>The header value may include a comma-separated list of language ranges. Each language range may be given an associated quality value that represents an estimate of the user's preference for the languages specified by that range. The quality value defaults to "q=1"
+Example:</p>
+<pre class="codehilite"><code>       Accept-Language: da, en-gb;q=0.8, en;q=0.7</code></pre>
+
+
+<p>Should be interpreted as: "I prefer Danish, but will accept British English and other types of English."</p>
+<p>If a language cannot be negotiated, then a default language will be used, typically English.</p>
+<h2 id="client-response-to-a-form"><a class="toclink" href="#client-response-to-a-form">Client Response to a Form</a></h2>
+<ul>
+<li>URL: Obtained from the current form</li>
+<li>HTTP Method: POST</li>
+<li>Authentication: None</li>
+<li>Request Content-Type: application/x-www-form-urlencoded</li>
+<li>Accept:<ul>
+<li>application/vnd.citrix.requesttokenresponse+xml, </li>
+<li>application/vnd.citrix.authenticateresponse-1+xml</li>
+</ul>
+</li>
+</ul>
+<p>In response to a form the client will post back the requested information in the same format as for HTML forms [http://www.w3.org/TR/html401/interact/forms.html], and must be appropriately encoded.
+Note to server implementors: Existing clients may encode incorrectly, using ‘%20’ instead of ‘+’ to encode spaces, and may use UTF-8 encoding for extended multilingual characters that server implementations must be able to cope with.
+A detailed discussion of how to form the client response for each user input type is discussed in the section named: Client Responses for Form Input.</p>
+<h3 id="wire-level-example"><a class="toclink" href="#wire-level-example">Wire-level Example</a></h3>
+<p><strong><em>Form from StoreFront</em></strong></p>
+<pre class="codehilite"><code>HTTP/1.1 200 OK
+Cache-Control: no-cache; private; no-store; must-revalidate; max-stale=0; post-check=0; pre-check=0; max-age=0
+Pragma: no-cache
+Content-Type: application/vnd.citrix.authenticateresponse-1+xml; charset=utf-8
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Set-Cookie: ASP.NET_SessionId=ixepmqu3dh1kxu30mv1una3y; path=/; HttpOnly
+Date: Mon, 07 Apr 2014 13:08:47 GMT
+Content-Length: 1552
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Citrix/Authentication/ExplicitForms&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Citrix/Authentication/ExplicitForms/Cancel&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;username&lt;/ID&gt;
+          &lt;SaveID&gt;ExplicitForms-Username&lt;/SaveID&gt;
+          &lt;Type&gt;username&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;User name:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;AssistiveText&gt;domain\user or user@domain&lt;/AssistiveText&gt;    
+          &lt;Text&gt;
+            &lt;Secret&gt;false&lt;/Secret&gt;    
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;password&lt;/ID&gt;
+          &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+          &lt;Type&gt;password&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Password:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;&lt;Secret&gt;true&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;saveCredentials&lt;/ID&gt;
+          &lt;Type&gt;savecredentials&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Remember my password&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;          
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;CheckBox&gt;
+            &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+          &lt;/CheckBox&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;loginBtn&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;Log On&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p><strong><em>Client Request</em></strong></p>
+<pre class="codehilite"><code>POST https://storefront.local/Citrix/Authentication/ExplicitForms HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/vnd.citrix.requesttokenresponse+xml, application/vnd.citrix.authenticateresponse-1+xml
+Host: storefront.local
+Cookie: ASP.NET_SessionId=ixepmqu3dh1kxu30mv1una3y
+Content-Length: 83
+Expect: 100-continue
+StateContext=&amp;loginBtn=Log+On&amp;username=animaniacs%5ctestuser0&amp;password=testuser&amp;saveCredentials=false</code></pre>
+
+
+<h2 id="conversation-cancel"><a class="toclink" href="#conversation-cancel">Conversation Cancel</a></h2>
+<ul>
+<li>URL: Obtained from the current form</li>
+<li>HTTP Method: POST</li>
+<li>Authentication: None</li>
+<li>Request Content-Type: application/x-www-form-urlencoded</li>
+<li>Accept:<ul>
+<li>application/vnd.citrix.authenticateresponse-1+xml</li>
+</ul>
+</li>
+<li>Response Content-Type: application/vnd.citrix.authenticateresponse-1+xml</li>
+</ul>
+<p>The client should POST the StateContext back to the server, to the Cancel Url obtained from the current form: e.g. to cancel the form above, the following should be POSTed:</p>
+<p><code>StateContext=</code></p>
+<p>Note to server implementors: The state associated with the conversation should be discarded on the server when a cancel message is received, and any attempt to re-use the existing Http session state should result in a failure form.</p>
+<p>Notes to client implementors:</p>
+<ul>
+<li>Implementors of long-lived clients should ensure that the session cookie is cleared after the conversation has been cancelled.</li>
+<li>The assumption is that forms shall normally have a cancel button, positioned in the natural location for each client platform, relative to the other buttons. However, the cancel button should only be shown if the element is present at: /AuthenticateResponse/AuthenticationRequirements/CancelButtonText in the supplied form.</li>
+</ul>
+<h3 id="wire-level-example_1"><a class="toclink" href="#wire-level-example_1">Wire-level Example</a></h3>
+<p><strong><em>Cancel Request from Client</em></strong></p>
+<pre class="codehilite"><code>POST https://storefront.local/Citrix/Authentication/ExplicitForms/Cancel HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/vnd.citrix.authenticateresponse-1+xml
+Host: storefront.local
+Cookie: ASP.NET_SessionId=ixepmqu3dh1kxu30mv1una3y
+Content-Length: 14
+
+StateContext=</code></pre>
+
+
+<p><strong><em>Response from StoreFront</em></strong></p>
+<pre class="codehilite"><code>HTTP/1.1 200 OK
+Cache-Control: no-cache; private; no-store; must-revalidate; max-stale=0; post-check=0; pre-check=0; max-age=0
+Pragma: no-cache
+Content-Type: application/vnd.citrix.authenticateresponse-1+xml; charset=utf-8
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Server: Microsoft-IIS/8.0
+Date: Mon, 07 Apr 2014 14:33:50 GMT
+Content-Length: 201
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;cancelled&lt;/Result&gt;
+  &lt;StateContext /&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h2 id="conversation-end"><a class="toclink" href="#conversation-end">Conversation End</a></h2>
+<ul>
+<li>URL: Obtained from the current form</li>
+<li>HTTP Method: POST</li>
+<li>Authentication: None</li>
+<li>Request Content-Type: application/x-www-form-urlencoded</li>
+<li>Accept:<ul>
+<li>application/vnd.citrix.requesttokenresponse+xml, </li>
+<li>application/vnd.citrix.authenticateresponse-1+xml</li>
+</ul>
+</li>
+<li>Response Content-Type: application/vnd.citrix.requesttokenresponse+xml</li>
+</ul>
+<p>Note to server implementors: The state associated with the conversation should be discarded on the server when the RSTR message has been sent, and any attempt to re-use the existing HTTP session state should result in a failure form.</p>
+<p>Note to client implementors: Implementors of long-lived clients should ensure that the session cookie is cleared after the conversation has been completed.</p>
+<h3 id="wire-level-example_2"><a class="toclink" href="#wire-level-example_2">Wire-level Example</a></h3>
+<p><strong><em>Authentication Request from Client</em></strong></p>
+<pre class="codehilite"><code>POST https://storefront.local/Citrix/Authentication/ExplicitForms HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/vnd.citrix.requesttokenresponse+xml, application/vnd.citrix.authenticateresponse-1+xml
+Host: storefront.local
+Cookie: ASP.NET_SessionId=ixepmqu3dh1kxu30mv1una3y
+Content-Length: 83
+Expect: 100-continue
+
+StateContext=&amp;loginBtn=Log+On&amp;username=animaniacs%5ctestuser0&amp;password=testuser&amp;saveCredentials=false</code></pre>
+
+
+<p><strong><em>Response from StoreFront</em></strong></p>
+<pre class="codehilite"><code>HTTP/1.1 200 OK
+Cache-Control: no-cache; private; no-store; must-revalidate; max-stale=0; post-check=0; pre-check=0; max-age=0
+Pragma: no-cache
+Content-Type: application/vnd.citrix.requesttokenresponse+xml
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Server: Microsoft-IIS/8.0
+Date: Mon, 07 Apr 2014 14:25:52 GMT
+Content-Length: 3408
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;requesttokenresponse xmlns=&quot;http://citrix.com/delivery-services/1-0/auth/requesttokenresponse&quot;&gt;
+  &lt;for-service&gt;73003cf4-dc21-4bef-9138-af0ec600dba3&lt;/for-service&gt;
+  &lt;issued&gt;2014-04-07T14:25:51.7525144Z&lt;/issued&gt;
+  &lt;expiry&gt;2014-04-08T10:25:51.7525144Z&lt;/expiry&gt;
+  &lt;lifetime&gt;0.20:00:00&lt;/lifetime&gt;
+  &lt;token-template /&gt;
+  &lt;token&gt;H4sIAAAAAAAEAK1XaY+…ANAAA=&lt;/token&gt;
+  &lt;CredentialUpdateInformationList xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+    &lt;CredentialUpdateInformation&gt;
+      &lt;CredentialDisplayName&gt;animaniacs&lt;/CredentialDisplayName&gt;
+      &lt;AuthenticationInfoId&gt;Citrix Common Forms 1.0&lt;/AuthenticationInfoId&gt;
+      &lt;CredentialUpdateService /&gt;
+    &lt;/CredentialUpdateInformation&gt;
+  &lt;/CredentialUpdateInformationList&gt;
+&lt;/requesttokenresponse&gt;</code></pre>
+
+
+<h2 id="client-persistent-storage"><a class="toclink" href="#client-persistent-storage">Client Persistent Storage</a></h2>
+<p>Client persistent storage is needed by third parties using the Citrix Authentication SDK to implement authentication methods that currently rely on persistent browser cookies, e.g. for assigning a unique ID to user agents.</p>
+<p>An authentication service specifies a value for the client to store by sending a header during a forms authentication conversation. Given a value to store, the client adds the same header to all further requests in the current and subsequent Common Forms authentication conversations with that authentication service.</p>
+<h3 id="header-syntax-and-semantics"><a class="toclink" href="#header-syntax-and-semantics">Header syntax and semantics</a></h3>
+<p>The same header, defined below, is used in both HTTP requests and responses.</p>
+<pre class="codehilite"><code>Storage-Header = &quot;X-Citrix-AM-Storage&quot; &quot;:&quot; field-value
+field-value = *LWS storage-value *LWS
+storage-value = *TEXT</code></pre>
+
+
+<p>The header value may include leading and trailing whitespace, which should be ignored, and the storage value is a plain text string. The storage value may be omitted entirely, leaving a header with an empty value.</p>
+<p>Each X-Citrix-AM-Storage header represents a value stored by the user agent on behalf of the specific authentication service. Each authentication service may store only one value, but a client that interacts with multiple authentication services must be able store one value for each service. An authentication service is identified by the start URL of a forms conversation, including scheme, hostname, port number and path, but excluding query strings and fragments. The URLs of subsequent requests in a forms auth conversation are likely to differ from the start URL so clients must be careful not to simply use the current request URL in making decisions about storage.</p>
+<p>Clients must compare URLs in accordance with the URI comparison rules defined in RFC 2616 [http://tools.ietf.org/html/rfc2616]. </p>
+<p>Note: a client may authenticate against a third party authentication service through Delegated Forms Authentication using different start URLs, for example one URL for NetScaler Gateway and one URL for StoreFront. In this case the third authentication service will end up setting two storage values on the client. This is conceptually not ideal but it should be sufficient because the main goal is parity with HTTP cookie-based authentication methods.</p>
+<p>The X-Citrix-AM-Storage header is only valid during a forms-based authentication conversation. Clients should not update storage or send a storage value outside the authentication conversation. Clients should update the storage value if the header is received on any valid forms response during the conversation, including: failure forms (for example a ‘fail’ or ‘cancel’ result, or failure status) and Request Token Responses.
+There is no mechanism for a client to advertise that it supports persistent storage, other than by returning a previously stored value.</p>
+<p>Notes to server implementors:
+- It is the server implementor’s responsibility to appropriately protect the data stored on the client, for example using HMACs if data origin and integrity are important, or encryption if privacy is also required.
+- The maximum size of the storage header on an HTTP response is 5016 bytes, including the header name and whitespace around the value.</p>
+<p>Note to client implementors: Clients should treat a storage value as an opaque string and should not attempt to interpret the value. The content of a storage value is meaningful only to the originating server.</p>
+<h3 id="server-to-client-http-responses"><a class="toclink" href="#server-to-client-http-responses">Server-to-Client HTTP Responses</a></h3>
+<p>An X-Citrix-AM-Storage header on a response is a directive for the client to persistently and securely store the value on behalf of the sending authentication service. Clients should store the received value immediately and not wait until the end of the authentication conversation, such that if an authentication attempt is abandoned the client will be able to send the last seen value on starting the next authentication attempt.</p>
+<p>If the X-Citrix-AM-Storage response header has an empty value, then clients should delete the storage value for the sending authentication service; subsequently clients do not need to send the empty X-Citrix-AM-Storage header.</p>
+<p>If a forms response does not include an X-Citrix-AM-Storage header, clients must assume that there is no change required, and must keep the current storage value unchanged, and continue to send the last seen value.</p>
+<p>If the response is not a valid forms response or is otherwise not understood by the client, the client must ignore any X-Citrix-AM-Storage header and not update the storage value.</p>
+<p>Servers should not include more than one X-Citrix-AM-Storage header in the same response. If multiple storage headers are received, clients should process the first one only.</p>
+<p>Storage values do not have an explicit or implicit expiry date and potentially may be retained indefinitely. However, clients should delete all stored values if the user uninstalls or otherwise resets the client software, for example using the “Reset” feature in Receiver.</p>
+<h3 id="client-to-server-http-requests"><a class="toclink" href="#client-to-server-http-requests">Client-to-Server HTTP Requests</a></h3>
+<p>If an authentication service has previously set a storage value on the client, the client must send the value to the authentication service using the X-Citrix-AM-Storage header on every request during a forms authentication attempt, starting with the request for the initial form.</p>
+<p>Clients may omit the header if they have no value stored for the authentication service.</p>
+<h3 id="wire-example"><a class="toclink" href="#wire-example">Wire Example</a></h3>
+<table border=1 cellpadding=0 cellspacing=0><tr><td valign=top width=75><td valign=top width=378><p>Message<td valign=top width=148><p>Commentary<tr><td valign=top width=75><p>Client internal storage table<td valign=top width=378><p><table border=1 cellpadding=0 cellspacing=0 width=355><tr><td valign=top width=248><p><span lang=EN-GB>Origin service start URL</span><td valign=top width=108><p><span lang=EN-GB>Storage value</span><tr><td valign=top width=248><p><span lang=EN-GB>&lt;none></span><td valign=top width=108></table><p><td valign=top width=148><p>A first time use scenario, so there are, no stored values.<tr><td valign=top width=75><p>Request<td valign=top width=378><p><span lang=NO-NYN>POST https://example.com/Citrix/Authentication/CustomForms/Authenticate HTTP/1.1</span><p><span lang=FR>Content-Type: application/vnd.citrix.requesttoken+xml</span><p><span lang=FR>Accept: application/vnd.citrix.requesttokenresponse+xml,application/vnd.citrix.authenticateresponse-1+xml,text/xml</span><p><span lang=FR>Content-Length: xxx</span><p><p><span lang=FR>&lt;?xml version="1.0"?></span><p><span lang=FR>&lt;requesttoken xmlns="http://citrix.com/delivery-services/1-0/auth/requesttoken">&lt;for-service>32a290eb-7521-cd92-1394-475927c3a239&lt;/for-service>&lt;for-service-url>https:// example.com /Citrix/Authentication/auth/v1/token&lt;/for-service-url>&lt;reqtokentemplate>&lt;/reqtokentemplate>&lt;requested-lifetime>0.08:00:00&lt;/requested-lifetime>&lt;/requesttoken></span><p><p><td valign=top width=148><p>There’s no stored value, so no o X-Citrix-AM-Storage header needs to be sent.<tr><td valign=top width=75><p>Response<td valign=top width=378><p>HTTP/1.1 200 OK<p>Content-Type: application/vnd.citrix.authenticateresponse-1+xml<p>X-Citrix-AM-Storage: FTU<p>Content-Length: xxx<p><p>&lt;?xml version="1.0" encoding="UTF-8"?><p>&lt;AuthenticateResponse xmlns="http://citrix.com/authentication/response/1"><p>&lt;Status>success&lt;/Status><p>&lt;Result>more-info&lt;/Result><p>&lt;StateContext>f8d463c0&lt;/StateContext><p>&lt;AuthenticationRequirements><p>&lt;PostBack>Citrix/Authentication/CustomForms/SendForm&lt;/PostBack><p>&lt;CancelPostBack>Citrix/Authentication/CustomForms /CancelForm&lt;/CancelPostBack><p>&lt;CancelButtonText>Cancel&lt;/CancelButtonText><p>&lt;Requirements><p>&lt;Requirement><p>&lt;Credential><p>&lt;ID>username&lt;/ID><p>&lt;Type>username&lt;/Type><p>&lt;/Credential><p>&lt;Label><p>&lt;Text>User name:&lt;/Text><p>&lt;Type>plain&lt;/Type><p>&lt;/Label><p>&lt;Input><p>&lt;Text /><p>&lt;/Input><p>&lt;/Requirement><p>&lt;Requirement><p>&lt;Credential><p>&lt;ID>password&lt;/ID><p>&lt;Type>password&lt;/Type><p>&lt;/Credential><p>&lt;Label><p>&lt;Text>Password:&lt;/Text><p>&lt;Type>plain&lt;/Type><p>&lt;/Label><p>&lt;Input><p>&lt;Text><p>&lt;Secret>true&lt;/Secret><p>&lt;/Text><p>&lt;/Input><p>&lt;/Requirement><p>&lt;Requirement><p>&lt;Credential><p>&lt;ID>nextBtn&lt;/ID><p>&lt;Type>none&lt;/Type><p>&lt;/Credential><p>&lt;Label><p>&lt;Type>none&lt;/Type><p>&lt;/Label><p>&lt;Input><p>&lt;Button>Sign On&lt;/Button><p>&lt;/Input><p>&lt;/Requirement><p>&lt;/Requirements><p>&lt;/AuthenticationRequirements><p>&lt;/AuthenticateResponse><td valign=top width=148><p>The authentication service sets  a value for the first time.<tr><td valign=top width=75><p>Client internal storage table<td valign=top width=378><p><table border=1 cellpadding=0 cellspacing=0 width=357><tr><td valign=top width=248><p><span lang=EN-GB>Origin service start URL</span><td valign=top width=110><p><span lang=EN-GB>Storage value</span><tr><td valign=top width=248><p><span lang=EN-GB>https://example.com:443/Citrix/Authentication/CustomForms/Authenticate</span><td valign=top width=110><p><span lang=EN-GB>FTU</span></table><p><p><td valign=top width=148><p>The client stores the value against the authentication service start URL<tr><td valign=top width=75><td valign=top width=378><p><span lang=NO-NYN>POST https://example.com/Citrix/Authentication/CustomForms/SendForm HTTP/1.1</span><p><span lang=NO-NYN>Accept: application/vnd.citrix.requesttokenresponse+xml,application/vnd.citrix.authenticateresponse-1+xml,text/xml</span><p><span lang=NO-NYN>Content-Type: application/x-www-form-urlencoded</span><p>Content-Length: xxx<p>X-Citrix-AM-Storage: FTU<p><p>StateContext=f8d463c0&username=user&password=pass&nextBtn=Sign%20On<td valign=top width=148><p>The client posts back credentials, also sending the latest storage value. Note that the URL for this request is different from the start URL.<tr><td valign=top width=75><td valign=top width=378><p>HTTP/1.1 200 OK<p>Content-Type: application/vnd.citrix.requesttokenresponse+xml<p>Content-Length: xxx<p>X-Citrix-AM-Storage: FTUDone<p><p>&lt;?xml version="1.0" encoding="utf-8"?><p>&lt;requesttokenresponse xmlns="http://citrix.com/delivery-services/1-0/auth/requesttokenresponse"><p><span lang=DA>&lt;for-service>73003cf4-dc21-4bef-9138-af0ec600dba3&lt;/for-service></span><p>&lt;issued>2014-04-07T14:25:51.7525144Z&lt;/issued><p>&lt;expiry>2014-04-08T10:25:51.7525144Z&lt;/expiry><p>&lt;lifetime>0.20:00:00&lt;/lifetime><p>&lt;token-template /><p>&lt;token>H4sIAAAAAAAEAK1XaY+…ANAAA=&lt;/token><p><span lang=DE>&lt;CredentialUpdateInformationList xmlns="http://citrix.com/authentication/response/1"></span><p><span lang=DE>&lt;CredentialUpdateInformation></span><p><span lang=DE>&lt;CredentialDisplayName>user&lt;/CredentialDisplayName></span><p><span lang=DE>&lt;AuthenticationInfoId>Citrix Common Forms 1.0&lt;/AuthenticationInfoId></span><p>&lt;CredentialUpdateService /><p>&lt;/CredentialUpdateInformation><p>&lt;/CredentialUpdateInformationList><p>&lt;/requesttokenresponse><td valign=top width=148><p>Authentication completes successfully and the authentication service updates the storage value using the Request Token Response.<tr><td valign=top width=75><p>Client internal storage table<td valign=top width=378><p><table border=1 cellpadding=0 cellspacing=0 width=357><tr><td valign=top width=248><p><span lang=EN-GB>Origin service start URL</span><td valign=top width=110><p><span lang=EN-GB>Storage value</span><tr><td valign=top width=248><p><span lang=EN-GB>https://example.com:443/Citrix/Authentication/CustomForms/Authenticate</span><td valign=top width=110><p><span lang=EN-GB>FTUDone</span></table><p><p><td valign=top width=148><p>The client stores the updated value against the authentication service forms start URL.</table>
+
+<h1 id="client-responses-for-form-input"><a class="toclink" href="#client-responses-for-form-input">Client Responses for Form Input</a></h1>
+<h2 id="general-user-agent-processing"><a class="toclink" href="#general-user-agent-processing">General User Agent Processing</a></h2>
+<p>When the user submits a form (for example. by activating a logon button), the user agent on the client should process it as follows:</p>
+<p>1.Identify the “successful” controls.</p>
+<p>2.Build a form data set, which is a sequence of control-id=current-value pairs from successful controls separated by the ‘&amp;’ character. Any value containing a ‘&amp;’ character should be correctly encoded as %26.</p>
+<p>3.Encode the data set to comply with the application/x-www-form-urlencoded content type.</p>
+<p>4.POST the data to the host-relative URL specified by the supplied form.</p>
+<p>The form contains a <StateContext> element at XPath: /AuthenticateResponse/StateContext. The text value of this element should be returned to the server in the form set data with control-id: StateContext.</p>
+<p>The user agent should identify the button activated by adding the button controlId=localized-button-text to the data set to be returned.</p>
+<p>Finally the user agent should append to the data set the credential id and current value for all /AuthenticateResponse/AuthenticationRequirements/Requirements/Requirement elements where the following applies:</p>
+<ul>
+<li>The ./Credential/ID element is present, and not empty.</li>
+<li>The requirement is not read-only.</li>
+<li>The ./Input element has a control associated with it.</li>
+</ul>
+<p>Once the data set is complete it should be encoded as forms data as described at: http://www.w3.org/TR/html4/interact/forms.html#form-content-type and then sent to the server using a HTTP POST to the host relative URL specified by the /AuthenticateResponse/AuthenticationRequirements/PostBack element. The POST should also set the appropriate cookie header.</p>
+<p>Note to client implementors: Elements that are marked as read-only should not be returned to the server</p>
+<h2 id="buttons"><a class="toclink" href="#buttons">Buttons</a></h2>
+<p>Where there are multiple buttons defined, only the button selected by the user should be sent in the form response in the form: <code>controlId=localized-button-text</code></p>
+<p>Consider a form containing two buttons:</p>
+<pre class="codehilite"><code>      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;backButtonId&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;Back&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;nextButtonId&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;Next&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;</code></pre>
+
+
+<p>If the Back button is selected, then the POST should contain the back button as follows:</p>
+<p><code>backButtonId=Back</code></p>
+<p>However, if the Next button is selected, then the POST should contain the following:
+<code>nextButtonId=Next</code></p>
+<h2 id="text-based-input"><a class="toclink" href="#text-based-input">Text-Based Input</a></h2>
+<p>For text-based input, the text supplied by the user should be sent, appropriately encoded, in the form response in the form:  credentialID=user-supplied-text</p>
+<p>Consider the form containing the following text credential:</p>
+<pre class="codehilite"><code>      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;textId&lt;/ID&gt;
+          &lt;Type&gt;textcredential&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Generic text&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;</code></pre>
+
+
+<p>The following demonstrates the form response that should be returned for various text inputs:</p>
+<ul>
+<li>domain\user: textId=domain%5cuser</li>
+<li>áâäçèé: textId=%c3%a1%c3%a2%c3%a4%c3%a7%c3%a8%c3%a9</li>
+<li><empty string>: textId=</li>
+</ul>
+<h2 id="check-box"><a class="toclink" href="#check-box">Check box</a></h2>
+<p>For check boxes, the value returned by the client should be true if the check box is selected and false if not.</p>
+<p>Note for client implementors: The true and false values are case-sensitive.</p>
+<p>Consider the form containing the following check box:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;checkboxId&lt;/ID&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Do you consent to this operation?&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;CheckBox&gt;
+      &lt;InitialValue&gt;true&lt;/InitialValue&gt;
+    &lt;/CheckBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>If the checkbox is selected, then the POST should contain the following:</p>
+<p><code>checkboxId=true</code></p>
+<p>If the check box is not selected, then the POST should contain the following:</p>
+<p><code>checkboxId=false</code></p>
+<h2 id="save-credentials-control"><a class="toclink" href="#save-credentials-control">Save Credentials Control</a></h2>
+<p>Because this has important semantic obligations for the client, there is a distinguished credential type to specify when the client can offer the user the option to save credentials. This allows the server to control whether the option is presented, and to specify the appropriate localized description.</p>
+<p>Notes for client implementors:</p>
+<ul>
+<li>Only credentials with a SaveID tag are permitted to be saved.</li>
+<li>Clients that don’t support saving credentials should omit the requirement element from display.</li>
+</ul>
+<p>Consider the form containing the following save credentials check box.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;saveCredentials&lt;/ID&gt;
+    &lt;Type&gt;savecredentials&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Remember my password&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;CheckBox&gt;
+      &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+    &lt;/CheckBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>If the check box is selected, then the POST should contain the following, as for a normal check box defined above:</p>
+<p><code>saveCredentials=true</code></p>
+<p>Notes for client implementors:</p>
+<h3 id="clear-saved-credential"><a class="toclink" href="#clear-saved-credential">Clear Saved Credential</a></h3>
+<p>If during the authentication conversation the client receives a form with result code “more-info”, which contains the SaveID of a credential that has already been submitted to the server, the client should infer that the credential was not valid. The client should immediately erase the saved credential set. Saved credentials should also be erased if a request to a StoreFront service URL results in a CitrixAuth challenge with reason: badpassword</p>
+<h3 id="update-saved-credential"><a class="toclink" href="#update-saved-credential">Update Saved Credential</a></h3>
+<p>During an authentication conversation, the client may receive a form with result code “update-credentials”. This indicates that the user is updating a credential (for example changing a password). If the SaveID of the credential matches that of a saved credential, the new value of the credential should be saved if authentication succeeds.</p>
+<h2 id="radio-buttons"><a class="toclink" href="#radio-buttons">Radio Buttons</a></h2>
+<p>For radio buttons, individual items contain localized display text and a non-localized value. Radio buttons should return the value associated with the currently selected item.</p>
+<p>Consider the form containing the following radio buttons:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;radioButtonId&lt;/ID&gt;
+    &lt;Type&gt;textcredential&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Choose one&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;RadioButton&gt;
+      &lt;InitialSelection&gt;Choice1&lt;/InitialSelection&gt;
+      &lt;DisplayValues&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Choice One Display Text&lt;/Display&gt;
+          &lt;Value&gt;Choice1&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Choice Two Display Text&lt;/Display&gt;
+          &lt;Value&gt;Choice2&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Choice Three Display Text&lt;/Display&gt;
+          &lt;Value&gt;Choice3&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+      &lt;/DisplayValues&gt;
+    &lt;/RadioButton&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>If the second item (Display Text Two) is selected, then the POST should contain the following:</p>
+<p><code>radioButtonId=Choice2</code></p>
+<p>Note for client implementors: The initial selection element is optional; the client implementor must decide what to do if there is no initial value.</p>
+<p>Note for server implementors: It is acceptable for clients to indicate that there is no selection by returning:</p>
+<p><code>radioButtonId=</code></p>
+<h2 id="combo-boxes"><a class="toclink" href="#combo-boxes">Combo Boxes</a></h2>
+<p>A combo box allows a single item to be selected. For combo boxes, individual items contain localized display text and a non-localized value. Combo boxes should return the value associated with the currently selected item.</p>
+<p>Consider the form containing the following combo box:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;comboId&lt;/ID&gt;
+    &lt;Type&gt;textcredential&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Combo-box&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;ComboBox&gt;
+      &lt;InitialSelection&gt;Value2&lt;/InitialSelection&gt;
+      &lt;DisplayValues&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Display Text One&lt;/Display&gt;
+          &lt;Value&gt;Value1&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Display Text Two&lt;/Display&gt;
+          &lt;Value&gt;Value2&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Display Text Three&lt;/Display&gt;
+          &lt;Value&gt;Value3&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+      &lt;/DisplayValues&gt;
+    &lt;/ComboBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>If the second item (Display Text Two) is selected, then the POST should contain the following:</p>
+<p><code>comboId=Value2</code></p>
+<p>Note for client implementors:</p>
+<ul>
+<li>The initial selection element is optional, and it is the client implementor’s choice how this should be handled.</li>
+</ul>
+<p>Notes for server implementors:</p>
+<ul>
+<li>Form implementors should ensure that all display text items and values are unique and not empty.</li>
+<li>It is acceptable for clients to indicate that there is no selection by returning: comboId=</li>
+<li>Servers must be robust against invalid values being returned.</li>
+<li>If the values are changed, it is suggested that any saved credential identifier is also changed to avoid the client sending back invalid saved credentials.</li>
+</ul>
+<h2 id="multi-combo-boxes"><a class="toclink" href="#multi-combo-boxes">Multi-Combo Boxes</a></h2>
+<p>A multi-combo box allows multiple items to be selected. For multi-combo boxes, individual items contain localized display text, a non-localized value, and a flag indicating whether the item is selected. Multi-combo boxes should return an entry for each selected item of the form: itemID=value.</p>
+<p>Consider the form containing the following multi-combo box, where the second item is initially selected:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;multiComboId&lt;/ID&gt;
+    &lt;Type&gt;textcredential&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Multi-select Combo&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;MultiComboBox&gt;
+      &lt;DisplayValues&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Alice&lt;/Display&gt;
+          &lt;Value&gt;Value1&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Bob&lt;/Display&gt;
+          &lt;Value&gt;Value2&lt;/Value&gt;
+          &lt;Select&gt;true&lt;/Select&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Eve&lt;/Display&gt;
+          &lt;Value&gt;Value3&lt;/Value&gt;
+          &lt;Select&gt;false&lt;/Select&gt;
+        &lt;/DisplayValue&gt;
+      &lt;/DisplayValues&gt;
+    &lt;/MultiComboBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>If the second item and third items (Bob and Eve) are selected, then the POST should contain the following:</p>
+<p><code>multiComboId=Value2&amp;multiComboId=Value3</code></p>
+<p>If no items are selected, then the POST should contain the following:</p>
+<p><code>multiComboId=</code></p>
+<p>Note for client implementors:
+- It is acceptable for clients to only return selected values that are unique.</p>
+<p>Notes for server implementors:
+- Form implementors should ensure that all display text items and values are unique
+- Servers must be robust against invalid values being returned.
+- If the values are changed, it is suggested that any saved credential identifier is also changed to avoid the client sending back invalid saved credentials.
+- Multi-combo boxes are not suitable for user name or domain credentials.</p>
+<h2 id="x509-certificates"><a class="toclink" href="#x509-certificates">X509 Certificates</a></h2>
+<p>A multi-combo box allows multiple items to be selected. For multi-combo boxes, individual items contain localized display text, a non-localized value, and a flag indicating whether the item is selected. Multi-combo boxes should return an entry for each selected item of the form: itemID=value.</p>
+<p>Consider the form containing the following multi-combo box, where the second item is initially selected:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;multiComboId&lt;/ID&gt;
+    &lt;Type&gt;textcredential&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Multi-select Combo&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;MultiComboBox&gt;
+      &lt;DisplayValues&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Alice&lt;/Display&gt;
+          &lt;Value&gt;Value1&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Bob&lt;/Display&gt;
+          &lt;Value&gt;Value2&lt;/Value&gt;
+          &lt;Select&gt;true&lt;/Select&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Eve&lt;/Display&gt;
+          &lt;Value&gt;Value3&lt;/Value&gt;
+          &lt;Select&gt;false&lt;/Select&gt;
+        &lt;/DisplayValue&gt;
+      &lt;/DisplayValues&gt;
+    &lt;/MultiComboBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>If the second item and third items (Bob and Eve) are selected, then the POST should contain the following:</p>
+<p><code>multiComboId=Value2&amp;multiComboId=Value3</code></p>
+<p>If no items are selected, then the POST should contain the following:</p>
+<p><code>multiComboId=</code></p>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../storefront-services-authentication-sdk/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../citrixauth-authentication-scheme/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

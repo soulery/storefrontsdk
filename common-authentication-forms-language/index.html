@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Citrix Common Authentication Forms Language - StoreFront SDK Documentation</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Citrix Common Authentication Forms Language";
+    var mkdocs_page_input_path = "common-authentication-forms-language.md";
+    var mkdocs_page_url = "/common-authentication-forms-language/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/custom.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://citrix.github.io" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+			<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs"><a class="fa fa-search errspan" onclick="getElementById('rtd-search-form').submit()"></a></li>
+			</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<a class="fa fa-search" onclick="getElementById('rtd-search-form').submit()"></a>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="..">Overview</a>
+			
+		
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Web API</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../overview/">Overview</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../how-the-api-works/">How the API works</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../requests/">Requests</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../using-configuration-elements/">Using configuration elements</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Store Service SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-sdk/">StoreFront Customization SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../getting-started-with-the-sdk/">Getting started with the SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-interfaces/">Customization interfaces</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues/">Known issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../samples/">Samples</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Authentication SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storefront-services-authentication-sdk/">Authentication Software Development Kit</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrix-common-forms-authentication-api/">Citrix Common Forms Authentication API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrixauth-authentication-scheme/">CitrixAuth Authentication Scheme</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+
+		<a class="current" style="width:272px;" href="./">Citrix Common Authentication Forms Language</a>
+			
+		
+        
+            <ul style="display:none">
+            
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#receiver-forms-language-overview" style="display: inline-table;padding-left: 3px;width:240px;">Receiver Forms Language Overview</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#form-structure">Form Structure</a></li>
+                
+                    <li><a class="toctree-l4" href="#requirement-element-idioms">Requirement Element Idioms</a></li>
+                
+				</ul>
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#detailed-example-forms" style="display: inline-table;padding-left: 3px;width:240px;">Detailed Example Forms</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#username-password-domain">Username, Password, Domain</a></li>
+                
+                    <li><a class="toctree-l4" href="#username-password-domain-selection-from-list">Username, Password, Domain Selection From List</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-password">Change Password</a></li>
+                
+                    <li><a class="toctree-l4" href="#confirmation-message">Confirmation Message</a></li>
+                
+                    <li><a class="toctree-l4" href="#generic-radius-challenge">Generic Radius Challenge</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-expired-pin">Change Expired PIN</a></li>
+                
+				</ul>
+				
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../security-token-services-api/">Security Token Services API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../authentication-form-generation/">StoreFront Authentication Form Generation</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues-auth/">Known Issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storeFront-authentication-sdk-thirdparty/">Third Party Notices</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-certificate-identity-declaration/">Sample Certificate Identity Declaration</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../magic-word-sample/">Sample Magic Word</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-test-forms/">Sample Test Forms</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>StoreFront Authentication SDK &raquo;</li>
+        
+      
+    
+    <li>Citrix Common Authentication Forms Language</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <p>Citrix Common Authentication Forms Language</p>
+<h1 id="background"><a class="toclink" href="#background">Background</a></h1>
+<p>Citrix has devised a common authentication protocol that is implemented by its next generation services and gateway platforms, referred to here as StoreFront Services and NetScaler Gateway. Citrix is implementing client support for this common authentication protocol in native user-agents, such as Receiver and Worx, for the major device platforms, notably: Windows, Mac, iOS, Android, Linux, and Receiver for Web for browser based user-agents.</p>
+<p>An important part of the common authentication protocol is a generic forms language, designed to allow third parties to express a wide range of authentication forms using a set of user interface constructs that are similar to basic HTML forms, see RFC 1867 [http://www.ietf.org/rfc/rfc1867.txt] and 2388 [http://www.ietf.org/rfc/rfc2388.txt] for more details.</p>
+<p>Third parties can extend the authentication methods supported by StoreFront Services and NetScaler Gateway by implementing server logic that emits and consumes forms defined in the common forms language, see the Citrix Authentication Software Development Kit [1] for more details.</p>
+<p>This document is intended for Citrix partners to understand the current expressivity of the common forms language, with the intent to allow them to customize the existing form definitions and to create new forms.</p>
+<h1 id="receiver-forms-language-overview"><a class="toclink" href="#receiver-forms-language-overview">Receiver Forms Language Overview</a></h1>
+<p>Authentication forms are logical forms expressed in Xml, the schema for which is located at: /Schemas/CommonFormsSchema.xsd.</p>
+<p>The client controls the rendered form’s layout with minimal hints from the server. These hints define the font size for different types of display text. Enough semantic information is contained in the form description to allow clients to handle credential types appropriately, and to enable credentials to be saved on client machines if permissible.</p>
+<h2 id="form-structure"><a class="toclink" href="#form-structure">Form Structure</a></h2>
+<p>The form is structured such that there is a control block, followed a section for authentication requirements.</p>
+<h3 id="control-block"><a class="toclink" href="#control-block">Control Block</a></h3>
+<p>The form contains the following control information:</p>
+<ul>
+<li><StateContext> contains any state information that the server wishes the client to hold and pass back with the response to the form.</li>
+<li><Result> represents the current state of the overall authentication process through a “soft” enumeration.</li>
+<li><Status> represents a "soft" enumeration of status codes for the current request.</li>
+<li><LogMessage>  is an optional, localized, message from the server to be displayed, and/or logged by the client.</li>
+</ul>
+<p>The following table describes the known result states:</p>
+<table border=1 cellpadding=0 cellspacing=0><tr><td width=177><p>more-info<td width=414><p>More information is required by the server. The form contains authentication requirements that should be collected by the client and returned to the server.<tr><td width=177><p>fail<td width=414><p>The authentication conversation has failed. There may be a &lt;LogMessage> to indicate the issue.<tr><td width=177><p>success<td width=414><p>The authentication conversation succeeded<tr><td width=177><p>cancelled<td width=414><p>The authentication conversation was cancelled directly by the user, or indirectly by the user-agent.<tr><td width=177><p>update-credentials<td width=414><p>The user is required to update a credential, such as a password. The form will contain authentication requirements that should be collected by the client and returned to the server.</table>
+
+<p>The following table describes the known status states:</p>
+<table border=1 cellpadding=0 cellspacing=0><tr><td width=177><p>success<td width=414><p>The last form POST was successfully processed.<tr><td width=177><p>error-service-unavailable<td width=414><p>The service is unavailable<tr><td width=177><p>error-internal-failure<td width=414><p>An internal error occurred.<tr><td width=177><p>error-params-not-expected<td width=414><p>One or more of the parameters was unexpected.<tr><td width=177><p>error-logon-point-unknown<td width=414><p>The logon point is unknown.<tr><td width=177><p>error-sessionid-invalid<td width=414><p>The associated Http Session state is invalid.<tr><td width=177><p>error-sessionid-expired<td width=414><p>The associated Http Session state has expired.<tr><td width=177><p>error-state-context-invalid<td width=414><p>The session context value was invalid.</table>
+
+<p><strong><em>Authentication Requirements</em></strong></p>
+<p>The first part of the authentication requirements contains information regarding where to send the form response:</p>
+<ul>
+<li>The Url to post the form response to</li>
+<li>The Url to post a cancel request to</li>
+<li>The optional text for the cancel button</li>
+</ul>
+<p>The details of how to process the form and construct a form response, can be found in the document: Citrix Common Forms API [2].</p>
+<p>The authentication requirements are expressed as an ordered collection of <Requirement> elements, which should generally be arranged in vertical order by the client when displayed. Each requirement element can define: a named credential value, an associated input field, a label, and assistive text. Where desired, the credential and input field can be omitted so the label is used for a heading, message or explanatory text. Common user interaction widgets are supported for input fields: single line clear text edit fields, single line obscured text edit fields, checkboxes, radio buttons, combo-boxes, and submit buttons.</p>
+<p><strong><em>Credential Types</em></strong></p>
+<p>The credential types supported are a “soft” enumeration, which means that new credential types can be added without breaking the schema. The mechanism for how credential types are negotiated between the client and the server is described in the document: Citrix Common Forms API [2].</p>
+<p>The default credential types are described below. Semantic information is implied for some credential types, to allow clients to provide enhanced handling and other functions.</p>
+<table border=1 cellpadding=0 cellspacing=0><tr><td width=177><p>none<td width=414><p>Used for read-only and non-textual input controls.<tr><td width=177><p>username<td width=414><p>The user name which may be qualified, e.g. an Active Directory user principal name such as <a href=mailto:user@fully.qualified.domain>user@fully.qualified.domain</a> or  legacy LAN Manager account such as domain\username.<tr><td width=177><p>domain<td width=414><p>Expected to be an Active Directory domain name, examples include: the shorter legacy LAN Manager format, the fully qualified domain name, or an alternate domain name.<tr><td width=177><p>password<td width=414><p>Textual password or passphrase.<tr><td width=177><p>newpassword<td width=414><p>New password in a change password form.<tr><td width=177><p>pin<td width=414><p>Textual password, likely a short numeric PIN.<tr><td width=177><p>textcredential<td width=414><p>Generic text value with no implied semantics.<tr><td width=177><p>savecredentials<td width=414><p>Control flag for clients that support saving credentials locally.<tr><td width=177><p>realm<td width=414><p>Synonym for domain.<tr><td width=177><p>rsa-passcode<td width=414><p>The current RSA passcode.<tr><td width=177><p>rsa-next-passcode<td width=414><p>The next RSA passcode.<tr><td width=177><p>rsa-next-tokencode<td width=414><p>Secondary RSA tokencode, triggered by one or more invalid tokencodes.<tr><td width=177><p>rsa-pin<td width=414><p>The RSA PIN, used during user generated PIN change.</table>
+
+<h3 id="label-types"><a class="toclink" href="#label-types">Label Types</a></h3>
+<p>The label types supported are a “soft” enumeration, which means that new label types can be added without breaking the schema. The mechanism for how label types are negotiated between the client and the server is described in the document: Citrix Common Forms API [2].</p>
+<p>Labels can be textual or binary. The only built-in support for binary labels is for images [Label type: image]</p>
+<p><strong><em>Notes regarding Images:</em></strong></p>
+<ul>
+<li>Images are intended for authentication purposes, such as captcha images, and are not intended for generic branding</li>
+<li>The image data supplied in the form is to be interpreted as a Data Uri as defined by RFC 2397, [https://www.ietf.org/rfc/rfc2397.txt]</li>
+</ul>
+<p>The following describes the built-in text based labels:</p>
+<table border=1 cellpadding=0 cellspacing=0><tr><td width=177><p>none<td width=414><p>No label is associated with the requirement<tr><td width=177><p>plain<td width=414><p>Normal font.<tr><td width=177><p>heading<td width=414><p>Heading font, with appropriate vertical spacing.<tr><td width=177><p>information<td width=414><p>Normal font<tr><td width=177><p>warning<td width=414><p>Warning font<tr><td width=177><p>error<td width=414><p>Error font<tr><td width=177><p>confirmation<td width=414><p>Normal font</table>
+
+<p><strong><em>Notes regarding text based labels:</em></strong></p>
+<ul>
+<li>If a label type is: none, any textual or binary data specified for the associate label shall be ignored.</li>
+<li>Client implementors may use the label type to decorate messages with icons for visual effect.</li>
+<li>A limited set of inline font markup is supported, within text labels, using standard HTML tags such as: <code>&lt;b&gt;</code> for bold, <code>&lt;i&gt;</code> for italic, and <code>&lt;u&gt;</code> for underline. Note: these style tags must be XML encoded or contained within a CDATA section.</li>
+<li>Messages will flow across multiple lines of display if necessary.</li>
+<li>Client implementations may strip trailing ‘:’ if specified by the form author</li>
+<li>If a label corresponds to an error message, then optionally, the label can also contain a list of credential identifier for requirements associated with the error, that the client can use to highlight the requirements for the users attention.</li>
+</ul>
+<h3 id="error-highlight-example"><a class="toclink" href="#error-highlight-example">Error Highlight Example</a></h3>
+<p>Consider a change password form with a requirement for the user to re-enter their existing password:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;oldPassword&lt;/ID&gt;
+    &lt;Type&gt;password&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Old password:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;Text&gt;
+      &lt;Secret&gt;true&lt;/Secret&gt;
+      &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+      &lt;InitialValue&gt;&lt;/InitialValue&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>If the user enters an invalid value, then an error label is returned that specifies the oldpassword requirement to be highlighted:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;HighlightFields&gt;
+      &lt;CredentialID&gt;oldPassword&lt;/CredentialID&gt;
+    &lt;/HighlightFields&gt;
+    &lt;Text&gt;Old password incorrect&lt;/Text&gt;
+    &lt;Type&gt;error&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p><img alt="" src="../img/authforms1.png" /></p>
+<p>This is displayed in Receiver for Windows as:</p>
+<h2 id="requirement-element-idioms"><a class="toclink" href="#requirement-element-idioms">Requirement Element Idioms</a></h2>
+<p>Examples of the common types of Requirement elements are shown below. Element values that are highlighted identify variable names or user-visible labels that are controlled by the author of the authentication form. Element values that are bolded and underscored indicate field enumeration types defined in this document.</p>
+<h3 id="cancel-button"><a class="toclink" href="#cancel-button">Cancel Button</a></h3>
+<p>The assumption is that forms shall normally have a cancel button, positioned in the natural location for each client platform, relative to the other buttons. However, the cancel button will only be shown if the element is present at: /AuthenticateResponse/AuthenticationRequirements/CancelButtonText.</p>
+<p>Notes:
+- If a form author specifies CancelButtonText, client implementors may still not show a cancel button if it is not appropriate for the device.
+- The absence of CancelButtonText doesn’t preclude the user-agent sending a cancellation request.</p>
+<h3 id="heading"><a class="toclink" href="#heading">Heading</a></h3>
+<p>This example is for a change password form. If a heading is not included as the first requirement element in a form, Receiver clients may provide a default heading that is tailored according to the user action that initiated the authentication process.  </p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Change Password&lt;/Text&gt;
+    &lt;Type&gt;heading&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="message"><a class="toclink" href="#message">Message</a></h3>
+<p>This example is for an expired password message, added to a change password form for explanation. </p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Your password has &amp;lt;b&amp;gt;expired&amp;lt;/b&amp;gt; and must be changed&lt;/Text&gt;
+    &lt;Type&gt;information&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="clear-text-credential"><a class="toclink" href="#clear-text-credential">Clear Text Credential</a></h3>
+<p>This example is for a user name credential type, but could be for a domain or generic value.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;username&lt;/ID&gt;
+    &lt;SaveID&gt;ExplicitForms-Username&lt;/SaveID&gt;
+    &lt;Type&gt;username&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Username:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;Text&gt;
+      &lt;Secret&gt;false&lt;/Secret&gt;
+      &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+      &lt;InitialValue&gt;&lt;/InitialValue&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>Note: Client implementations may ignore the constraints specified by the form author.</p>
+<h3 id="secret-text-credential"><a class="toclink" href="#secret-text-credential">Secret Text Credential</a></h3>
+<p>This credential must keep what the user types a secret, like an <code>&lt;input&gt;</code> field of type password in Html.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;password&lt;/ID&gt;
+    &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+    &lt;Type&gt;password&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Password:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;Text&gt;
+      &lt;Secret&gt;true&lt;/Secret&gt;
+      &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+      &lt;InitialValue&gt;&lt;/InitialValue&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="checkbox"><a class="toclink" href="#checkbox">Checkbox</a></h3>
+<p>This is one of several input types that typically uses the credential type: none.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;userConsent&lt;/ID&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Accept terms and conditions&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;CheckBox&gt;
+      &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+    &lt;/CheckBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="radio-button"><a class="toclink" href="#radio-button">Radio Button</a></h3>
+<p>The following demonstrates a series of radio buttons, for the user to select a single item from a set of choices. The <Display> element is typically localized, whereas the <Value> is fixed and is used for defining the initial selection and the value sent to the server.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;changePINmode&lt;/ID&gt;
+    &lt;Type&gt;textcredential&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;PIN generation:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;RadioButton&gt;
+      &lt;InitialSelection&gt;2&lt;/InitialSelection&gt;
+      &lt;DisplayValues&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Create your own PIN&lt;/Display&gt;
+          &lt;Value&gt;1&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Request PIN from authentication system&lt;/Display&gt;
+          &lt;Value&gt;2&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+      &lt;/DisplayValues&gt;
+    &lt;/RadioButton&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>Note for form authors: The initial selection element is optional, and it is the client implementors choice how not having an initial value should be handled.</p>
+<h3 id="combo-box"><a class="toclink" href="#combo-box">Combo Box</a></h3>
+<p>A combo-box is almost identical to Radio Button, in that it is used to select a single item. However the hint to the client is that it should be shown as a list control.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;Region&lt;/ID&gt;
+    &lt;Type&gt;textcredential&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Region:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;ComboBox&gt;
+      &lt;InitialSelection&gt;unspecified&lt;/InitialSelection&gt;
+      &lt;DisplayValues&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;(Select a region)&lt;/Display&gt;
+          &lt;Value&gt;unspecified&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;United States&lt;/Display&gt;
+          &lt;Value&gt;US&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Europe&lt;/Display&gt;
+          &lt;Value&gt;EU&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+      &lt;/DisplayValues&gt;
+    &lt;/ComboBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>Note for form authors: The initial selection element is optional, and it is the client implementors choice how not having an initial value should be handled.</p>
+<h3 id="multi-combo-box"><a class="toclink" href="#multi-combo-box">Multi-Combo box</a></h3>
+<p>A multi-combo box is similar to a combo box, except multiple selections can be made.</p>
+<p>The following multi-combo box, initially has the second item selected.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;multiComboId&lt;/ID&gt;
+    &lt;Type&gt;textcredential&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Multi-select Combo&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;MultiComboBox&gt;
+      &lt;DisplayValues&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Alice&lt;/Display&gt;
+          &lt;Value&gt;Value1&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Bob&lt;/Display&gt;
+          &lt;Value&gt;Value2&lt;/Value&gt;
+          &lt;Select&gt;true&lt;/Select&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;Eve&lt;/Display&gt;
+          &lt;Value&gt;Value3&lt;/Value&gt;
+          &lt;Select&gt;false&lt;/Select&gt;
+        &lt;/DisplayValue&gt;
+      &lt;/DisplayValues&gt;
+    &lt;/MultiComboBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="save-credentials-control"><a class="toclink" href="#save-credentials-control">Save Credentials Control</a></h3>
+<p>Saving credentials has important semantic obligations for the client, therefore a distinguished credential type is defined. This allows the form author to control whether the option is presented, and to specify the appropriate localized description.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;saveCredentials&lt;/ID&gt;
+    &lt;Type&gt;savecredentials&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Remember my password&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;CheckBox&gt;
+      &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+    &lt;/CheckBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="submit-button"><a class="toclink" href="#submit-button">Submit Button</a></h3>
+<p>Multiple buttons can appear in a form, all of them will invoke form submission.</p>
+<pre class="codehilite"><code>            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;ID&gt;loginBtn&lt;/ID&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Label&gt;
+                &lt;Input&gt;
+                    &lt;Button&gt;Log on&lt;/Button&gt;
+                &lt;/Input&gt;
+            &lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="assistive-text"><a class="toclink" href="#assistive-text">Assistive Text</a></h3>
+<p>Assistive text is optional text to provide more information about an input element to the user. Assistive text may be shown using a tooltip or similar user interface element, but the mechanism for displaying the assistive text is at the discretion of the client. The following example is for a text input with assistive text describing the format required.</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;username&lt;/ID&gt;
+    &lt;SaveID&gt;ExplicitForms-Username&lt;/SaveID&gt;
+    &lt;Type&gt;username&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Username:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;AssistiveText&gt;
+      Please supply either domain\user or user@fully.qualified.domain.name
+    &lt;AssistiveText&gt;
+    &lt;Text&gt;
+      &lt;Secret&gt;false&lt;/Secret&gt;
+      &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+      &lt;InitialValue&gt;&lt;/InitialValue&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h1 id="detailed-example-forms"><a class="toclink" href="#detailed-example-forms">Detailed Example Forms</a></h1>
+<h2 id="username-password-domain"><a class="toclink" href="#username-password-domain">Username, Password, Domain</a></h2>
+<p>The following form defines a user name and password form, with the ability to save credentials on the client, assistive text and a cancel button, that renders in Citrix Receiver for Windows as shown below:</p>
+<p><img alt="" src="../img/authforms2.png" /></p>
+<p>Note that the Secure connection marking is supplied by Receiver independently of the form description.</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Citrix/Authentication/ExplicitForms/AuthenticateAttempt&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Citrix/Authentication/ExplicitForms/CancelAuthenticate&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;username&lt;/ID&gt;
+          &lt;SaveID&gt;ExplicitForms-Username&lt;/SaveID&gt;
+          &lt;Type&gt;username&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;User name:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;AssistiveText&gt;Please supply either domain\username or user@fully.qualified.domain&lt;/AssistiveText&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;false&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;password&lt;/ID&gt;
+          &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+          &lt;Type&gt;password&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Password:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;true&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;saveCredentials&lt;/ID&gt;
+          &lt;Type&gt;savecredentials&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Remember my password&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;CheckBox&gt;
+            &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+          &lt;/CheckBox&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+       &lt;Credential&gt;
+         &lt;ID&gt;loginBtn&lt;/ID&gt;
+         &lt;Type&gt;none&lt;/Type&gt;
+       &lt;/Credential&gt;
+       &lt;Label&gt;
+         &lt;Type&gt;none&lt;/Type&gt;
+       &lt;/Label&gt;
+       &lt;Input&gt;
+         &lt;Button&gt;Log On&lt;/Button&gt;
+       &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h3 id="username-password-with-inline-error-message"><a class="toclink" href="#username-password-with-inline-error-message">Username, Password with Inline Error Message</a></h3>
+<p>In the previous example, if the password supplied by the user was incorrect, then the server will return the following form:</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Citrix/Authentication/ExplicitForms/AuthenticateAttempt&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Citrix/Authentication/ExplicitForms/CancelAuthenticate&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;username&lt;/ID&gt;
+          &lt;SaveID&gt;ExplicitForms-Username&lt;/SaveID&gt;
+          &lt;Type&gt;username&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;User name&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;AssistiveText&gt;Please supply either domain\username or user@fully.qualified.domain&lt;/AssistiveText&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;false&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;domain\user&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;password&lt;/ID&gt;
+          &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+          &lt;Type&gt;password&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Password:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;true&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Incorrect user name or password&lt;/Text&gt;
+          &lt;Type&gt;error&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input /&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;saveCredentials&lt;/ID&gt;
+          &lt;Type&gt;savecredentials&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Remember my password&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;CheckBox&gt;
+            &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+          &lt;/CheckBox&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;loginBtn&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;Log On&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p>This is rendered by Citrix Receiver for Windows as:</p>
+<p><img alt="" src="../img/authforms3.png" /></p>
+<h2 id="username-password-domain-selection-from-list"><a class="toclink" href="#username-password-domain-selection-from-list">Username, Password, Domain Selection From List</a></h2>
+<p>The following form defines a user name and password form with domain selection from a list, with the ability to save credentials on the client, and a Cancel button, that renders as shown below:</p>
+<p><img alt="" src="../img/authforms4.png" /></p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Citrix/Authentication/ExplicitForms/AuthenticateAttempt&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Citrix/Authentication/ExplicitForms/CancelAuthenticate&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+    &lt;Requirement&gt;
+      &lt;Credential&gt;
+        &lt;Type&gt;none&lt;/Type&gt;
+      &lt;/Credential&gt;
+      &lt;Label&gt;
+        &lt;Text&gt;Please log on&lt;/Text&gt;
+        &lt;Type&gt;heading&lt;/Type&gt;
+      &lt;/Label&gt;
+      &lt;Input /&gt;
+    &lt;/Requirement&gt;
+    &lt;Requirement&gt;
+      &lt;Credential&gt;
+        &lt;ID&gt;username&lt;/ID&gt;
+        &lt;SaveID&gt;ExplicitForms-Username&lt;/SaveID&gt;
+        &lt;Type&gt;username&lt;/Type&gt;
+      &lt;/Credential&gt;
+      &lt;Label&gt;
+        &lt;Text&gt;User name:&lt;/Text&gt;
+        &lt;Type&gt;plain&lt;/Type&gt;
+      &lt;/Label&gt;
+      &lt;Input&gt;
+        &lt;Text&gt;
+          &lt;Secret&gt;false&lt;/Secret&gt;
+          &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+          &lt;InitialValue&gt;&lt;/InitialValue&gt;
+          &lt;Constraint&gt;.+&lt;/Constraint&gt;
+        &lt;/Text&gt;
+      &lt;/Input&gt;
+    &lt;/Requirement&gt;
+    &lt;Requirement&gt;
+      &lt;Credential&gt;
+        &lt;ID&gt;password&lt;/ID&gt;
+        &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+        &lt;Type&gt;password&lt;/Type&gt;
+      &lt;/Credential&gt;
+      &lt;Label&gt;
+        &lt;Text&gt;Password:&lt;/Text&gt;
+        &lt;Type&gt;plain&lt;/Type&gt;
+      &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;true&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;domain&lt;/ID&gt;
+          &lt;SaveID&gt;ExplicitForms-Domain&lt;/SaveID&gt;
+          &lt;Type&gt;domain&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Domain:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;ComboBox&gt;
+            &lt;InitialSelection&gt;domain&lt;/InitialSelection&gt;
+            &lt;DisplayValues&gt;
+              &lt;DisplayValue&gt;
+                &lt;Display&gt;domain&lt;/Display&gt;
+                &lt;Value&gt;domain&lt;/Value&gt;
+              &lt;/DisplayValue&gt;
+              &lt;DisplayValue&gt;
+                &lt;Display&gt;other&lt;/Display&gt;
+                &lt;Value&gt;animaniacs&lt;/Value&gt;
+              &lt;/DisplayValue&gt;
+            &lt;/DisplayValues&gt;
+          &lt;/ComboBox&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;saveCredentials&lt;/ID&gt;
+          &lt;Type&gt;savecredentials&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Remember my password&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;CheckBox&gt;
+            &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+          &lt;/CheckBox&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;loginBtn&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;Log On&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p>When the user fills in their user name and password, selects not to save their password on the client, and the Log On button is activated, then following is returned to the server: </p>
+<pre class="codehilite"><code>POST https://server/Citrix/Authentication/ExplicitForms/AuthenticateAttempt HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/vnd.citrix.authenticateresponse-1+xml, 
+        application/vnd.citrix.requesttokenresponse+xml
+Accept-Language: en
+Host: server
+Content-Length: 96
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: ASP.NET_SessionId=abcdefg123456
+
+StateContext=&amp;domain=mydomain&amp;loginBtn=Log+On&amp;password=mypswd&amp;saveCredentials=false&amp;username=me</code></pre>
+
+
+<h2 id="change-password"><a class="toclink" href="#change-password">Change Password</a></h2>
+<p>This form is carefully distinguished from other generic credential collection forms, by having a distinct <Result> code in the control block. This is needed so that Receivers which support saving credentials can react appropriately. It includes the user name value as a read-only credential input, and submit both password and newpassword credential values. This form also illustrates the ability to have pre-filled and read-only input fields.</p>
+<p><img alt="" src="../img/authforms5.png" /></p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;update-credentials&lt;/Result&gt;
+  &lt;StateContext/&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Citrix/Authentication/ExplicitForms&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Citrix/Authentication/ExplicitForms/Cancel&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Change Expired Password&lt;/Text&gt;
+          &lt;Type&gt;heading&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input /&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;Type&gt;username&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;User name:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;false&lt;/Secret&gt;
+            &lt;ReadOnly&gt;true&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;animaniacs\expiredpassword&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;oldPassword&lt;/ID&gt;
+          &lt;Type&gt;password&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Old password:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;true&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;newPassword&lt;/ID&gt;
+          &lt;SaveID&gt;ExplicitForms-Password&lt;/SaveID&gt;
+          &lt;Type&gt;newpassword&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;New password:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;true&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;confirmPassword&lt;/ID&gt;
+          &lt;Type&gt;newpassword&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Confirm password:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;true&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;changePasswordBtn&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;OK&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h2 id="confirmation-message"><a class="toclink" href="#confirmation-message">Confirmation Message</a></h2>
+<p><img alt="" src="../img/authforms6.png" /></p>
+<p>This example illustrates a message display form that is used to provide important user feedback, such as when the users password has been changed in the example above. This form suppresses the Cancel button to indicate to the user that it is only requesting acknowledgement of a noteworthy state change. The user can still cancel the authentication process in other ways, such as pressing Esc key or using the window close control. Citrix Reciever renders the forms as follows:</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext /&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Citrix/Authentication/ExplicitForms/ChangePasswordConfirm&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;&lt;/CancelPostBack&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Your password has been changed successfully.&lt;/Text&gt;
+          &lt;Type&gt;confirmation&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input /&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;changePasswordConfirmBtn&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;OK&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h2 id="generic-radius-challenge"><a class="toclink" href="#generic-radius-challenge">Generic Radius Challenge</a></h2>
+<p><img alt="" src="../img/authforms7.png" /></p>
+<p>This example illustrates the flexibility to have long descriptions and long input fields (without a preceding label), and to control line wrapping by using multiple labels.</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+    &lt;Status&gt;success&lt;/Status&gt;
+    &lt;Result&gt;more-info&lt;/Result&gt;
+    &lt;StateContext /&gt;
+    &lt;AuthenticationRequirements&gt;
+        &lt;PostBack&gt;/serviceLocationPath/ExplicitForms/AuthenticateAttempt&lt;/PostBack&gt;
+        &lt;CancelPostBack&gt;/serviceLocationPath/ExplicitForms/CancelAuthenticate&lt;/CancelPostBack&gt;         &lt;Requirements&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;
+                    &lt;Text&gt;Two-Factor Authentication&lt;/Text&gt;
+                    &lt;Type&gt;heading&lt;/Type&gt;
+                &lt;/Label&gt;
+                &lt;Input /&gt;
+            &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;
+                    &lt;Text&gt;The authentication system requires more information.&lt;/Text&gt;
+                    &lt;Type&gt;plain&lt;/Type&gt;
+                &lt;/Label&gt;
+                &lt;Input /&gt;
+            &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;
+                    &lt;Text&gt;PIN accepted. Wait for the tokencode to change then enter the new passcode.&lt;/Text&gt;
+                    &lt;Type&gt;plain&lt;/Type&gt;
+                &lt;/Label&gt;
+                &lt;Input /&gt;
+            &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;ID&gt;challengeResponse&lt;/ID&gt;
+                    &lt;Type&gt;textcredential&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;&lt;Type&gt;none&lt;/Type&gt;&lt;/Label&gt;
+                &lt;Input&gt;
+                    &lt;Text&gt;
+                        &lt;Secret&gt;true&lt;/Secret&gt;
+                        &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+                        &lt;InitialValue&gt;&lt;/InitialValue&gt;
+                        &lt;Constraint&gt;.+&lt;/Constraint&gt;
+                    &lt;/Text&gt;
+                &lt;/Input&gt;
+            &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;ID&gt;submitResponseBtn&lt;/ID&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Label&gt;
+                &lt;Input&gt;
+                    &lt;Button&gt;Next&lt;/Button&gt;
+                &lt;/Input&gt;
+            &lt;/Requirement&gt;
+        &lt;/Requirements&gt;
+    &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h2 id="change-expired-pin"><a class="toclink" href="#change-expired-pin">Change Expired PIN</a></h2>
+<p>This example illustrates radio buttons.</p>
+<p><img alt="" src="../img/authforms8.png" /></p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+    &lt;Status&gt;success&lt;/Status&gt;
+    &lt;Result&gt;more-info&lt;/Result&gt;
+    &lt;StateContext /&gt;
+    &lt;AuthenticationRequirements&gt;
+        &lt;PostBack&gt;/serviceLocationPath/ExplicitForms/AuthenticateAttempt&lt;/PostBack&gt;
+        &lt;CancelPostBack&gt;/serviceLocationPath/ExplicitForms/CancelAuthenticate&lt;/CancelPostBack&gt;
+        &lt;Requirements&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;
+                    &lt;Text&gt;Change Expired PIN&lt;/Text&gt;
+                    &lt;Type&gt;heading&lt;/Type&gt;
+                &lt;/Label&gt;
+                &lt;Input /&gt;
+            &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;
+                    &lt;Text&gt;After changing your PIN, Receiver prompts you log on again.&lt;/Text&gt;
+                    &lt;Type&gt;plain&lt;/Type&gt;
+                &lt;/Label&gt;
+                &lt;Input /&gt;
+            &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;ID&gt;changePINmode&lt;/ID&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;&lt;Type&gt;none&lt;/Type&gt;&lt;/Label&gt;
+                &lt;Input&gt;
+                    &lt;RadioButton&gt;
+                &lt;InitialSelection&gt;1&lt;/InitialSelection&gt;
+                        &lt;DisplayValues&gt;
+                          &lt;DisplayValue&gt;
+                            &lt;Display&gt;Create your own PIN&lt;/Display&gt;
+                            &lt;Value&gt;1&lt;/Value&gt;
+                          &lt;/DisplayValue&gt;
+                          &lt;DisplayValue&gt;
+                            &lt;Display&gt;Request PIN from authentication system&lt;/Display&gt;
+                            &lt;Value&gt;2&lt;/Value&gt;
+                          &lt;/DisplayValue&gt;
+                        &lt;/DisplayValues&gt;
+                    &lt;/RadioButton&gt;
+                &lt;/Input&gt;
+            &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+                &lt;Credential&gt;
+                    &lt;ID&gt;submitResponseBtn&lt;/ID&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Credential&gt;
+                &lt;Label&gt;
+                    &lt;Type&gt;none&lt;/Type&gt;
+                &lt;/Label&gt;
+                &lt;Input&gt;
+                    &lt;Button&gt;Next&lt;/Button&gt;
+                &lt;/Input&gt;
+            &lt;/Requirement&gt;
+        &lt;/Requirements&gt;
+    &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../citrixauth-authentication-scheme/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../security-token-services-api/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

@@ -1,0 +1,3269 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>StoreFront Authentication Form Generation - StoreFront SDK Documentation</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "StoreFront Authentication Form Generation";
+    var mkdocs_page_input_path = "authentication-form-generation.md";
+    var mkdocs_page_url = "/authentication-form-generation/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/custom.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://citrix.github.io" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+			<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs"><a class="fa fa-search errspan" onclick="getElementById('rtd-search-form').submit()"></a></li>
+			</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<a class="fa fa-search" onclick="getElementById('rtd-search-form').submit()"></a>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="..">Overview</a>
+			
+		
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Web API</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../overview/">Overview</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../how-the-api-works/">How the API works</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../requests/">Requests</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../using-configuration-elements/">Using configuration elements</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Store Service SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-sdk/">StoreFront Customization SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../getting-started-with-the-sdk/">Getting started with the SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-interfaces/">Customization interfaces</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues/">Known issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../samples/">Samples</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Authentication SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storefront-services-authentication-sdk/">Authentication Software Development Kit</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrix-common-forms-authentication-api/">Citrix Common Forms Authentication API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrixauth-authentication-scheme/">CitrixAuth Authentication Scheme</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../common-authentication-forms-language/">Citrix Common Authentication Forms Language</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../security-token-services-api/">Security Token Services API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+
+		<a class="current" style="width:272px;" href="./">StoreFront Authentication Form Generation</a>
+			
+		
+        
+            <ul style="display:none">
+            
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#overview" style="display: inline-table;padding-left: 3px;width:240px;">Overview</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#form-conversation-factory">Form Conversation Factory</a></li>
+                
+                    <li><a class="toctree-l4" href="#form-conversation">Form Conversation</a></li>
+                
+                    <li><a class="toctree-l4" href="#forms">Forms</a></li>
+                
+				</ul>
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#built-in-support" style="display: inline-table;padding-left: 3px;width:240px;">Built-in Support</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#active-directory">Active Directory</a></li>
+                
+                    <li><a class="toctree-l4" href="#forms_1">Forms</a></li>
+                
+				</ul>
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#forms-template-engine" style="display: inline-table;padding-left: 3px;width:240px;">Forms Template Engine</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#introduction_1">Introduction</a></li>
+                
+                    <li><a class="toctree-l4" href="#creation">Creation</a></li>
+                
+                    <li><a class="toctree-l4" href="#template-rendering">Template Rendering</a></li>
+                
+				</ul>
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#forms-template-language" style="display: inline-table;padding-left: 3px;width:240px;">Forms Template Language</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#low-level-api">Low Level API</a></li>
+                
+                    <li><a class="toctree-l4" href="#high-level-api">High Level API</a></li>
+                
+				</ul>
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#appendix-a-event-log-entries" style="display: inline-table;padding-left: 3px;width:240px;">Appendix A: Event Log Entries</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#razor-template-error-event-id-1">Razor Template Error: Event Id 1</a></li>
+                
+                    <li><a class="toctree-l4" href="#c-compilation-error-event-id-2">C# Compilation Error: Event Id 2</a></li>
+                
+                    <li><a class="toctree-l4" href="#invalid-reciever-common-form-xml-event-id-4">Invalid Reciever Common Form Xml: Event Id 4</a></li>
+                
+				</ul>
+				
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#appendix-b-form-template-language-examples" style="display: inline-table;padding-left: 3px;width:240px;">Appendix B: Form Template Language Examples</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#low-level-api_1">Low Level API</a></li>
+                
+                    <li><a class="toctree-l4" href="#requirements-api">Requirements API</a></li>
+                
+                    <li><a class="toctree-l4" href="#high-level-api_1">High Level API</a></li>
+                
+				</ul>
+				
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues-auth/">Known Issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storeFront-authentication-sdk-thirdparty/">Third Party Notices</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-certificate-identity-declaration/">Sample Certificate Identity Declaration</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../magic-word-sample/">Sample Magic Word</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-test-forms/">Sample Test Forms</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>StoreFront Authentication SDK &raquo;</li>
+        
+      
+    
+    <li>StoreFront Authentication Form Generation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <h1 id="introduction"><a class="toclink" href="#introduction">Introduction</a></h1>
+<p>Citrix has devised a common authentication protocol that is implemented by its next generation services and gateway platforms, referred to here as StoreFront Services and NetScaler Gateway. Citrix has implemented client support for this common authentication protocol in native user agents, such as Receiver and Worx, for the major device platforms, notably Windows, Mac, iOS, Android, Linux, and Receiver for Web for browser-based user agents.</p>
+<p>An important part of the common authentication protocol is a generic forms language, which is described in the Receiver Common Authentication Forms Language document [2]. This language is designed to allow third parties to express a wide range of authentication forms using a set of user interface constructs that are similar to basic HTML forms; see RFC 1867 [http://www.ietf.org/rfc/rfc1867.txt] and 2388 [http://www.ietf.org/rfc/rfc2388.txt] for more details.</p>
+<p>Third parties can extend the authentication methods supported by StoreFront Services and NetScaler Gateway by implementing server logic that emits and consumes forms defined in the common forms language; see the Citrix Authentication Software Development Kit [1] for more details.</p>
+<p>This document aims to enable Citrix partners to understand how StoreFront generates the formsand to enable them to customize the existing form definitions, create new forms, and new sequences of forms to create new authentication conversations.</p>
+<h1 id="overview"><a class="toclink" href="#overview">Overview</a></h1>
+<p>Forms-based authentication is a conversation using the HTTP protocol where the client responds to a series of forms generated by the server to establish an identity on the server. The HTTP API is described in the Citrix Common Forms API document [3]. There are several StoreFront components that interact to achieve the generation of the forms and the handling of the HTTP responses. </p>
+<p>StoreFront makes extensive use of service location and inversion-of-control (IoC) containers; see http://martinfowler.com/articles/injection.html for more details of this software pattern.</p>
+<p><img alt="" src="../img/authformgen1.png" /></p>
+<p>Forms Generation Components for a conversation requiring Active Directory credential validation</p>
+<p>Handling HTTP requests and responses is the responsibility of a small set of built-in MVCs (model view controllers). In most cases there will be no need for custom form implementers to implement new controllers. For general forms, where there is no requirement to validate Active Directory credentials, the FormsAuthenticationController ASP.Net MVC controller should be used. If validating Active Directory credentials is required, then the ExplicitFormsAuthenticationController controller should be used. The MVC controllers validate the requests and extract the state associated with the conversation and then construct and invoke the conversation engine.</p>
+<p>The conversation engine is responsible for running the conversation, which includes creating the appropriate conversation object and dispatching messages to it. There are two built-in conversation engines: ConversationEngine, used when validating Active Directory credentials is not required, and ExplicitConversationEngine, used when validating Active Directory credentials is required. Again, it is not anticipated that custom forms implementers will need to modify the conversation engine functionality.</p>
+<p>The configuration for the MVC route includes the name, used by the Service Locator to find a class that implements the IFormsConversationFactory interface, stored in the IoC container. The appropriate conversation engine uses this to locate the custom conversation factory that uses any settings required, to create a new custom conversation object.</p>
+<p>The custom conversation object is responsible for orchestrating the sequence of forms and dispatching messages to appropriate form objects. It is expected that custom forms implementers that require a complex series of forms will implement a conversation object. However, there are two built-in classes that provide the base functionality that implementers can build on. These are FormsConversationBase, used when validating Active Directory credentials is not required, and ExplicitConversation, used when validating Active Directory credentials is required.</p>
+<p>An individual form is usually composed of two elements: the form object and the associated form template. The form object is responsible for generating a dynamic data model that is passed to the forms template engine with the name of the forms template to generate the form that will be transmitted to the client. The form object is also responsible for processing the response to the form generated by the client. Although StoreFront has a small number of built-in form objects and their associated templates, custom forms implementers will generally have to implement new forms objects and templates.</p>
+<p>The forms template engine is the built-in component that can be used by individual forms to generate the final Receiver Common Form XML from a template and dynamic data. It is not expected that custom forms implementers will be required to modify this component.</p>
+<p>FormsConversationBase, used when validating Active Directory credentials is not required, and ExplicitConversation, used when validating Active Directory credentials is required.</p>
+<p>An individual form is usually composed of two elements: the form object and the associated form template. The form object is responsible for generating a dynamic data model that is passed to the forms template engine with the name of the forms template to generate the form that will be transmitted to the client. The form object is also responsible for processing the response to the form generated by the client. Although StoreFront has a small number of built-in form objects and their associated templates, custom forms implementers will generally have to implement new forms objects and templates.</p>
+<p>The forms template engine is the built-in component that can be used by individual forms to generate the final Receiver Common Form XML from a template and dynamic data. It is not expected that custom forms implementers will be required to modify this component.</p>
+<h2 id="form-conversation-factory"><a class="toclink" href="#form-conversation-factory">Form Conversation Factory</a></h2>
+<p>If a custom conversation is required, then a custom factory is required that implements the following interface:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.FormsProtocol.Conversations.Interfaces
+{
+    /// &lt;summary&gt;
+    /// This interface represents a factory for instances of &lt;seealso cref=&quot;IFormsConversation&quot;/&gt;
+    /// &lt;/summary&gt;
+    public interface IFormsConversationFactory
+    {
+        /// &lt;summary&gt;
+        /// Create a new instance of an object that implements &lt;seealso cref=&quot;IFormsConversation&quot;/&gt;
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;controllerContext&quot;&gt;
+        /// The &lt;seealso cref=&quot;ControllerContext&quot;/&gt; for where the conversation will be run&lt;/param&gt;
+        /// &lt;param name=&quot;templateEngine&quot;&gt;
+        /// The &lt;seealso cref=&quot;FormsTemplateEngine&quot;/&gt; to use to render the conversation&lt;/param&gt;
+        /// &lt;param name=&quot;cultures&quot;&gt;The current language cultures&lt;/param&gt;
+        /// &lt;returns&gt;
+        /// A new instance of an object that implements &lt;seealso cref=&quot;IFormsConversation&quot;/&gt;
+        /// &lt;/returns&gt;
+        IFormsConversation Create(ControllerContext controllerContext,
+                                  FormsTemplateEngine templateEngine,
+                                  IEnumerable&lt;CultureInfo&gt; cultures);
+    }
+}</code></pre>
+
+
+<p>This factory must be stored in the IoC container with a specific name, and this is usually achieved through the use of a start-up module (see the StoreFront Service Authentication SDK for more details on start-up modules). The appropriate conversation engine obtains the factory name from the route data associated with the start of the customized conversation in the web.config file. For example, the following is the route data for the built-in user name and password conversation:</p>
+<pre class="codehilite"><code>    &lt;explicitAuthentication&gt;
+      &lt;routeTable order=&quot;0&quot;&gt;
+        &lt;routes&gt;
+          &lt;route name=&quot;StartExplicitAuthentication&quot; url=&quot;ExplicitForms/Start&quot;&gt;
+            &lt;defaults&gt;
+              &lt;add param=&quot;controller&quot; value=&quot;ExplicitFormsAuthentication&quot; /&gt;
+              &lt;add param=&quot;action&quot; value=&quot;AuthenticateStart&quot; /&gt;
+              &lt;add param=&quot;postbackAction&quot; value=&quot;Authenticate&quot; /&gt;
+              &lt;add param=&quot;cancelAction&quot; value=&quot;CancelAuthenticate&quot; /&gt;
+              &lt;add param=&quot;conversationFactory&quot; value=&quot;ExplicitAuthentication&quot; /&gt;
+              &lt;add param=&quot;changePasswordAction&quot; value=&quot;StartChangePassword&quot; /&gt;
+              &lt;add param=&quot;changePasswordController&quot; value=&quot;ChangePassword&quot; /&gt;
+              &lt;add param=&quot;protocol&quot; value=&quot;ExplicitForms&quot; /&gt;
+            &lt;/defaults&gt;
+            &lt;data /&gt;
+          &lt;/route&gt;
+          &lt;route name=&quot;ExplicitAuthentication&quot; url=&quot;ExplicitForms&quot;&gt;
+            &lt;defaults&gt;
+              &lt;add param=&quot;controller&quot; value=&quot;ExplicitFormsAuthentication&quot; /&gt;
+              &lt;add param=&quot;action&quot; value=&quot;Authenticate&quot; /&gt;
+              &lt;add param=&quot;protocol&quot; value=&quot;ExplicitForms&quot; /&gt;
+            &lt;/defaults&gt;
+            &lt;data /&gt;
+          &lt;/route&gt;
+          &lt;route name=&quot;CancelExplicitAuthentication&quot; url=&quot;ExplicitForms/Cancel&quot;&gt;
+            &lt;defaults&gt;
+              &lt;add param=&quot;controller&quot; value=&quot;ExplicitFormsAuthentication&quot; /&gt;
+              &lt;add param=&quot;action&quot; value=&quot;CancelAuthenticate&quot; /&gt;
+              &lt;add param=&quot;protocol&quot; value=&quot;ExplicitForms&quot; /&gt;
+            &lt;/defaults&gt;
+            &lt;data /&gt;
+          &lt;/route&gt;
+        &lt;/routes&gt;
+      &lt;/routeTable&gt;
+    &lt;/explicitAuthentication&gt;</code></pre>
+
+
+<p>The conversation engine uses the service locator to obtain the factory object with the specified name and then invokes the Create() method to obtain the custom conversation object.</p>
+<p><img alt="" src="../img/authformgen2.png" /></p>
+<h2 id="form-conversation"><a class="toclink" href="#form-conversation">Form Conversation</a></h2>
+<p>Most new authentication conversations will require a conversation object to orchestrate the sequence of forms. The StoreFront Services Authentication SDK contains samples that demonstrate creating custom conversation objects.</p>
+<p>When a conversation is started, the first action is to create a ConversationState object that has the following API:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.FormsProtocol.Conversations
+{
+    /// &lt;summary&gt;
+    /// This data class contains the conversation state that is required
+    /// to be stored in the session state between requests.
+    /// &lt;/summary&gt;
+    public class ConversationState
+    {
+        /// &lt;summary&gt;
+        /// Constructor
+        /// &lt;/summary&gt;
+        public ConversationState()
+        {
+            Extensions = new Dictionary&lt;string, object&gt;();
+        }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the &lt;seealso cref=&quot;FormsTemplateEngine&quot;/&gt;.
+        /// &lt;/summary&gt;
+        /// &lt;remarks&gt;
+        /// This is used to render the forms that make up the conversation.
+        /// &lt;/remarks&gt;
+        public FormsTemplateEngine TemplateEngine { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the current &lt;seealso cref=&quot;IFormsConversation&quot;/&gt;
+        /// &lt;/summary&gt;
+        public IFormsConversation CurrentConversation { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the &lt;seealso cref=&quot;RequestToken&quot;/&gt; message
+        /// sent at the start of the conversation.
+        /// &lt;/summary&gt;
+        /// &lt;remarks&gt;
+        /// This is used to generate the request security token response
+        /// at the end of the conversation.
+        /// &lt;/remarks&gt;
+        public RequestToken RequestToken { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the &lt;seealso cref=&quot;ITokenService&quot;/&gt; used to
+        /// issue the &lt;seealso cref=&quot;IToken&quot;/&gt; generated at the end
+        /// of the conversation.
+        /// &lt;/summary&gt;
+        public ITokenService TokenIssuingService { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets whether or not this conversation is delegated using the
+        /// delegated forms protocol
+        /// &lt;/summary&gt;
+        public bool Delegated { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the &lt;seealso cref=&quot;IStringCipher&quot;/&gt; to use for the delegated result
+        /// &lt;/summary&gt;
+        public IStringCipher Cipher { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets a dictionary of extension objects
+        /// &lt;/summary&gt;
+        public Dictionary&lt;string, object&gt; Extensions { get; private set; }
+    }
+}</code></pre>
+
+
+<p>This object is used to store the state of the conversation between HTTP requests and responses. The conversation object is re-created for each HTTP request or response, so custom conversation implementers should not attempt to add member variables to their custom conversation class to store data. Implementers should instead store their custom data in the conversation state Extensions dictionary if they require the data to persist between HTTP requests or responses.</p>
+<p>A conversation object must implement the following interface:</p>
+<pre class="codehilite"><code>    /// &lt;summary&gt;
+    /// This interface represents a Forms conversation, or part of a conversation
+    /// &lt;/summary&gt;
+    public interface IFormsConversation
+    {
+        /// &lt;summary&gt;
+        /// Start the Form conversation
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;absoluteBaseUrl&quot;&gt;
+        /// This is the absolute Url of the end-point to be used for
+        /// the conversation.
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;absoluteCancelUrl&quot;&gt;
+        /// This is the absolute Url of the end-point to be used to
+        /// cancel the conversation.
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;httpContext&quot;&gt;The &lt;seealso cref=&quot;HttpContextBase&quot;/&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        FormResult Start(string absoluteBaseUrl, string absoluteCancelUrl,
+                         HttpContextBase httpContext);
+
+        /// &lt;summary&gt;
+        /// Cancel the current Form conversation
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;httpContext&quot;&gt;The &lt;seealso cref=&quot;HttpContextBase&quot;/&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        FormResult Cancel(HttpContextBase httpContext);
+
+        /// &lt;summary&gt;
+        /// Get the next form in the conversation.
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        RenderedForm GetNextForm();
+
+        /// &lt;summary&gt;
+        /// Process the response to form
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;httpContext&quot;&gt;
+        /// The &lt;seealso cref=&quot;HttpContextBase&quot;/&gt; containing all the information
+        /// regarding the form response.
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;FormData&quot;&gt;The Form data&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        FormResult ProcessFormResponse(HttpContextBase httpContext, NameValueCollection FormData);
+
+        /// &lt;summary&gt;
+        /// Gets the collection of credential types required for this conversation.
+        /// &lt;/summary&gt;
+        IEnumerable&lt;string&gt; RequiredCredentialTypes { get; }
+
+        /// &lt;summary&gt;
+        /// Gets the host-relative endpoint for this conversation.
+        /// &lt;/summary&gt;
+        string Endpoint { get; }
+
+        /// &lt;summary&gt;
+        /// Gets the host-relative endpoint to cancel this conversation.
+        /// &lt;/summary&gt;
+        string CancelEndpoint { get; }
+    }
+
+    /// &lt;summary&gt;
+    /// Enumeration of Form results
+    /// &lt;/summary&gt;
+    public enum FormResult
+    {
+        /// &lt;summary&gt;
+        /// More information is required. A new form will be issued to
+        /// collect the required information
+        /// &lt;/summary&gt;
+        moreInfo,
+
+        /// &lt;summary&gt;
+        /// The form failed
+        /// &lt;/summary&gt;
+        fail,
+
+        /// &lt;summary&gt;
+        /// Authentication succeeded
+        /// &lt;/summary&gt;
+        success,
+
+        /// &lt;summary&gt;
+        /// The user cancelled the form request
+        /// &lt;/summary&gt;
+        canceled
+    };</code></pre>
+
+
+<p>StoreFront Services contains a base class that implementers can inherit from:</p>
+<p>Citrix.DeliveryServices.Authentication.FormsProtocol.Conversations.FormsConversationBase</p>
+<p>This class implements the basic required functionality, but the implementer must implement the following methods:</p>
+<pre class="codehilite"><code>        /// &lt;summary&gt;
+        /// Cancel the current Form conversation
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;httpContext&quot;&gt;The &lt;seealso cref=&quot;HttpContext&quot;/&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public virtual FormResult Cancel(HttpContextBase httpContext)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// &lt;summary&gt;
+        /// Get the next form in the conversation.
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public virtual RenderedForm GetNextForm()
+        {
+            throw new NotImplementedException();
+        }
+
+        /// &lt;summary&gt;
+        /// Process the response to form
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;httpContext&quot;&gt;
+        /// The &lt;seealso cref=&quot;HttpContext&quot;/&gt; containing all the information
+        /// regarding the form response.
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;FormData&quot;&gt;The Form data&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public virtual FormResult ProcessFormResponse(HttpContextBase httpContext, 
+                                                      NameValueCollection FormData)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// &lt;summary&gt;
+        /// Override this method to get the initial &lt;seealso cref=&quot;IForm&quot;/&gt; in the conversation
+        /// &lt;/summary&gt;
+        protected virtual IForm GetInitialForm()
+        {
+            throw new NotImplementedException();
+        }</code></pre>
+
+
+<p>For conversations that require Active Directory credential validation, the conversation object must also implement the following interface:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.Forms.Engine.Interfaces
+{
+    /// &lt;summary&gt;
+    /// This interface defines access to an &lt;seealso cref=&quot;AuthenticationResult&quot;/&gt;
+    /// &lt;/summary&gt;
+    public interface IAuthenticationResultHolder
+    {
+        /// &lt;summary&gt;
+        /// Gets the result of the authentication conversation.
+        /// &lt;/summary&gt;
+        AuthenticationResult AuthenticationResult { get; }
+    }
+}</code></pre>
+
+
+<div class="admonition info">
+<p class="admonition-title">Notes</p>
+<p>The FormsConversationBase class contains a default implementation of this interface.</p>
+</div>
+<h2 id="forms"><a class="toclink" href="#forms">Forms</a></h2>
+<p>Form objects within a conversation represent a high-level task, such as validating a user name and password. A form object is responsible for the generation of the specific Receiver Common Form XML for the task and the processing of the user agent’s response. A form object may repeatedly generate XML forms until its task is complete, for example to re-prompt for a password and show an error message if the previously submitted password was incorrect.</p>
+<p>Forms must implement the following interface:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.Forms.Engine.Interfaces
+{
+    /// &lt;summary&gt;
+    /// The expected next action for the form
+    /// &lt;/summary&gt;
+    public enum FormState
+    {
+        /// &lt;summary&gt;
+        /// Rendering the next form
+        /// &lt;/summary&gt;
+        Rendering,
+
+        /// &lt;summary&gt;
+        /// Processing the response to the last form
+        /// &lt;/summary&gt;
+        Processing,
+
+        /// &lt;summary&gt;
+        /// This form is complete
+        /// &lt;/summary&gt;
+        Complete
+    };
+
+    /// &lt;summary&gt;
+    /// This interface represents a single Form
+    /// &lt;/summary&gt;
+    public interface IForm
+    {
+        /// &lt;summary&gt;
+        /// Render the next form.
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;The next &lt;seealso cref=&quot;RenderedForm&quot;/&gt;&lt;/returns&gt;
+        RenderedForm GetNextForm();
+
+        /// &lt;summary&gt;
+        /// Process the response to the last form
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;httpContext&quot;&gt;
+        /// The &lt;seealso cref=&quot;HttpContextBase&quot;/&gt; containing all the information
+        /// regarding the form response.
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;formData&quot;&gt;The form data.&lt;/param&gt;
+        /// &lt;returns&gt;The &lt;seealso cref=&quot;FormResult&quot;/&gt; from processing the response&lt;/returns&gt;
+        FormResult ProcessFormResponse(HttpContextBase httpContext, NameValueCollection formData);
+
+        /// &lt;summary&gt;
+        /// Gets the collection of credential types required for this conversation.
+        /// &lt;/summary&gt;
+        IEnumerable&lt;string&gt; RequiredCredentialTypes { get; }
+
+        /// &lt;summary&gt;
+        /// Gets the current state of the form
+        /// &lt;/summary&gt;
+        FormState State { get; }
+    }
+}</code></pre>
+
+
+<p>StoreFront Services contains a base class that implementers can inherit from:</p>
+<p>Citrix.DeliveryServices.Authentication.FormsProtocol.Forms.FormBase</p>
+<p>This class implements the basic required functionality, but the implementer must implement the following methods:</p>
+<pre class="codehilite"><code>        /// &lt;summary&gt;Render the next form.&lt;/summary&gt;
+        /// &lt;returns&gt;The next &lt;seealso cref=&quot;RenderedForm&quot;/&gt;&lt;/returns&gt;
+        public virtual RenderedForm GetNextForm()
+        {
+            throw new NotImplementedException();
+        }
+
+        /// &lt;summary&gt;Process the response to the last form&lt;/summary&gt;
+        /// &lt;param name=&quot;httpContext&quot;&gt;
+        /// The &lt;seealso cref=&quot;HttpContextBase&quot;/&gt; containing all the information
+        /// regarding the form response.
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;formData&quot;&gt;The form data&lt;/param&gt;
+        /// &lt;returns&gt;The &lt;seealso cref=&quot;FormResult&quot;/&gt; from processing the response&lt;/returns&gt;
+        public virtual FormResult ProcessFormResponse(HttpContextBase httpContext,
+                                                      NameValueCollection formData)
+        {
+            throw new NotImplementedException();
+        }</code></pre>
+
+
+<p>The GetNextForm() method may use the forms template engine, described below, to generate the Receiver Common Form XML to be sent to the client. Then RenderedForm returned has the following structure:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.Forms.Engine.Interfaces
+{
+    /// &lt;summary&gt;
+    /// This data class represents a rendered form
+    /// &lt;/summary&gt;
+    public class RenderedForm
+    {
+        /// &lt;summary&gt;
+        /// Gets or sets the rendered Form as an &lt;seealso cref=&quot;XmlDocument&quot;/&gt;
+        /// &lt;/summary&gt;
+        public XmlDocument Form { get; set; }
+
+        /// &lt;summary&gt;
+        /// Get or sets whether the associated form is the last form
+        /// &lt;/summary&gt;
+        public bool Complete { get; set; }
+    }
+}</code></pre>
+
+
+<p>The Complete flag should be set to true if the form is not expecting the client to send a response back to the form being issued. This is usually required for terminal error messages, and will result in the conversation being terminated when the form has been sent to the client.</p>
+<p>If the conversation returns FormResult.moreInfo to the Conversation Engine, then it will request the next form from the conversation object.</p>
+<p><img alt="" src="../img/authformgen3.png" /></p>
+<p>When a form has completed its processing, ProcessFormResponse should return FormResult.success. This signals to the conversation object that it should now use the next form in the sequence.</p>
+<p><img alt="" src="../img/authformgen4.png" /></p>
+<p>When all the forms have completed their processing, then the conversation is complete and the conversation returns FormResult.success to the conversation engine. This causes it to obtain the success result, which for non-delegated forms authentication is a Request Security Token Response message, which is returned to the client containing the access token.</p>
+<p><img alt="" src="../img/authformgen5.png" /></p>
+<h1 id="built-in-support"><a class="toclink" href="#built-in-support">Built-in Support</a></h1>
+<p>The StoreFront Authentication SDK has some built-in forms. It also provides access to the built-in support for verifying and managing Active Directory credentials.</p>
+<h2 id="active-directory"><a class="toclink" href="#active-directory">Active Directory</a></h2>
+<p>The Authentication Service IoC container is populated with several objects that can be used to verify and manage Active Directory credentials, and are described below:</p>
+<h3 id="user-name-with-password-support"><a class="toclink" href="#user-name-with-password-support">User Name with Password Support</a></h3>
+<p>The IoC container is populated with an object that implements the following interface:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.Explicit.Core
+{
+    /// &lt;summary&gt;
+    /// A class to be used to create an instance that implements &lt;seealso cref=&quot;IExplicit&quot;/&gt;.
+    /// &lt;/summary&gt;
+    public class ExplicitFactory
+    {
+        /// &lt;summary&gt;
+        /// Initializes a new instance of the &lt;see cref=&quot;ExplicitFactory&quot;/&gt; class.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;explicitSettings&quot;&gt;
+        /// The &lt;seealso cref=&quot;ExplicitSettings&quot;&gt;explicit settings&lt;/seealso&gt;
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;authenticationSettings&quot;&gt;
+        /// The general &lt;seealso cref=&quot;AuthenticationSettings&quot;/&gt;
+        /// &lt;/param&gt;
+        public ExplicitFactory(ExplicitSettings explicitSettings,
+                               AuthenticationSettings authenticationSettings);
+
+        /// &lt;summary&gt;
+        /// Gets or sets the &lt;seealso cref=&quot;ExplicitSettings&quot;/&gt;
+        /// &lt;/summary&gt;
+        public ExplicitSettings Settings { get; private set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the general &lt;seealso cref=&quot;AuthenticationSettings&quot;/&gt;
+        /// &lt;/summary&gt;
+        public AuthenticationSettings AuthenticationSettings { get; private set; }
+
+        /// &lt;summary&gt;
+        /// Create an instance that implements &lt;seealso cref=&quot;IExplicit&quot;/&gt;
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;An object that implements &lt;seealso cref=&quot;IExplicit&quot;/&gt;&lt;/returns&gt;
+        public IExplicit CreateInstance();
+    }
+}</code></pre>
+
+
+<p>The built-in ExplicitConversationFactory uses this to create an object that provides the user name with password support. One of these objects, implementing the interface below, is created for each ExplicitConversation object.</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.Explicit.Core.Interfaces
+{
+    /// &lt;summary&gt;
+    /// The interface to the explicit business logic
+    /// &lt;/summary&gt;
+    public interface IExplicit
+    {
+        /// &lt;summary&gt;
+        /// Gets the &lt;seealso cref=&quot;ExplicitSettings&quot;/&gt;
+        /// of this object.
+        /// &lt;/summary&gt;
+        ExplicitSettings Settings { get; }
+
+        /// &lt;summary&gt;
+        /// Gets the general &lt;seealso cref=&quot;AuthenticationSettings&quot;/&gt;
+        /// of this object.
+        /// &lt;/summary&gt;
+        AuthenticationSettings AuthenticationSettings { get; }
+
+        /// &lt;summary&gt;
+        /// Gets the full user identity of the account whose password has expired
+        /// &lt;/summary&gt;
+        /// &lt;remarks&gt;
+        /// Only returns a valid value when &lt;see cref=&quot;Authenticate(string,string,string)&quot;/&gt;
+        /// has been called within the current conversation and it has returned
+        /// &lt;see cref=&quot;AuthenticationStatus.FailedChangeExpiredSecret&quot;/&gt;
+        /// &lt;/remarks&gt;
+        string ExpiredUser { get; }
+
+        /// &lt;summary&gt;
+        /// When a user calls an action that resets the state such as Authenticate we need to
+        /// forget all previous cached information.
+        /// &lt;/summary&gt;
+        void ClearState();
+
+        /// &lt;summary&gt;
+        /// Returns whether the given password is sufficiently complex
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;password&quot;&gt;The password to check&lt;/param&gt;
+        /// &lt;returns&gt;True, if meets complexity check&lt;/returns&gt;
+        bool PasswordMeetsComplexity(string password);
+
+        /// &lt;summary&gt;
+        /// Authenticate the specified credentials. If the password
+        /// has expired and password changing is configured, the username and domain will
+        /// be saved in the object state for use in a subsequent call to
+        /// &lt;see cref=&quot;ChangeExpiredPassword&quot;/&gt;
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;userName&quot;&gt;The username to verify&lt;/param&gt;
+        /// &lt;param name=&quot;domain&quot;&gt;
+        /// The domain of the user, which can be null if the domain is specified in username
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;password&quot;&gt;
+        /// The password to verify, which can be an empty string
+        /// &lt;/param&gt;
+        /// &lt;returns&gt;
+        /// An &lt;seealso cref=&quot;AuthenticationResult&quot;/&gt; indicating authentication status
+        /// &lt;/returns&gt;
+        /// &lt;exception cref=&quot;ExplicitAuthenticationException&quot;&gt;if the credentials could not
+        /// be authenticated&lt;/exception&gt;
+        AuthenticationResult Authenticate(string userName, string domain, string password);
+
+        /// &lt;summary&gt;
+        /// Perform a domain restriction check
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;UserInfo&quot;&gt;The &lt;seealso cref=&quot;UserInfo&quot;/&gt; to check&lt;/param&gt;
+        /// &lt;remarks&gt;
+        /// If the configuration contains a list of domains then perform a domain, or
+        /// user principle name suffix, restriction check.
+        /// &lt;/remarks&gt;
+        void PerformDomainRestriction(UserInfo UserInfo);
+
+        /// &lt;summary&gt;
+        /// Attempt to change the password for the user associated with the last
+        /// call to &lt;see cref=&quot;Authenticate(string,string,string)&quot;/&gt;.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;oldPassword&quot;&gt;The existing password&lt;/param&gt;
+        /// &lt;param name=&quot;newPassword&quot;&gt;The new password&lt;/param&gt;
+        /// &lt;returns&gt;an &lt;see cref=&quot;ChangePasswordResult&quot; /&gt;
+        /// indicating the password change status
+        /// &lt;/returns&gt;
+        /// &lt;exception cref=&quot;InvalidOperationException&quot;&gt;
+        /// If no user has been saved to the object state
+        /// &lt;/exception&gt;
+        /// &lt;exception cref=&quot;ExplicitAuthenticationException&quot;&gt;
+        /// If the password change operation failed
+        /// &lt;/exception&gt;
+        /// &lt;exception cref=&quot;ArgumentNullException&quot;&gt;
+        /// If oldPassword of newPassword is null.
+        /// &lt;/exception&gt;
+        ChangePasswordResult ChangeExpiredPassword(string oldPassword, string newPassword);
+
+        /// &lt;summary&gt;
+        /// Attempt to change the password for the credentials indicated by the
+        /// given principal.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;principal&quot;&gt;
+        /// The &lt;seealso cref=&quot;IClaimsPrincipal&quot;/&gt; representing the user
+        /// &lt;/param&gt;
+        /// &lt;param name=&quot;oldPassword&quot;&gt;The existing password&lt;/param&gt;
+        /// &lt;param name=&quot;newPassword&quot;&gt;The new password&lt;/param&gt;
+        /// &lt;returns&gt;
+        /// an &lt;seealso cref=&quot;ChangePasswordResult&quot;/&gt; indicating the password change status
+        /// &lt;/returns&gt;
+        ChangePasswordResult ChangePassword(IClaimsPrincipal principal, string oldPassword,
+                                            string newPassword);
+    }
+}</code></pre>
+
+
+<p>The ExplicitSettings object has the following definition:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.Explicit.Core.Configuration
+{
+    /// &lt;summary&gt;
+    /// A data class to hold the Explicit business logic settings
+    /// &lt;/summary&gt;
+    public class ExplicitSettings
+    {
+        /// &lt;summary&gt;
+        /// Gets or sets service locator name for the authenticator to use
+        /// &lt;/summary&gt;
+        public string AuthenticatorName { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the require account security identifiers property
+        /// &lt;/summary&gt;
+        public bool RequireAccountSIDs { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the hide domain field property
+        /// &lt;/summary&gt;
+        public bool HideDomainField { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the allow user to change their password property
+        /// &lt;/summary&gt;
+        public AllowPasswordChangeValue AllowUserPasswordChange { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the password expiry warning mode
+        /// &lt;/summary&gt;
+        public PasswordExpiryWarningValue ShowPasswordExpiryWarning { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the override for the password expiry warning period in days
+        /// &lt;/summary&gt;
+        public int PasswordExpiryWarningPeriod { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets the list of trusted domains
+        /// &lt;/summary&gt;
+        public IList&lt;string&gt; Domains { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets the default trusted domain
+        /// &lt;/summary&gt;
+        /// &lt;remarks&gt;
+        /// This will be null, if no trusted domains are specified,
+        /// otherwise it must be a member of the trusted domains.
+        /// &lt;/remarks&gt;
+        public string DefaultDomain { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets the allow zero length password property
+        /// &lt;/summary&gt;
+        public bool AllowZeroLengthPassword { get; set; }
+    }
+}</code></pre>
+
+
+<p>The settings are built from the following configuration section of the Authentication Service and stored in the IoC container:</p>
+<pre class="codehilite"><code>&lt;configuration&gt;
+  &lt;citrix.deliveryservices&gt;
+    &lt;explicitBL authenticator=&quot;defaultDelegatedAuthenticator&quot; hideDomainField=&quot;true&quot;
+                allowUserPasswordChange=&quot;Never&quot; allowZeroLengthPassword=&quot;false&quot; 
+                showPasswordExpiryWarning=&quot;Windows&quot; 
+                passwordExpiryWarningPeriod=&quot;10&quot; requireAccountSIDs=&quot;true&quot;&gt;
+      &lt;domainSelection default=&quot;&quot;&gt;
+        &lt;clear /&gt;
+      &lt;/domainSelection&gt;
+    &lt;/explicitBL&gt;
+  &lt;/citrix.deliveryservices&gt;
+&lt;/configuration&gt;</code></pre>
+
+
+<p>The explicitBL section has the following configuration items that control the expected user interface in addition to authentication policy:</p>
+<ul>
+<li>authenticator: This value must not be changed</li>
+<li>hideDomainField:<ul>
+<li>If this value is true, then forms should not display a separate user interface element for the user to supply the domain where their credential is stored. Instead they will be asked for their user name in the form of domain\user or user@domain.</li>
+<li>If this value is false, then a domain user interface element will be displayed. If the <domainSelection> element is empty, then a text box for the user to type their domain should be displayed, otherwise a combo box containing all the values from the <domainSelection> element should be displayed.</li>
+</ul>
+</li>
+<li>allowUserPasswordChange: This value controls when a user is allowed to change their password and can have the following values:<ul>
+<li>Never: The user is not allowed to change their password through StoreFront. A user attempting to authenticate with an expired password will fail to gain access to the system, and will be directed to change their password elsewhere.</li>
+<li>ExpiredOnly: The user is allowed to change an expired password during the authentication process.</li>
+<li>Always: The user can change an expired password during authentication, but will also receive a warning when their password is about to expire, and will be able to choose to change their password at any time.</li>
+</ul>
+</li>
+<li>allowZeroLengthPassword: This is usually false and prevents users with zero length passwords from gaining access to the system or changing their password to a zero length.</li>
+<li>showPasswordExpiryWarning: This setting controls when a password expiry warning notice is presented to the user, if allowUserChangePassword=Always, and this setting can have the following values:<ul>
+<li>Windows: The period is determined by the Windows setting described here: http://technet.microsoft.com/en-us/library/ee829687(v=ws.10).aspx </li>
+<li>Custom: The period is determined by the passwordExpiryWarningPeriod setting below</li>
+<li>Never: The notification is never shown to the user</li>
+</ul>
+</li>
+<li>passwordExpiryWarningPeriod: This setting, in days, determines when to display a password expiry warning notice to the user, if allowUserChangePassword=Always and showPasswordExpiryWarning=Custom</li>
+<li>requireAccountSIDs: This setting determines whether or not to include the Windows Group information with the authentication data. This value should be left as true, as other StoreFront components rely on the information being present.</li>
+<li>domainSelection: This element allows the specification of a set of domains. These can be specified as either short domain or fully qualified domain names. The user is then restricted to either selecting or typing a valid domain. It is possible to specify a default.<ul>
+<li>Note: The comparison is a string comparison only.</li>
+</ul>
+</li>
+</ul>
+<h3 id="kerberos-support"><a class="toclink" href="#kerberos-support">Kerberos Support</a></h3>
+<p>StoreFront also allows the use of Kerberos Service-For-User (S4U) for partial account validation and to obtain information about the account, including group information. The IoC container is populated with an object that implements the following interface that can be used for this purpose:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.Kerberos
+{
+    /// &lt;summary&gt;
+    /// Interface for attempting kerberos authentication
+    /// &lt;/summary&gt;
+    public interface IKerberosAuthenticator
+    {
+        /// &lt;summary&gt;
+        /// Authenticate the user specified by their user principal name
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;userPrincipalName&quot;&gt;The user principal name&lt;/param&gt;
+        /// &lt;param name=&quot;clientRealm&quot;&gt;The optional client realm &lt;/param&gt;
+        /// &lt;returns&gt;The &lt;seealso cref=&quot;AuthenticationResult&quot;/&gt;&lt;/returns&gt;
+        AuthenticationResult Authenticate(string userPrincipalName, string clientRealm = null);
+
+        /// &lt;summary&gt;
+        /// Authenticate the user specified by a user certificate
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;userCertificate&quot;&gt;The user certificate&lt;/param&gt;
+        /// &lt;param name=&quot;domainHint&quot;&gt;The optional domain hint &lt;/param&gt;
+        /// &lt;returns&gt;The &lt;seealso cref=&quot;AuthenticationResult&quot;/&gt;&lt;/returns&gt;
+        AuthenticationResult Authenticate(X509Certificate2 userCertificate,
+                                          string domainHint = null);
+
+        /// &lt;summary&gt;
+        /// Authenticate the user specified by a user certificate
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;userCertificate&quot;&gt;The user certificate&lt;/param&gt;
+        /// &lt;param name=&quot;domainHint&quot;&gt;The optional domain hint &lt;/param&gt;
+        /// &lt;returns&gt;The &lt;seealso cref=&quot;AuthenticationResult&quot;/&gt;&lt;/returns&gt;
+        AuthenticationResult Authenticate(HttpClientCertificate userCertificate,
+                                          string domainHint = null);
+    }
+}</code></pre>
+
+
+<h2 id="forms_1"><a class="toclink" href="#forms_1">Forms</a></h2>
+<p>The Authentication SDK provides the following built-in forms:</p>
+<h3 id="cancelledform"><a class="toclink" href="#cancelledform">CancelledForm</a></h3>
+<p>This class creates the required form in response to a cancel request.</p>
+<p><strong><em>Constructor:</em></strong></p>
+<pre class="codehilite"><code>Citrix.DeliveryServices.Authentication.FormsProtocol.Forms.CancelledForm(
+                  FormsTemplateEngine templateEngine, IEnumerable&lt;CultureInfo&gt; cultures)</code></pre>
+
+
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>templateEngine: The template engine. This is a required parameter.</li>
+<li>cultures: The currently available cultures. This is a required parameter.</li>
+</ul>
+<p><strong><em>Form:</em></strong></p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;cancelled&lt;/Result&gt;
+  &lt;StateContext /&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p><strong><em>Template:</em></strong> </p>
+<p><code>Cancelled.tfrm</code></p>
+<h3 id="failuremessageform"><a class="toclink" href="#failuremessageform">FailureMessageForm</a></h3>
+<p>This class creates a mini-conversation of a message form, to inform the user of the reason for the error, followed by a failure form.</p>
+<p><strong><em>Constructor:</em></strong></p>
+<pre class="codehilite"><code>Citrix.DeliveryServices.Authentication.FormsProtocol.Forms.FailureMessageForm(
+              FormsTemplateEngine templateEngine, IEnumerable&lt;CultureInfo&gt; cultures,
+               IEnumerable&lt;FormsMessage&gt; messages, string postbackUrl, string cancelUrl)</code></pre>
+
+
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>
+<p>templateEngine: The template engine.</p>
+</li>
+<li>
+<p>cultures: The currently available cultures.</p>
+</li>
+<li>
+<p>messages: The messages to display.</p>
+</li>
+<li>
+<p>postbackUrl: The host relative URL to POST the form response to.</p>
+</li>
+<li>
+<p>cancelUrl: The host relative URL to POST a cancel form response to.</p>
+</li>
+</ul>
+<p><strong><em>Template:</em></strong> Messages.tfrm &amp; Failed.tfrm</p>
+<h3 id="changeexpiredpasswordform"><a class="toclink" href="#changeexpiredpasswordform">ChangeExpiredPasswordForm</a></h3>
+<p>This class creates a mini-conversation to change a user’s expired password.</p>
+<p><strong><em>Constructor:</em></strong></p>
+<pre class="codehilite"><code>Citrix.DeliveryServices.Authentication.FormsProtocol.Forms.ChangePassword.ChangeExpiredPasswordForm
+(
+    FormsTemplateEngine templateEngine, IEnumerable&lt;CultureInfo&gt; cultures, IExplicit explicitBL,
+    string postbackUrl, string cancelUrl
+)</code></pre>
+
+
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>templateEngine: The template engine.</li>
+<li>cultures: The currently available cultures.</li>
+<li>explicitBL: The explicit credential business object, described above.</li>
+<li>postbackUrl: The host relative URL to POST the form response to.</li>
+<li>cancelUrl: The host relative URL to POST a cancel form response to.</li>
+</ul>
+<p><strong><em>Template:</em></strong> ChangeExpiredPassword.tfrm and ConfirmChangePassword.tfrm</p>
+<div class="admonition info">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>The explicitBL object must have previously been used in the conversation to attempt to authenticate the user and discover that their password has expired. If this is not done, then an error form will be generated.</li>
+<li>The settings for explicitBL object must have the AllowUserPasswordChange value set to either ExpiredOnly or Always. If the value is Never, then an error form will be issued.</li>
+</ul>
+</div>
+<h3 id="usernamepasswordform"><a class="toclink" href="#usernamepasswordform">UsernamePasswordForm</a></h3>
+<p>This class creates a mini-conversation to allow a user to authenticate by explicitly providing their user name and password in the form. If configured it will also allow the user to change their expired password as part of this form.</p>
+<p><strong><em>Constructor:</em></strong></p>
+<pre class="codehilite"><code>Citrix.DeliveryServices.Authentication.FormsProtocol.Forms.UsernamePasswordForm
+(
+    FormsTemplateEngine templateEngine, IEnumerable&lt;CultureInfo&gt; cultures, IExplicit explicitBL,
+    string postbackUrl, string cancelUrl, bool allowChangeExpiredPasswordIfConfigured=true
+)</code></pre>
+
+
+<p><strong><em>Parameters:</em></strong>
+- templateEngine: The template engine.
+- cultures: The currently available cultures.
+- explicitBL: The explicit credential business object, described above.
+- postbackUrl: The host relative URL to POST the form response to.
+- cancelUrl: The host relative URL to POST a cancel form response to.
+- allowChangeExpiredPasswordIfConfigured: This optional parameter defines whether or not the the user is allowed to change their expired password as part of this form.
+    - true: This is the default value, and allows the user to change their expired password, if the explicitBL object has been configured to allow it.
+    - false:The user is never allowed to change their password as part of this form.</p>
+<p><strong><em>Template:</em></strong> UsernamePassword.tfrm and optionally ChangeExpiredPassword.tfrm and ConfirmChangePassword.tfrm</p>
+<h3 id="changepasswordcontroller"><a class="toclink" href="#changepasswordcontroller">ChangePasswordController</a></h3>
+<p>The ChangePasswordController is a built-in ASP.Net MVC Controller for handling requests for a user to choose to change their password before it has expired. This Controller is deployed by default and an MVC route to it is defined in the Authentication Service web.config as shown below:</p>
+<pre class="codehilite"><code>&lt;commonExplicitEndpoints&gt;
+  &lt;routeTable order=&quot;10&quot;&gt;
+    &lt;routes&gt;
+      &lt;route name=&quot;StartChangePassword&quot; url=&quot;ChangePassword/Start&quot;&gt;
+        &lt;defaults&gt;
+          &lt;add param=&quot;controller&quot; value=&quot;ChangePassword&quot; /&gt;
+          &lt;add param=&quot;action&quot; value=&quot;StartChangePassword&quot; /&gt;
+          &lt;add param=&quot;postbackAction&quot; value=&quot;ChangePassword&quot; /&gt;
+          &lt;add param=&quot;cancelAction&quot; value=&quot;CancelChangePassword&quot; /&gt;
+          &lt;add param=&quot;conversationFactory&quot; value=&quot;ChangePassword&quot; /&gt;
+          &lt;add param=&quot;changePasswordAction&quot; value=&quot;StartChangePassword&quot; /&gt;
+          &lt;add param=&quot;changePasswordController&quot; value=&quot;ChangePassword&quot; /&gt;
+        &lt;/defaults&gt;
+        &lt;data /&gt;
+      &lt;/route&gt;
+      &lt;route name=&quot;ChangePassword&quot; url=&quot;ChangePassword&quot;&gt;
+        &lt;defaults&gt;
+          &lt;add param=&quot;controller&quot; value=&quot;ChangePassword&quot; /&gt;
+          &lt;add param=&quot;action&quot; value=&quot;ChangePassword&quot; /&gt;
+        &lt;/defaults&gt;
+        &lt;data /&gt;
+      &lt;/route&gt;
+      &lt;route name=&quot;CancelChangePassword&quot; url=&quot;ChangePassword/Cancel&quot;&gt;
+        &lt;defaults&gt;
+          &lt;add param=&quot;controller&quot; value=&quot;ChangePassword&quot; /&gt;
+          &lt;add param=&quot;action&quot; value=&quot;CancelChangePassword&quot; /&gt;
+        &lt;/defaults&gt;
+        &lt;data /&gt;
+      &lt;/route&gt;
+    &lt;/routes&gt;
+  &lt;/routeTable&gt;
+&lt;/commonExplicitEndpoints&gt;</code></pre>
+
+
+<p>In order for the client to discover this route, the CredentialUpdateService URL information must be present in the Request Security Token Response, as illustrated below:</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;requesttokenresponse xmlns=&quot;http://citrix.com/delivery-services/1-0/auth/requesttokenresponse&quot;
+                      xmlns:ar=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;for-service&gt;a service identifier&lt;/for-service&gt;
+  &lt;issued&gt;2009-05-12T15:27:28.1550000Z&lt;/issued&gt;
+  &lt;expiry&gt;2009-05-12T16:29:31.1550000Z&lt;/expiry&gt;
+  &lt;lifetime&gt;0.01:02:03&lt;/lifetime&gt;
+  &lt;token-template&gt;abcdef&lt;/token-template&gt;
+  &lt;token&gt;ABCDEF123===&lt;/token&gt;
+  &lt;ar:CredentialUpdateInformationList&gt;
+    &lt;ar:CredentialUpdateInformation&gt;
+      &lt;ar:CredentialDisplayName&gt;DomainName&lt;/ar:CredentialDisplayName&gt;
+      &lt;ar:AuthenticationInfoId&gt;1&lt;/ar:AuthenticationInfoId&gt;
+      &lt;ar:ExpiryTime&gt;2010-05-12T15:27:28.155Z&lt;/ar:ExpiryTime&gt;
+      &lt;ar:TimeRemaining&gt;10.05:33:09&lt;/ar:TimeRemaining&gt;
+      &lt;ar:CredentialUpdateService&gt;/ChangePasswordStart&lt;/ar:CredentialUpdateService&gt;
+    &lt;/ar:CredentialUpdateInformation&gt;
+  &lt;/ar:CredentialUpdateInformationList&gt;
+&lt;/requesttokenresponse&gt;</code></pre>
+
+
+<p>A custom conversation can use the built-in functionality by setting the change password controller name and action name in the route data of the route associated with the conversation, as shown below:</p>
+<pre class="codehilite"><code>&lt;route name=&quot;StartExplicitAuthentication&quot; url=&quot;ExplicitForms/Start&quot;&gt;
+  &lt;defaults&gt;
+    &lt;add param=&quot;controller&quot; value=&quot;ExplicitFormsAuthentication&quot; /&gt;
+    &lt;add param=&quot;action&quot; value=&quot;AuthenticateStart&quot; /&gt;
+    &lt;add param=&quot;postbackAction&quot; value=&quot;Authenticate&quot; /&gt;
+    &lt;add param=&quot;cancelAction&quot; value=&quot;CancelAuthenticate&quot; /&gt;
+    &lt;add param=&quot;conversationFactory&quot; value=&quot;ExplicitAuthentication&quot; /&gt;
+    &lt;add param=&quot;changePasswordAction&quot; value=&quot;StartChangePassword&quot; /&gt;
+    &lt;add param=&quot;changePasswordController&quot; value=&quot;ChangePassword&quot; /&gt;
+    &lt;add param=&quot;protocol&quot; value=&quot;ExplicitForms&quot; /&gt;
+  &lt;/defaults&gt;
+  &lt;data /&gt;
+&lt;/route&gt;</code></pre>
+
+
+<p>This data is resolved by the built-in code to find the change password start URL . The built-in code also ensures that the correct RSTR is returned so the client can discover the change password end-point.</p>
+<p><strong><em>Templates:</em></strong> ChangeExpiredPassword.tfrm and ConfirmChangePassword.tfrm</p>
+<div class="admonition info">
+<p class="admonition-title">Notes</p>
+<ul>
+<li>The user must be authenticated in order to change their password. The authenticated user must have authenticated using a password, otherwise an error form is issued. The password originally supplied during authentication is verified against a value supplied by the user in the form, and changing the password is not allowed unless the passwords match.</li>
+<li>The settings for explicitBL object must have the AllowUserPasswordChange value set to Always. If the value is Never or ExpiredOnly, then an error form will be issued. </li>
+</ul>
+</div>
+<h1 id="forms-template-engine"><a class="toclink" href="#forms-template-engine">Forms Template Engine</a></h1>
+<h2 id="introduction_1"><a class="toclink" href="#introduction_1">Introduction</a></h2>
+<p>The forms template engine is the StoreFront component responsible for generating the Receiver Common Forms from templates. The templates are based on the ASP.NET Razor View Engine (see http://www.asp.net/web-pages/tutorials/basics/2-introduction-to-asp-net-web-programming-using-the-razor-syntax) with methods specific to the Receiver Common Forms domain that comprises the Forms Template Language described below.</p>
+<p>The StoreFront Authentication SDK samples contain examples of how to define new templates, use the API, generate localized textual content, and use the Forms Template Language. Further details of the APIs can also be found in the XML documentation file at:</p>
+<p><code>AuthSDK.zip\Assemblies\StoreFront\Citrix.DeliveryServices.Authentication.Forms.Template.XML</code></p>
+<p>If there are issues with the template processing, the Forms Template Engine adds events to the Event log as described in Appendix A.</p>
+<h2 id="creation"><a class="toclink" href="#creation">Creation</a></h2>
+<h3 id="template-engine-creation"><a class="toclink" href="#template-engine-creation">Template Engine Creation</a></h3>
+<p>For a particular web application, there is one and only one instance of the Forms Template Engine. It is stored in the StoreFront IoC container by the Forms Protocol start-up module during the application start-up and is accessed through the service locator.</p>
+<p>First a Razor engine host is created and configured to generate C# code. The base class is configured to be:</p>
+<p><code>Citrix.DeliveryServices.Authentication.Forms.Template.FormsTemplateBase</code></p>
+<p>This base class contains the domain-specific business rules relating to the Citrix Receiver Common Forms.</p>
+<p>The Razor host imports the following namespaces:</p>
+<ul>
+<li>System</li>
+<li>Citrix.DeliveryServices.Authentication.Forms.Template.Requirements</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Notes</p>
+<p>A limitation of this version is that it is not possible to add other namespaces or references to custom assemblies.</p>
+</div>
+<p>The Forms Template Engine is then constructed from a Razor template engine, wrapping the razor host and the Citrix localization factory, before loading and compiling the templates.</p>
+<p>The templates are files with the file extension tfrm that are stored in the directory ~/App_Data/Templates. The template engine also finds and loads images with the following file extensions: gif, jpg, jpeg, png, bmp. The Forms Template Engine also watches for changes to the templates directory and automatically reloads the templates when a change is made. When the templates are reloaded, an event is added to the Citrix Delivery Services Event log, as described in Appendix A, with Event Id: 5. </p>
+<p>The Forms Template Engine is finally stored in the IoC.</p>
+<h3 id="template-compilation"><a class="toclink" href="#template-compilation">Template Compilation</a></h3>
+<p>The compilation of a template, named CustomTemplate.tfrm for example, has the following steps:</p>
+<p>1.The Razor engine takes the template contents and generates code that represents the class Citrix.CompiledForms.CustomTemplate as C# code with FormsTemplateBase as its base class.</p>
+<p>2.The C# is then compiled into a code DOM using the CSharpCodeProvider.</p>
+<p>3.The code DOM is then compiled into an in-memory assembly that is loaded into the process.</p>
+<p>4.The loaded assembly is then stored in the Forms Template Engine, indexed as: CustomTemplate.</p>
+<div class="admonition info">
+<p class="admonition-title">Notes</p>
+<p>The Razor template processing requires that the process has write access to the %TEMP% directory</p>
+</div>
+<h2 id="template-rendering"><a class="toclink" href="#template-rendering">Template Rendering</a></h2>
+<h3 id="images"><a class="toclink" href="#images">Images</a></h3>
+<p>The Receiver Common Authentication Forms Language allows the use of images as part of the authentication process, for example Captcha images. In addition to the templates, the Forms Template Engine will also search the template folder for files with extensions: gif, jpg, jpeg, png, and bmp. It will load all the files found and convert them to appropriate RFC 2397 data URIs, ready for use in the required templates. Again, adding, removing, or modifying an image will result in the images being reloaded automatically.</p>
+<p>Images can also be dynamically generated, with support built-in for converting raw image data to data URIs for use in forms.</p>
+<h3 id="localization"><a class="toclink" href="#localization">Localization</a></h3>
+<p>The forms Template Engine supports the generation of localized textual content from a single template. In order for localized content to be available to the Forms Template Engine, the forms author should create localized content as standard Microsoft resx files (see http://msdn.microsoft.com/en-us/library/ekyft91f(v=vs.90).aspx). These resource files should be placed in the directory:</p>
+<p><code>~/App_Data/resources.</code></p>
+<p>StoreFront Services needs to be configured to become aware of new localization files, as described below.</p>
+<p>APIs that accept localization keys can also accept either strings that do not require localization, or pre-localized strings. The processing of a localization key has the following steps.</p>
+<p>A key is expected to be an indexed resource key of form: ResourceSetPrefix:Key. The ResourceSetPrefix is configured in the Authentication Service web.config, and maps a prefix to a set of resources. For example, the default prefixes are defined as:</p>
+<pre class="codehilite"><code>&lt;configuration&gt;  
+  &lt;citrix.deliveryservices&gt;
+    &lt;localisation&gt;
+      &lt;resourceSets&gt;
+        &lt;clear /&gt;
+        &lt;add prefix=&quot;FormsProtocol&quot; resourcePath=&quot;App_Data/resources/FormsProtocol&quot; /&gt;
+        &lt;add prefix=&quot;ExplicitCore&quot; resourcePath=&quot;App_Data/resources/ExplicitCore&quot; /&gt;
+        &lt;add prefix=&quot;ExplicitFormsCommon&quot; resourcePath=&quot;App_Data/resources/ExplicitFormsCommon&quot; /&gt;
+        &lt;add prefix=&quot;ExplicitAuth&quot; resourcePath=&quot;App_Data/resources/ExplicitAuth&quot; /&gt;
+      &lt;/resourceSets&gt;
+    &lt;/localisation&gt;
+  &lt;/citrix.deliveryservices&gt;
+&lt;/configuration&gt;</code></pre>
+
+
+<p>So, for example, the resource named: “test” defined in the FormsProtocol.resx file would be accessed by the localization key:</p>
+<p><code>FormsProtocol:test</code></p>
+<p>Customizations are expected to update the above configuration with their resource sets.</p>
+<p>If a localization key is supplied that does not correspond to this pattern, or that specifies a resource set prefix not mapped in the above configuration, then the supplied key is just returned as the localized string. Examples include:</p>
+<ul>
+<li>“String not to be localized” would be localized as: “String not to be localized”</li>
+<li>“Pre-localized” would be localized as: “Pre-localized”</li>
+<li>“UnknownReseourceSetPrefix:Key” would be localized as: “UnknownReseourceSetPrefix:Key”</li>
+</ul>
+<p>If a valid resource set prefix is found, then the associated resource provider is used to locate the appropriate localized string into the requested language. If the localization key exists, but the request is to localize to a language not provided, then the string will be localized into the default language, which is English.</p>
+<h3 id="template-rendering_1"><a class="toclink" href="#template-rendering_1">Template Rendering</a></h3>
+<p>The Forms Template Engine is used by Forms objects to generate the Forms through the following methods on the Forms Template Engine:</p>
+<pre class="codehilite"><code>        /// &lt;summary&gt;
+        /// Render the specified template using the specified anonymous object
+        /// as the model.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;templateName&quot;&gt;The name of the template to render&lt;/param&gt;
+        /// &lt;param name=&quot;currentCultures&quot;&gt;The current &lt;seealso cref=&quot;CultureInfo&quot;/&gt; to use to 
+                                          localize text items&lt;/param&gt;
+        /// &lt;param name=&quot;model&quot;&gt;The anonymous model&lt;/param&gt;
+        /// &lt;param name=&quot;messages&quot;&gt;The &lt;seealso cref=&quot;FormsMessage&quot;/&gt; to render&lt;/param&gt;
+        /// &lt;returns&gt;The rendered Xml&lt;/returns&gt;
+        public XmlDocument RenderTemplate(string templateName,
+                                          IEnumerable&lt;CultureInfo&gt; currentCultures,
+                                          object model,
+                                          IEnumerable&lt;FormsMessage&gt; messages = null);
+
+        /// &lt;summary&gt;
+        /// Render the specified template using the specified dictionary of named objects
+        /// as the values.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;templateName&quot;&gt;The name of the template to render&lt;/param&gt;
+        /// &lt;param name=&quot;currentCultures&quot;&gt;The current &lt;seealso cref=&quot;CultureInfo&quot;/&gt; to use to 
+                                          localize text items&lt;/param&gt;
+        /// &lt;param name=&quot;renderValues&quot;&gt;The dictionary of named objects to use as values&lt;/param&gt;
+        /// &lt;param name=&quot;messages&quot;&gt;The &lt;seealso cref=&quot;FormsMessage&quot;/&gt; to render&lt;/param&gt;
+        /// &lt;returns&gt;The rendered Xml&lt;/returns&gt;
+        public XmlDocument RenderTemplate(string templateName,
+                                          IEnumerable&lt;CultureInfo&gt; currentCultures,
+                                          IDictionary&lt;string, object&gt; renderValues,
+                                          IEnumerable&lt;FormsMessage&gt; messages=null);</code></pre>
+
+
+<p>In the above, the template name is the index of the compiled template, as described above; for example, the name to be used for test.tfrm is: test. The data model, whether an anonymous data class or a dictionary, allows the form to define named data items referenced in the associated template. Examples of data models can be seen in the Forms Template Language section below.</p>
+<p>The FormsMessage object has the following API, and is used for associating messages with credentials:</p>
+<pre class="codehilite"><code>namespace Citrix.DeliveryServices.Authentication.Forms.Template.RequirementAPI
+{
+    /// &lt;summary&gt;
+    /// This class represents a message to be displayed on a form.
+    /// The message is one of the following categories:
+    ///     information, warning or error.
+    /// &lt;/summary&gt;
+    public class FormsMessage
+    {
+        /// &lt;summary&gt;
+        /// Gets or sets the localization key
+        /// &lt;/summary&gt;
+        public string LocalisationKey { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the localized message
+        /// &lt;/summary&gt;
+        internal string Message { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the collection of filed identifiers that this
+        /// message relates to.
+        /// &lt;/summary&gt;
+        public IEnumerable&lt;string&gt; FieldIds { get; set; }
+
+        /// &lt;summary&gt;
+        /// Gets or sets the form message type
+        /// This must be: information, warning or error
+        /// &lt;/summary&gt;
+        public Label.LabelType MessageType { get; set; }
+
+        /// &lt;summary&gt;
+        /// Render this message into the specified buffer
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;sb&quot;&gt;
+        /// The &lt;seealso cref=&quot;StringBuilder&quot;/&gt; to render this message into
+        /// &lt;/param&gt;
+        /// &lt;returns&gt;The string of the the rendered message&lt;/returns&gt;
+        public void RenderMessageToBuffer(StringBuilder sb);
+    }
+}</code></pre>
+
+
+<p>For example, consider a change password form with a requirement for the user to re-enter their existing password:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;oldPassword&lt;/ID&gt;
+    &lt;Type&gt;password&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Old password:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;Text&gt;
+      &lt;Secret&gt;true&lt;/Secret&gt;
+      &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+      &lt;InitialValue&gt;&lt;/InitialValue&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>If the user enters an invalid value, then an error label is returned that specifies the oldPassword requirement to be highlighted. This would be done by creating a FormsMessage as follows:</p>
+<pre class="codehilite"><code>new FormsMessage
+    {
+        MessageType = Label.LabelType.error,
+        LocalisationKey = &quot;ExplicitCore:OldInvalid&quot;,
+        FieldIds = new[] { &quot;oldPassword&quot; }
+    }
+This would result in the following XML:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;HighlightFields&gt;
+      &lt;CredentialID&gt;oldPassword&lt;/CredentialID&gt;
+    &lt;/HighlightFields&gt;
+    &lt;Text&gt;Old password incorrect&lt;/Text&gt;
+    &lt;Type&gt;error&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<p>The generated form XML is returned to the client by the conversation engine and the MVC Controller in an appropriately formatted message.</p>
+<p>The Authentication SDK samples contain detailed examples of how to use the Template Rendering API.</p>
+<h1 id="forms-template-language"><a class="toclink" href="#forms-template-language">Forms Template Language</a></h1>
+<p>The FormsTemplateBase C# class has a collection of methods that can be accessed in the template. These form the domain- specific forms template language. The language is divided into three APIs: low-level, requirements and high-level, which allow different levels of control of the final Receiver Common Forms XML. Appendix B illustrates a single form generated using the three APIs, so that they can be compared and contrasted.</p>
+<p>The following description expects a basic understanding of the layout of the Receiver Common Forms XML as described in [2]. The APIs also expect an understanding of C# optional and named Parameters, as described here: http://msdn.microsoft.com/en-gb/library/dd264739.aspx </p>
+<p>In addition to these domain-specific methods, many general Razor programming constructs may be used.</p>
+<h2 id="low-level-api"><a class="toclink" href="#low-level-api">Low Level API</a></h2>
+<p>This API is the lowest level API and is based around the generation of strings for XML documents.</p>
+<p>For the low-level methods, all the Parameters are required.</p>
+<h3 id="containsvalue"><a class="toclink" href="#containsvalue">ContainsValue</a></h3>
+<p><code>bool ContainsValue(string valueName)</code></p>
+<p>This method returns true if the specified named index is associated with an object in the data model.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>valueName: The name of an object in the data model.</li>
+</ul>
+<p>Returns: True if the specified named index is valid</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Model: new { AssistiveText = "Help Text"};</p>
+<p>Template:</p>
+<pre class="codehilite"><code>&lt;Input&gt;
+@if (ContainsValue(&quot;AssistiveText&quot;))
+{
+@: &lt;AssistiveText&gt;@GetValue(&quot;AssistiveText&quot;)&lt;/AssistiveText &gt;
+}
+  &lt;Text&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Input&gt;
+  &lt;AssistiveText&gt;Help Text&lt;/AssistiveText&gt;
+  &lt;Text&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;</code></pre>
+
+
+<h3 id="getobject"><a class="toclink" href="#getobject">GetObject</a></h3>
+<p><code>object GetObject(string valueName)</code></p>
+<p>This method returns the object in the data model with the specified named index.</p>
+<p><strong><em>Parameters:</em></strong>:</p>
+<ul>
+<li>valueName: The name of an object in the data model.</li>
+</ul>
+<p>Returns: The specified object from the data model, or null if the index is not valid.</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Model:</p>
+<pre class="codehilite"><code>new
+{
+    PhoneNumbers = new []
+                   {
+                       new Tuple&lt;string, string&gt; (&quot;Home Number&quot;, &quot;01954 283 710&quot;),
+                       new Tuple&lt;string, string&gt; (&quot;Fax Number&quot;, &quot;01954 283 601&quot;)
+                   }
+}</code></pre>
+
+
+<p>Template:</p>
+<pre class="codehilite"><code>@foreach(Tuple&lt;string, string&gt; phoneNumber in (IEnumerable)GetObject(&quot;PhoneNumbers&quot;))
+{
+@:      &lt;Requirement&gt;
+@Credential(credentialType: &quot;none&quot;)
+@TextLabel(labelKey: @phoneNumber.Item1)
+@:        &lt;Input&gt;
+@:          &lt;Text&gt;
+@:            &lt;InitialValue&gt;@phoneNumber.Item2&lt;/InitialValue&gt;
+@:            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+@:          &lt;/Text&gt;
+@:        &lt;/Input&gt;
+@:      &lt;/Requirement&gt;
+}</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Home Number&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;Text&gt;
+      &lt;InitialValue&gt;01954 283 710&lt;/InitialValue&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Fax Number&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;Text&gt;
+      &lt;InitialValue&gt;01954 283 601&lt;/InitialValue&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="getvalue"><a class="toclink" href="#getvalue">GetValue</a></h3>
+<p><code>string GetValue(string valueName)</code></p>
+<p>This method returns the object in the data model with the specified named index, as a string. This method will convert the specified object to a string, if required.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>valueName: The name of an object in the data model.</li>
+</ul>
+<p>Returns: The specified string from the data model, or the empty string if the index is not valid</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Model: new { Date = DateTime.Now() };</code></p>
+<p>Template: <code>@GetValue("Date")</code></p>
+<p>Output: 5/6/2005 02:34:42 PM</p>
+<h3 id="controlvalue"><a class="toclink" href="#controlvalue">ControlValue</a></h3>
+<p><code>bool ControlValue(string valueName)</code></p>
+<p>This method returns the object in the data model with the specified named index, as a Boolean value. This method expects that the stored object is a Boolean and will not attempt to convert from other types.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>valueName: The name of an object in the data model.</li>
+</ul>
+<p>Returns: The specified Boolean value from the data model, or false if the index is not valid</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Model: new { Display = true  };</code></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@if (ControlValue(&quot;Display&quot;))
+{
+@: &lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+}</code></pre>
+
+
+<p>Output: </p>
+<p><code>&lt;AuthenticateResponse xmlns="http://citrix.com/authentication/response/1"&gt;</code></p>
+<h3 id="getattributevalue"><a class="toclink" href="#getattributevalue">GetAttributeValue</a></h3>
+<p><code>string GetAttributeValue(string valueName)</code></p>
+<p>This method returns the object in the data model with the specified named index, as a string encoded for using as an XML attribute. This method will convert the specified object to a string, if required.</p>
+<p><strong><em>Parameters:</em></strong>:</p>
+<ul>
+<li>valueName: The name of an object in the data model.</li>
+</ul>
+<p>Returns: The specified string from the data model encoded to be used as an XML attribute, or the empty string if the index is not valid</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Model: new { Namespace = "http://citrix.com/authentication/response/1"};</code></p>
+<p>Template: </p>
+<p><code>&lt;AuthenticateResponse xmlns="@GetAttributeValue("Namespace")"&gt;</code></p>
+<p>Output: </p>
+<p><code>&lt;AuthenticateResponse xmlns="http://citrix.com/authentication/response/1"&gt;</code></p>
+<h3 id="getelementvalue"><a class="toclink" href="#getelementvalue">GetElementValue</a></h3>
+<p><code>string GetElementValue(string valueName)</code></p>
+<p>This method returns the object in the data model with the specified named index, as a string encoded for using as an XML element. This method will convert the specified object to a string, if required.</p>
+<p><strong><em>Parameters:</em></strong>
+- valueName: The name of an object in the data model.</p>
+<p>Returns: The specified string from the data model encoded to be used as an XML element, or the empty string if the index is not valid</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Model: new { "StateContextElementName", "StateContext"};</code></p>
+<p>Template: </p>
+<p><code>&lt;@GetElementValue("StateContextElementName")&gt;</code></p>
+<p>Output: </p>
+<p><code>&lt;StateContext&gt;</code></p>
+<h3 id="gettextvalue"><a class="toclink" href="#gettextvalue">GetTextValue</a></h3>
+<p><code>string GetTextValue(string valueName)</code></p>
+<p>This method returns the object in the data model with the specified named index, as a string encoded for using as XML text. This method will convert the specified object to a string, if required.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>valueName: The name of an object in the data model.</li>
+</ul>
+<p>Returns: </p>
+<p>The specified string from the data model encoded to be used as XML text, or the empty string if the index is not valid</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Model: new { TestText = "This is non-localized &amp; unencoded text"};</code></p>
+<p>Template: </p>
+<p><code>@GetTextValue("TestText")</code></p>
+<p>Output: </p>
+<p>This is non-localized &amp; unencoded text.</p>
+<h3 id="getlocalisedtextvalue"><a class="toclink" href="#getlocalisedtextvalue">GetLocalisedTextValue</a></h3>
+<p><code>string GetLocalisedTextValue(string valueName)</code></p>
+<p>This method will use the localization key to provide a localized string encoded as XML text.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>valueName: The name of an object in the data model containing a localization key</li>
+</ul>
+<p>Returns: The localized string, encoded as XML text, or the empty string if the index is not valid</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Template: @GetLocalisedTextValue("Test:TestKey")</code></p>
+<p>Output: </p>
+<p>This is a localized test string</p>
+<h3 id="getlocalisedformattedvalue"><a class="toclink" href="#getlocalisedformattedvalue">GetLocalisedFormattedValue</a></h3>
+<p><code>string GetLocalisedFormattedValue(string formatName, params object[] Parameters)</code></p>
+<p>This method will use the localization key to obtain a format string that is used with the Parameters to generate a localized string, encoded as XML text.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>valueName: The name of an object in the data model containing a localization key</li>
+</ul>
+<p>Returns: </p>
+<p>The localized string, encoded as XML text, or the empty string if the index is not valid</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Template: @GetLocalisedTextValue("Test:FormatKey", DateTime.Now)</code></p>
+<p>Output: </p>
+<p>Called at: 5/6/2005 02:34:42 PM</p>
+<p>Requirements</p>
+<p>A Receiver Common Form contains a list of authentication requirements. Each authentication requirement contains the following elements: <code>&lt;Credential&gt;</code>, <code>&lt;Label&gt;</code>, and <code>&lt;Input&gt;</code>. This API is focused around the generation of these three elements.
+In cases where there are many arguments, defaults are provided where possible, and it is expected that Parameters are specified by name for ease of use, as demonstrated in the examples.</p>
+<h3 id="credential"><a class="toclink" href="#credential">Credential</a></h3>
+<p><code>string Credential(string credentialType, string id = null, string saveId = null)</code></p>
+<p>Create a <Credential> authentication requirement fragment with the specified values.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>credentialType: The credential type (see the Receiver Common Authentication Forms Language document for more information). This parameter is required.</li>
+<li>id: The optional credential identifier. The default is to have no identifier.</li>
+<li>saveId: The optional identifier to be used to save this credential on a client. The default is to have no save identifier.</li>
+</ul>
+<p>Returns: </p>
+<p>The <Credential> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template: </p>
+<p><code>@Credential(credentialType: "username", id: "UsernameID", saveId: "SaveUsernameID")</code></p>
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Credential&gt;
+  &lt;ID&gt;UsernameID&lt;/ID&gt;
+  &lt;SaveID&gt;SaveUsernameID&lt;/SaveID&gt;
+  &lt;Type&gt;username&lt;/Type&gt;
+&lt;/Credential&gt;</code></pre>
+
+
+<h3 id="textlabel"><a class="toclink" href="#textlabel">TextLabel</a></h3>
+<p><code>string TextLabel(string labelKey, Label.LabelType labelType = Label.LabelType.plain)</code></p>
+<p>Create a text-based <Label> authentication requirement fragment from the specified values.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+</ul>
+<p>Returns: The text-based <Label> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Template: @TextLabel(labelKey: "Test:UsernameLabelKey")</code></p>
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Label&gt;
+  &lt;Text&gt;User name:&lt;/Text&gt;
+  &lt;Type&gt;plain&lt;/Type&gt;
+&lt;/Label&gt;</code></pre>
+
+
+<h3 id="imagelabel"><a class="toclink" href="#imagelabel">ImageLabel</a></h3>
+<p><code>string ImageLabel(string imageKey)</code></p>
+<p>Create an image-based <Label> authentication requirement fragment from an image stored in the Template folder.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>imageKey: The name of the image file in the Template directory. This is a required parameter.</li>
+</ul>
+<p>Returns: The image-based <Label> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template: </p>
+<p><code>@ImageLabel(imageKey: "captcha.png")</code></p>
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Label&gt;
+  &lt;Binary&gt;data:image/png;base64,iVBORw0KGgoAAAANSUh…/sAAAAASUVORK5CYII=&lt;/Binary&gt;
+  &lt;Type&gt;image&lt;/Type&gt;
+&lt;/Label&gt;</code></pre>
+
+
+<p>Note: </p>
+<p>It is possible to dynamically create images and display them, for example:</p>
+<p>Form:</p>
+<pre class="codehilite"><code>byte[] dynamicImage; 
+var converted = FormsTemplateEngine.GetImageDataUri(dynamicImage, @&quot;image/gif&quot;);      
+TemplateEngine.RenderTemplate(FormName, Cultures, Values,
+            new { DynamicImage = converted});</code></pre>
+
+
+<p>Template:</p>
+<pre class="codehilite"><code>&lt;Label&gt;
+  &lt;Binary&gt;@GetTextValue(&quot;DynamicImage&quot;)&lt;/Binary&gt;
+  &lt;Type&gt;image&lt;/Type&gt;
+&lt;/Label&gt;</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Label&gt;
+  &lt;Binary&gt;data:image/png;base64,iVBORw0KGgoAAAANSUh…/sAAAAASUVORK5CYII=&lt;/Binary&gt;
+  &lt;Type&gt;image&lt;/Type&gt;
+&lt;/Label&gt;</code></pre>
+
+
+<h3 id="inputbutton"><a class="toclink" href="#inputbutton">InputButton</a></h3>
+<p><code>string InputButton(string buttonKey, string assistiveTextKey=null)</code></p>
+<p>Create a button <code>&lt;Input&gt;</code> authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>
+<p>buttonKey: The localization key for the button label. This is a required parameter.</p>
+</li>
+<li>
+<p>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</p>
+</li>
+</ul>
+<p>Returns: The button <Label> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template: </p>
+<p><code>@InputButton(buttonKey: "Test:LogonButtonKey")</code></p>
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Input&gt;
+  &lt;Button&gt;Log On&lt;/Button&gt;
+&lt;/Input&gt;</code></pre>
+
+
+<h3 id="inputcombobox"><a class="toclink" href="#inputcombobox">InputComboBox</a></h3>
+<pre class="codehilite"><code>string InputComboBox(string displayItemsValueName, string initialSelectionValueName = null,
+                     string assistiveTextKey = null)</code></pre>
+
+
+<p>Create a combo-box <code>&lt;Input&gt;</code> authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>displayItemsValueName: The name of the dictionary of display-value pairs in the model. This is a required parameter.</li>
+<li>initialSelectionValueName: The optional initially selected display value. The default is to select the first value.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+</ul>
+<p>Returns: </p>
+<p>The combo-box <code>&lt;Input&gt;</code> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Model:</p>
+<pre class="codehilite"><code>new
+{
+    Domains = new Dictionary&lt;string, string&gt;
+              {
+                  { @&quot;citrix&quot;, @&quot;citrix.com&quot;},
+                  { @&quot;citrite&quot;, @&quot;citrite.local&quot;}
+              },
+    InitialDomain = @&quot;citrite.local&quot;
+}</code></pre>
+
+
+<p>Template: </p>
+<pre class="codehilite"><code>@InputComboBox(displayItemsValueName: &quot;Domains&quot;,
+                       initialSelectionValueName: &quot;InitialDomain&quot;,
+                       assistiveTextKey: &quot;DomainAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Input&gt;
+  &lt;AssistiveText&gt;Please select your domain&lt;/AssistiveText&gt;
+  &lt;ComboBox&gt;
+    &lt;InitialSelection&gt;citrite.local&lt;/InitialSelection&gt;
+    &lt;DisplayValues&gt;
+      &lt;DisplayValue&gt;
+        &lt;Display&gt;citrix&lt;/Display&gt;
+        &lt;Value&gt;citrix.com&lt;/Value&gt;
+      &lt;/DisplayValue&gt;
+      &lt;DisplayValue&gt;
+        &lt;Display&gt;citrite&lt;/Display&gt;
+        &lt;Value&gt;citrite.local&lt;/Value&gt;
+      &lt;/DisplayValue&gt;
+    &lt;/DisplayValues&gt;
+  &lt;/ComboBox&gt;
+&lt;/Input&gt;</code></pre>
+
+
+<p>Note: </p>
+<p>The display values for combo box, radio button, and multi-combo box, can be localized, for example, the following model is taken from the Test Forms sample:</p>
+<pre class="codehilite"><code>new
+{
+    multiComboValues = new Dictionary&lt;string, string&gt;
+            {
+                {@&quot;TestForms:ComboDisplayTextOne&quot;, @&quot;Value1&quot;},
+                {@&quot;TestForms:ComboDisplayTextTwo&quot;, @&quot;Value2&quot;},
+                {@&quot;TestForms:ComboDisplayTextThree&quot;, @&quot;Value3&quot;}
+            }
+}</code></pre>
+
+
+<h3 id="inputradiobutton"><a class="toclink" href="#inputradiobutton">InputRadioButton</a></h3>
+<pre class="codehilite"><code>string InputRadioButton(string displayItemsValueName, string initialSelectionValueName = null,
+                        string assistiveTextKey = null)</code></pre>
+
+
+<p>Create a combo-box <code>&lt;Input&gt;</code> authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>displayItemsValueName: The name of the dictionary of display-value pairs in the model. This is a required parameter.</li>
+<li>initialSelectionValueName: The optional initially selected display value. The default is is to select the first value.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+</ul>
+<p>Returns: </p>
+<p>The radio button <code>&lt;Input&gt;</code> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Model:</p>
+<pre class="codehilite"><code>new
+{
+    Domains = new Dictionary&lt;string, string&gt;
+              {
+                  { @&quot;citrix&quot;, @&quot;citrix.com&quot;},
+                  { @&quot;citrite&quot;, @&quot;citrite.local&quot;}
+              },
+    InitialDomain = @&quot;citrite.local&quot;
+}</code></pre>
+
+
+<p>Template: </p>
+<pre class="codehilite"><code>@InputRadioButton(displayItemsValueName: &quot;Domains&quot;,
+                          initialSelectionValueName: &quot;InitialDomain&quot;,
+                          assistiveTextKey: &quot;DomainAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Input&gt;
+  &lt;AssistiveText&gt;Please select your domain&lt;/AssistiveText&gt;
+  &lt;RadioButton&gt;
+    &lt;InitialSelection&gt;citrite.local&lt;/InitialSelection&gt;
+    &lt;DisplayValues&gt;
+      &lt;DisplayValue&gt;
+        &lt;Display&gt;animaniacs&lt;/Display&gt;
+        &lt;Value&gt;animaniacs.net&lt;/Value&gt;
+      &lt;/DisplayValue&gt;
+      &lt;DisplayValue&gt;
+        &lt;Display&gt;citrite&lt;/Display&gt;
+        &lt;Value&gt;citrite.local&lt;/Value&gt;
+      &lt;/DisplayValue&gt;
+    &lt;/DisplayValues&gt;
+  &lt;/RadioButton&gt;
+&lt;/Input&gt;</code></pre>
+
+
+<h3 id="inputmulticombobox"><a class="toclink" href="#inputmulticombobox">InputMultiComboBox</a></h3>
+<p><code>string InputMultiComboBox(string displayItemsValueName, string assistiveTextKey = null)</code></p>
+<p>Create a multi-select combo-box <code>&lt;Input&gt;</code> authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>displayItemsValueName: The name of the dictionary of display, value and selection flag tuples in the model. This is a required parameter.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+</ul>
+<p>Returns: </p>
+<p>The multi-selection combo-box <code>&lt;Input&gt;</code> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Model:</p>
+<pre class="codehilite"><code>new
+{
+    Users = new Dictionary&lt;string, Tuple&lt;string, bool?&gt;&gt;
+                {
+                    { @&quot;Alice&quot;, new Tuple&lt;string, bool?&gt;(&quot;Alice&quot;, null)},
+                    { @&quot;Bob&quot;,  new Tuple&lt;string, bool?&gt;(&quot;Bob&quot;, false)},
+                    { @&quot;Eve&quot;,  new Tuple&lt;string, bool?&gt;(&quot;Eve&quot;, true)}
+                }
+}</code></pre>
+
+
+<p>Template: </p>
+<pre class="codehilite"><code>@InputMultiComboBox(displayItemsValueName: &quot;Users&quot;,
+                            assistiveTextKey: &quot;MultiComboBoxAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Input&gt;
+  &lt;AssistiveText&gt;Please select who is a hacker&lt;/AssistiveText&gt;
+  &lt;MultiComboBox&gt;
+    &lt;DisplayValues&gt;
+      &lt;DisplayValue&gt;
+        &lt;Display&gt;Alice&lt;/Display&gt;
+        &lt;Value&gt;Alice&lt;/Value&gt;
+      &lt;/DisplayValue&gt;
+      &lt;DisplayValue&gt;
+        &lt;Display&gt;Bob&lt;/Display&gt;
+        &lt;Value&gt;Bob&lt;/Value&gt;
+        &lt;Select&gt;false&lt;/Select&gt;
+      &lt;/DisplayValue&gt;
+      &lt;DisplayValue&gt;
+        &lt;Display&gt;Eve&lt;/Display&gt;
+        &lt;Value&gt;Eve&lt;/Value&gt;
+        &lt;Select&gt;true&lt;/Select&gt;
+      &lt;/DisplayValue&gt;
+    &lt;/DisplayValues&gt;
+  &lt;/MultiComboBox&gt;
+&lt;/Input&gt;</code></pre>
+
+
+<h3 id="inputcheckbox"><a class="toclink" href="#inputcheckbox">InputCheckBox</a></h3>
+<p><code>string InputCheckBox(bool? initiallyChecked=null, string assistiveTextKey = null)</code></p>
+<p>Create a check box <code>&lt;Input&gt;</code> authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>initiallyChecked: The optional value to set whether the check box is initially checked. If the value is null, which is the default, then the optional &lt; InitialValue &gt; element is not included.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+</ul>
+<p>Returns: </p>
+<p>The check box <code>&lt;Input&gt;</code> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template: </p>
+<pre class="codehilite"><code>@InputCheckBox(initiallyChecked: true,
+                       assistiveTextKey: &quot;CheckBoxAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Input&gt;
+  &lt;AssistiveText&gt;Check box assistive text&lt;/AssistiveText&gt;
+  &lt;CheckBox&gt;
+    &lt;InitialValue&gt;true&lt;/InitialValue&gt;
+  &lt;/ CheckBox &gt;
+&lt;/Input&gt;</code></pre>
+
+
+<h3 id="inputtextbox"><a class="toclink" href="#inputtextbox">InputTextBox</a></h3>
+<pre class="codehilite"><code>string InputTextBox(string assistiveTextKey = null, string initialValueName = null,
+                    string constraint = TextBox.DefaultConstraint, bool? secret = null,
+                    bool? readOnly = null)</code></pre>
+
+
+<p>Create a text-based <code>&lt;Input&gt;</code> authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>initialValueName: The optional name of the model value that contains the initial value of the text box. Note that this is a raw string not a key to be localized. The default is not to have an initial value.</li>
+<li>constraint: The optional, and unused, regular expression for the text to be entered.</li>
+<li>secret: If true then the text typed by the user should be obscured. This parameter is optional. If the value is null, which is the default, then the optional <Secret> element is not included.</li>
+<li>readOnly: This optional parameter makes the initial text value read-only. If the value is null, which is the default, then the optional <ReadOnly> element is not included.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+</ul>
+<p>Returns: </p>
+<p>The text <code>&lt;Input&gt;</code> xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<pre class="codehilite"><code>Template: @InputTextBox(secret: true,
+                      assistiveTextKey: &quot;PasswordAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Input&gt;
+  &lt;AssistiveText&gt;Please enter your password&lt;/AssistiveText&gt;
+  &lt;Text&gt;
+    &lt;Secret&gt;true&lt;/Secret&gt;
+    &lt;Constraint&gt;.+&lt;/Constraint&gt;
+  &lt;/Text&gt;
+&lt;/Input&gt;</code></pre>
+
+
+<h2 id="high-level-api"><a class="toclink" href="#high-level-api">High Level API</a></h2>
+<p>The high level API is also focused on the authentication requirements, but creates a complete requirement, including the <code>&lt;Credential&gt;</code>, <code>&lt;Label&gt;</code>, and <code>&lt;Input&gt;</code> values. These methods provide a higher-level abstraction and ensure that the authentication requirements produced are internally consistent. For this reason, it is recommended that these methods should be used where possible.</p>
+<p>In cases where there are many arguments, defaults are provided where possible, and it is expected that Parameters are specified by name for ease of use.</p>
+<h3 id="controlheaders"><a class="toclink" href="#controlheaders">ControlHeaders</a></h3>
+<pre class="codehilite"><code>string ControlHeaders(string status, string result, string stateContext = null,
+                      string logMessageKey = null)</code></pre>
+
+
+<p>Create the control header fragment.</p>
+<p><strong><em>Parameters:</em></strong>
+- status: The authentication status (see the Receiver Common Authentication Forms Language document). This parameter is required.
+- result: The authentication result (see the Receiver Common Authentication Forms Language document). This parameter is required.
+- stateContext: The optional state context. The default is an empty state context.
+- logMessage: This optional parameter is a key to a localized message to be logged by the client. The default is to not include the optional <LogMessage> element.</p>
+<p>Returns: The control xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p><code>Template: @ControlHeaders(status: StatusSuccess, result: ResultMoreInfo, stateContext: "0x12345678")</code></p>
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Status&gt;success&lt;/Status&gt;
+&lt;Result&gt;more-info&lt;/Result&gt;
+&lt;StateContext&gt;0x12345678&lt;/StateContext&gt;</code></pre>
+
+
+<h3 id="textbox"><a class="toclink" href="#textbox">Textbox</a></h3>
+<pre class="codehilite"><code>string Textbox(string type, string id = null, string saveId = null, string assistiveTextKey = null,
+               string labelKey = null, Label.LabelType labelType = Label.LabelType.plain,
+               string initialValueName = null, string constraint = TextBox.DefaultConstraint,
+               bool? secret = null, bool? readOnly = null)</code></pre>
+
+
+<p>Create a general text box authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>type: The type of the associated credential (see the Receiver Common Authentication Forms Language document). This parameter is required.</li>
+<li>id: The optional credential identifier. If not specified, then the option <ID> element is not included.</li>
+<li>saveId: The optional identifier to be used to save this credential on a client. The default is to have no save identifier.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+<li>initialValueName: The optional name of a model value that contains the initial value of the text box. Note that this is a raw string not a key to be localized. The default is not to have an initial value.</li>
+<li>constraint: The optional, and unused, regular expression for the text to be entered.</li>
+<li>secret: If true then the text typed by the user should be obscured. This parameter is optional. If the value is null, which is the default, then the optional <Secret> element is not included.</li>
+<li>readOnly: This optional parameter makes the initial text value read-only. If the value is null, which is the default, then the optional <ReadOnly> element is not included.</li>
+</ul>
+<p>Returns: </p>
+<p>The text box authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@Textbox(type: &quot;username&quot;, id:&quot;UsernameID&quot;, saveId: &quot;SaveUsernameID&quot;,
+         labelKey: &quot;Test:UsernameLabelKey&quot;,
+         assistiveTextKey: &quot;Test:UsernameAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;UsernameID&lt;/ID&gt;
+    &lt;SaveID&gt;SaveUsernameID&lt;/SaveID&gt;
+    &lt;Type&gt;username&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;User name:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;AssistiveText&gt;domain\user or user@domain.com&lt;/AssistiveText&gt;
+    &lt;Text&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="passwordtextbox"><a class="toclink" href="#passwordtextbox">PasswordTextBox</a></h3>
+<pre class="codehilite"><code>string PasswordTextBox(string id = null, string saveId = null, string assistiveTextKey = null,
+                       string labelKey = null, Label.LabelType labelType = Label.LabelType.plain,
+                       string initialValueName = null,
+                       string constraint = TextBox.DefaultConstraint, bool? readOnly = false)</code></pre>
+
+
+<p>Create a password text box authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>id: The optional credential identifier. If not specified, then the option <ID> element is not included.</li>
+<li>saveId: The optional identifier to be used to save this credential on a client. The default is to have no save identifier.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+<li>initialValueName: The optional name of a model value that contains the initial value of the text box. Note that this is a raw string not a key to be localized. The default is not to have an initial value.</li>
+<li>constraint: The optional, and unused, regular expression for the text to be entered.</li>
+<li>readOnly: This optional parameter makes the initial text value read-only. If the value is null, which is the default, then the optional <ReadOnly> element is not included.</li>
+</ul>
+<p>Returns: </p>
+<p>The password text box authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<p><code>@PasswordTextBox(id:"PasswordID", saveId: "SavePasswordID", labelKey: "Test:PasswordLabelKey")</code></p>
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;PasswordID&lt;/ID&gt;
+    &lt;SaveID&gt;SavePasswordID&lt;/SaveID&gt;
+    &lt;Type&gt;password&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Password:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;Text&gt;
+      &lt;Secret&gt;true&lt;/Secret&gt;
+      &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="usernametextbox"><a class="toclink" href="#usernametextbox">UsernameTextBox</a></h3>
+<pre class="codehilite"><code>string UsernameTextBox(string id = null, string saveId = null, string assistiveTextKey = null,
+                       string labelKey = null, Label.LabelType labelType = Label.LabelType.plain,
+                       string initialValueName = null,
+                       string constraint = TextBox.DefaultConstraint, bool? secret = null,
+                       bool? readOnly = null)</code></pre>
+
+
+<p>Create a user name text box authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>id: The optional credential identifier. If not specified, then the option <ID> element is not included.</li>
+<li>saveId: The optional identifier to be used to save this credential on a client. The default is to have no save identifier.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+<li>initialValueName: The optional name of a model value that contains the initial value of the text box. Note that this is a raw string not a key to be localized. The default is not to have an initial value.</li>
+<li>constraint: The optional, and unused, regular expression for the text to be entered.</li>
+<li>secret: If true then the text typed by the user should be obscured. This parameter is optional. If the value is null, which is the default, then the optional <Secret> element is not included.</li>
+<li>readOnly: This optional parameter makes the initial text value read-only. If the value is null, which is the default, then the optional <ReadOnly> element is not included.</li>
+</ul>
+<p>Returns: The user name text box authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@UsernameTextBox(id:&quot;UsernameID&quot;, saveId: &quot;SaveUsernameID&quot;, labelKey: &quot;Test:UsernameLabelKey&quot;,
+                 assistiveTextKey: &quot;Test:UsernameAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;UsernameID&lt;/ID&gt;
+    &lt;SaveID&gt;SaveUsernameID&lt;/SaveID&gt;
+    &lt;Type&gt;username&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;User name:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;AssistiveText&gt;domain\user or user@domain.com&lt;/AssistiveText&gt;
+    &lt;Text&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="newpasswordtextbox"><a class="toclink" href="#newpasswordtextbox">NewPasswordTextBox</a></h3>
+<pre class="codehilite"><code>string NewPasswordTextBox(string id = null, string saveId = null, string assistiveTextKey = null,
+                          string labelKey = null,Label.LabelType labelType = Label.LabelType.plain,
+                          string initialValueName = null,
+                          string constraint = TextBox.DefaultConstraint, bool? secret = null,
+                          bool? readOnly = null)</code></pre>
+
+
+<p>Create a new password text box authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>id: The optional credential identifier. If not specified, then the option <ID> element is not included.</li>
+<li>saveId: The optional identifier to be used to save this credential on a client. The default is to have no save identifier.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+<li>initialValueName: The optional name of a model value that contains the initial value of the text box. Note that this is a raw string not a key to be localized. The default is not to have an initial value.</li>
+<li>constraint: The optional, and unused, regular expression for the text to be entered.</li>
+<li>secret: If true then the text typed by the user should be obscured. This parameter is optional. If the value is null, which is the default, then the optional <Secret> element is not included.</li>
+<li>readOnly: This optional parameter makes the initial text value read-only. If the value is null, which is the default, then the optional <ReadOnly> element is not included.</li>
+</ul>
+<p>Returns: </p>
+<p>The new password text box authentication requirement xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@NewPasswordTextBox(id:&quot;NewPasswordID&quot;, saveId: &quot;SavePasswordID&quot;, 
+                    labelKey:&quot;Test:NewPasswordLabelKey&quot;,
+                    assistiveTextKey: &quot;Test:NewPasswordAssisitiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;NewPasswordID&lt;/ID&gt;
+    &lt;SaveID&gt;SavePasswordID&lt;/SaveID&gt;
+    &lt;Type&gt;newpassword&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Password:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;AssistiveText&gt;Must meet complexity requirements&lt;/AssistiveText&gt;
+    &lt;Text&gt;
+      &lt;Secret&gt;true&lt;/Secret&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="passcodetextbox"><a class="toclink" href="#passcodetextbox">PasscodeTextBox</a></h3>
+<pre class="codehilite"><code>string PasscodeTextBox(string id = null, string assistiveTextKey = null, string labelKey = null,
+                       Label.LabelType labelType = Label.LabelType.plain,
+                       string constraint = TextBox.DefaultConstraint)</code></pre>
+
+
+<p>Create a passcode text box authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>id: The optional credential identifier. If not specified, then the option <ID> element is not included.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+<li>constraint: The optional, and unused, regular expression for the text to be entered.</li>
+</ul>
+<p>Returns: </p>
+<p>The passcode text box authentication requirement xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@PasscodeTextBox(id:&quot;PasscodeID&quot;, labelKey: &quot;Test:PasscodeLabelKey&quot;,
+                 assistiveTextKey: &quot;Test:PasscodeAssisitiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;PasscodeID&lt;/ID&gt;
+    &lt;Type&gt;passcode&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Passcode:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;AssistiveText&gt;PIN and token&lt;/AssistiveText&gt;
+    &lt;Text&gt;
+      &lt;Secret&gt;true&lt;/Secret&gt;
+      &lt;Constraint&gt;.+&lt;/Constraint&gt;
+    &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="image"><a class="toclink" href="#image">Image</a></h3>
+<p><code>string Image(string imageKey)</code></p>
+<p>Create an image label authentication requirement fragment with no associated input.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>imageKey: The image key, i.e. the file name in the Templates directory. This is a required parameter.</li>
+</ul>
+<p>Returns: </p>
+<p>The image label authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@Image(&quot;citrix_logo.gif&quot;)
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Binary&gt;data:image/gif;base64,R0lGODlhXAAkAEAAACH5BAAAAA…+l105A7NZ1PAQEAOw==&lt;/Binary&gt;
+    &lt;Type&gt;image&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="text"><a class="toclink" href="#text">Text</a></h3>
+<p><code>string Text(string textKey)</code></p>
+<p>Create a text label authentication requirement fragment with no associated input, in the plain style.</p>
+<p><strong><em>Parameters:</em></strong>
+- textKey: The text localization key. This is a required parameter.</p>
+<p>Returns: </p>
+<p>The text label authentication requirement xml fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@Text(&quot;Test:PlainKey&quot;)
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;This is plain text.&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="heading"><a class="toclink" href="#heading">Heading</a></h3>
+<p><code>string Heading(string headingKey)</code></p>
+<p>Create a heading text label authentication requirement fragment with no associated input.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>headingKey: The text localization key. This is a required parameter.</li>
+</ul>
+<p>Returns: </p>
+<p>The heading text label authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<p><code>@Heading("Test:HeadingKey")</code></p>
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;This is a heading.&lt;/Text&gt;
+    &lt;Type&gt;heading&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="information"><a class="toclink" href="#information">Information</a></h3>
+<p><code>string Information(string informationKey)</code></p>
+<p>Create an information text label authentication requirement fragment with no associated input.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>informationKey: The text localization key. This is a required parameter.</li>
+</ul>
+<p>Returns: </p>
+<p>The information text label authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@Information(&quot;Test:InformationKey&quot;)
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;This is an information item.&lt;/Text&gt;
+    &lt;Type&gt;information&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="warning"><a class="toclink" href="#warning">Warning</a></h3>
+<p><code>string Warning(string warningKey)</code></p>
+<p>Create a warning text label authentication requirement fragment with no associated input.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>warningKey: The text localization key. This is a required parameter.</li>
+</ul>
+<p>Returns: </p>
+<p>The warning text label authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@Warning(&quot;Test:WarningKey&quot;)
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;This is a warning.&lt;/Text&gt;
+    &lt;Type&gt;warning&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="error"><a class="toclink" href="#error">Error</a></h3>
+<p><code>string Error(string errorKey)</code></p>
+<p>Create an error text label authentication requirement fragment with no associated input.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>errorKey: The text localization key. This is a required parameter.</li>
+</ul>
+<p>Returns: </p>
+<p>The error text label authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@Error(&quot;Test:ErrorKey&quot;)
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;This is an error.&lt;/Text&gt;
+    &lt;Type&gt;error&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="confirmation"><a class="toclink" href="#confirmation">Confirmation</a></h3>
+<p><code>string Confirmation(string confirmationKey)</code></p>
+<p>Create a confirmation text label authentication requirement fragment with no associated input.</p>
+<p><strong><em>Parameters:</em></strong>
+- confirmationKey: The text localization key. This is a required parameter.</p>
+<p>Returns: The confirmation text label authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@Confirmation(&quot;Test:ConfirmationKey&quot;)
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;This is a confirmation.&lt;/Text&gt;
+    &lt;Type&gt;confirmation&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="infomessages"><a class="toclink" href="#infomessages">InfoMessages</a></h3>
+<p><code>string InfoMessages()</code></p>
+<p>Create a fragment that represents the list of all information label authentication requirements generated in the form.</p>
+<p><strong><em>Parameters:</em></strong> </p>
+<p>None</p>
+<p>Returns: </p>
+<p>All the information label authentication requirements as an XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Form:</p>
+<pre class="codehilite"><code>TemplateEngine.RenderTemplate(FormName, Cultures, Values,
+            new[]
+            {
+                new FormsMessage
+                    {
+                        LocalisationKey = PasswordExpiredLocalisationKey,
+                        MessageType = Label.LabelType.information
+                    }
+            })</code></pre>
+
+
+<p>Template:</p>
+<pre class="codehilite"><code>@InfoMessages()
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Your password has expired and must be changed.&lt;/Text&gt;
+    &lt;Type&gt;information&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+ &lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="warningmessages"><a class="toclink" href="#warningmessages">WarningMessages</a></h3>
+<p><code>string WarningMessages()</code></p>
+<p>Create a fragment that represents the list of all warning label authentication requirements generated in the form.</p>
+<p><strong><em>Parameters:</em></strong> </p>
+<p>None</p>
+<p>Returns: </p>
+<p>All the warning label authentication requirements as an XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Form:</p>
+<pre class="codehilite"><code>TemplateEngine.RenderTemplate(FormName, Cultures, Values,
+            new[]
+            {
+                new FormsMessage
+                    {
+                        LocalisationKey = WarningLocalizationKey,
+                        MessageType = Label.LabelType.warning
+                    }
+            })</code></pre>
+
+
+<p>Template:</p>
+<pre class="codehilite"><code>@WarningMessages()
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;This is a warning message.&lt;/Text&gt;
+    &lt;Type&gt;warning&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+ &lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="errormessages"><a class="toclink" href="#errormessages">ErrorMessages</a></h3>
+<p><code>string ErrorMessages()</code></p>
+<p>Create a fragment that represents the list of all error label authentication requirements generated in the form.</p>
+<p><strong><em>Parameters:</em></strong> </p>
+<p>None</p>
+<p>Returns: </p>
+<p>All the error label authentication requirements as an XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Form:</p>
+<pre class="codehilite"><code>TemplateEngine.RenderTemplate(FormName, Cultures, Values,
+            new[]
+            {
+                new FormsMessage
+                    {
+                        LocalisationKey = ErrorLocalizationKey,
+                        MessageType = Label.LabelType.error
+                    }
+            })</code></pre>
+
+
+<p>Template:</p>
+<pre class="codehilite"><code>@ErrorMessages()
+Output:
+&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;This is an error message.&lt;/Text&gt;
+    &lt;Type&gt;error&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input /&gt;
+ &lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="button"><a class="toclink" href="#button">Button</a></h3>
+<p><code>string Button(string id, string buttonKey, string assistiveTextKey = null)</code></p>
+<p>Create a button authentication requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>id: The button identifier. This is a required parameter.</li>
+<li>buttonKey: The localization key for the button text. This is a required parameter.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+</ul>
+<p>Returns: The button authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<p><code>@Button(id:"loginBtn", buttonKey: "LogonButtonKey")</code></p>
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;loginBtn&lt;/ID&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Type&gt;none&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;Button&gt;Log On&lt;/Button&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="savecredential"><a class="toclink" href="#savecredential">SaveCredential</a></h3>
+<pre class="codehilite"><code>string SaveCredential(string id, string assistiveTextKey = null, string labelKey = null,
+                      Label.LabelType labelType = Label.LabelType.plain,
+                      bool? initiallyChecked = null)</code></pre>
+
+
+<p>Create a save credential requirement fragment.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>id: The optional credential identifier. If not specified, then the option <ID> element is not included.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+<li>initiallyChecked: The optional value to set whether the associated check box is initially checked. If the value is null, which is the default, then the optional &lt; InitialValue &gt; element is not included.</li>
+</ul>
+<p>Returns: </p>
+<p>The save credential authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@SaveCredential(id:&quot;SaveCredentialID&quot;, labelKey: &quot;Test:SaveCredentialKey&quot;,
+                assistiveTextKey: &quot;SaveCredentialAssistiveTextKey&quot;, initiallyChecked: true)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;SaveCredentialID&lt;/ID&gt;
+    &lt;Type&gt;savecredentials&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Remember my password&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;AssistiveText&gt;Save your credentials locally&lt;/AssistiveText&gt;
+    &lt;CheckBox&gt;
+      &lt;InitialValue&gt;true&lt;/InitialValue&gt;
+    &lt;/CheckBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="domaincombobox"><a class="toclink" href="#domaincombobox">DomainComboBox</a></h3>
+<pre class="codehilite"><code>string DomainComboBox(string id, string displayItemsValueName,
+                      string initialSelectionValueName = null, string saveId = null,
+                      string assistiveTextKey = null, string labelKey = null,
+                      Label.LabelType labelType = Label.LabelType.plain)</code></pre>
+
+
+<p>Create a combo box authentication requirement fragment for domains.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>id: The optional credential identifier. If not specified, then the option <ID> element is not included.</li>
+<li>displayItemsValueName: The name of the dictionary of display-value pairs in the model. This is a required parameter.</li>
+<li>initialSelectionValueName: The optional initially selected display value. The default is to select the first value.</li>
+<li>saveId: The optional identifier to be used to save this credential on a client. The default is to have no save identifier.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+</ul>
+<p>Returns: </p>
+<p>The domain combo box authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Model:</p>
+<pre class="codehilite"><code>new
+{
+    Domains = new Dictionary&lt;string, string&gt;
+              {
+                  { @&quot;citrix&quot;, @&quot;citrix.com&quot;},
+                  { @&quot;citrite&quot;, @&quot;citrite.local&quot;}
+              },
+    InitialDomain = @&quot;citrite.local&quot;
+}</code></pre>
+
+
+<p>Template:</p>
+<pre class="codehilite"><code>@DomainComboBox(id:&quot;DomainID&quot;, displayItemsValueName: &quot;Domains&quot;,
+                initialSelectionValueName: &quot;InitialDomain&quot;, saveId: &quot;SaveDomainID&quot;,
+                labelKey: &quot;Test:DomainKey&quot;,
+                assistiveTextKey: &quot;Test:DomainComboBoxAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;DomainID&lt;/ID&gt;
+    &lt;SaveID&gt;SaveDomainID&lt;/SaveID&gt;
+    &lt;Type&gt;domain&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Domain:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;AssistiveText&gt;Please select your domain&lt;/AssistiveText&gt;
+    &lt;ComboBox&gt;
+      &lt;InitialSelection&gt;citrite.local&lt;/InitialSelection&gt;
+      &lt;DisplayValues&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;citrix&lt;/Display&gt;
+          &lt;Value&gt;citrix.com&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+        &lt;DisplayValue&gt;
+          &lt;Display&gt;citrite&lt;/Display&gt;
+          &lt;Value&gt;citrite.local&lt;/Value&gt;
+        &lt;/DisplayValue&gt;
+      &lt;/DisplayValues&gt;
+    &lt;/ComboBox&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h3 id="domaintextbox"><a class="toclink" href="#domaintextbox">DomainTextBox</a></h3>
+<pre class="codehilite"><code>string DomainTextBox(string id = null, string saveId = null, string assistiveTextKey = null,
+                     string labelKey = null, Label.LabelType labelType = Label.LabelType.plain,
+                     string initialValueName = null,
+                     string constraint = TextBox.DefaultConstraint, bool? secret = null,
+                     bool? readOnly = null)</code></pre>
+
+
+<p>Create a text box authentication requirement fragment for domains.</p>
+<p><strong><em>Parameters:</em></strong></p>
+<ul>
+<li>id: The optional credential identifier. If not specified, then the option <ID> element is not included.</li>
+<li>saveId: The optional identifier to be used to save this credential on a client. The default is to have no save identifier.</li>
+<li>assistiveTextKey: The optional localization key for the assistive text. The default is to have no assistive text.</li>
+<li>labelKey: The localization key for the label. This parameter is required.</li>
+<li>labelType: The optional label type (see the Receiver Common Authentication Forms Language document for more information). The default label type is: plain</li>
+<li>initialValueName: The optional name of a model value that contains the initial value of the text box. Note that this is a raw string not a key to be localized. The default is not to have an initial value.</li>
+<li>constraint: The optional, and unused, regular expression for the text to be entered.</li>
+<li>secret: If true then the text typed by the user should be obscured. This parameter is optional. If the value is null, which is the default, then the optional <Secret> element is not included.</li>
+<li>readOnly: This optional parameter makes the initial text value read-only. If the value is null, which is the default, then the optional <ReadOnly> element is not included.</li>
+</ul>
+<p>Returns: </p>
+<p>The domain text box authentication requirement XML fragment</p>
+<p><strong><em>Example:</em></strong></p>
+<p>Template:</p>
+<pre class="codehilite"><code>@DomainTextBox(id:&quot;DomainID&quot;, saveId: &quot;SaveDomainID&quot;, labelKey: &quot;Test:DomainKey&quot;,
+               assistiveTextKey: &quot;Test:DomainTextBoxAssistiveTextKey&quot;)</code></pre>
+
+
+<p>Output:</p>
+<pre class="codehilite"><code>&lt;Requirement&gt;
+  &lt;Credential&gt;
+    &lt;ID&gt;DomainID&lt;/ID&gt;
+    &lt;SaveID&gt;SaveDomainID&lt;/SaveID&gt;
+    &lt;Type&gt;domain&lt;/Type&gt;
+  &lt;/Credential&gt;
+  &lt;Label&gt;
+    &lt;Text&gt;Domain:&lt;/Text&gt;
+    &lt;Type&gt;plain&lt;/Type&gt;
+  &lt;/Label&gt;
+  &lt;Input&gt;
+    &lt;AssistiveText&gt;Please supply your domain&lt;/AssistiveText&gt;
+      &lt;Text&gt;
+        &lt;InitialValue&gt;&lt;/InitialValue&gt;
+        &lt;Constraint&gt;.+&lt;/Constraint&gt;
+      &lt;/Text&gt;
+  &lt;/Input&gt;
+&lt;/Requirement&gt;</code></pre>
+
+
+<h1 id="appendix-a-event-log-entries"><a class="toclink" href="#appendix-a-event-log-entries">Appendix A: Event Log Entries</a></h1>
+<p>If there are issues with the template processing, the Forms Template Engine adds events to the event log at the following location, with Task Category 1170:</p>
+<p><code>Event Viewer &gt; Applications and Services Logs &gt; Citrix Delivery Services</code></p>
+<p>The following examples illustrate the errors that can be produced.</p>
+<h2 id="razor-template-error-event-id-1"><a class="toclink" href="#razor-template-error-event-id-1">Razor Template Error: Event Id 1</a></h2>
+<p>There was a Razor compilation error of a template named UsernamePassword with contents:</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+@* ©2014 Citrix Systems, Inc.   All rights reserved. *@
+@foreach
+@ControlHeaders(status: StatusSuccess, result: ResultMoreInfo, stateContext: GetValue(&quot;StateContext&quot;))
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;@GetTextValue(&quot;PostBackUrl&quot;)&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;@GetTextValue(&quot;CancelPostBackUrl&quot;)&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;@GetLocalisedTextValue(&quot;ExplicitFormsCommon:CancelButtonText&quot;)&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      @* @Heading(&quot;ExplicitAuth:AuthenticateHeadingText&quot;) *@
+      @InfoMessages()
+      @WarningMessages()
+      @UsernameTextBox(id: @GetTextValue(&quot;usernameId&quot;), saveId: @GetTextValue(&quot;usernameSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:UsernameLabel&quot;, initialValueName: &quot;InitialUsername&quot;, assistiveTextKey: @GetTextValue(&quot;AssistiveTextValue&quot;), secret: false, readOnly: false)
+      @PasswordTextBox(id: @GetTextValue(&quot;passwordId&quot;), saveId: @GetTextValue(&quot;passwordSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:PasswordLabel&quot;, initialValueName: &quot;dummy&quot;, readOnly: false)
+      @if (ControlValue(&quot;DisplayDomainText&quot;)) {
+      @DomainTextBox(id: @GetTextValue(&quot;domainId&quot;), saveId: @GetTextValue(&quot;domainSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:DomainLabel&quot;, readOnly: false)
+      } else if (ControlValue(&quot;DisplayDomainCombo&quot;)) {
+      @DomainComboBox(id: @GetTextValue(&quot;domainId&quot;), saveId: @GetTextValue(&quot;domainSaveId&quot;), displayItemsValueName: &quot;DomainValues&quot;, initialSelectionValueName: &quot;InitialDomain&quot;, labelKey: &quot;ExplicitFormsCommon:DomainLabel&quot;)
+      }
+      @SaveCredential(id: @GetTextValue(&quot;saveCredentialsId&quot;), labelKey: &quot;ExplicitFormsCommon:SaveCredentialsLabel&quot;, initiallyChecked: ControlValue(&quot;SaveCredentials&quot;))
+      @ErrorMessages()
+      @Button(id: @GetTextValue(&quot;loginButtonId&quot;), buttonKey: &quot;ExplicitFormsCommon:LoginButtonText&quot;)
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p>Errors:</p>
+<pre class="codehilite"><code>Expected a &quot;{&quot; but found a &quot;@&quot;.  Block statements must be enclosed in &quot;{&quot; and &quot;}&quot;.  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    &lt;p&gt;Hello, @user&lt;/p&gt;</code></pre>
+
+
+<p>Instead, wrap the contents of the block in "{}":</p>
+<pre class="codehilite"><code>@if(isLoggedIn) {
+    &lt;p&gt;Hello, @user&lt;/p&gt;
+} at line:(183:4,0)</code></pre>
+
+
+<h2 id="c-compilation-error-event-id-2"><a class="toclink" href="#c-compilation-error-event-id-2">C# Compilation Error: Event Id 2</a></h2>
+<p>There was a C# compilation error of a template named UsernamePassword with contents:</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+@* ©2014 Citrix Systems, Inc.   All rights reserved. *@
+@ControlHeaders(status: StatusSuccess, result: ResultMoreInfo, stateContext: GetValue(&quot;StateContext&quot;))
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;@GetTextValue2(&quot;PostBackUrl&quot;)&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;@GetTextValue(&quot;CancelPostBackUrl&quot;)&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;@GetLocalisedTextValue(&quot;ExplicitFormsCommon:CancelButtonText&quot;)&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      @* @Heading(&quot;ExplicitAuth:AuthenticateHeadingText&quot;) *@
+      @InfoMessages()
+      @WarningMessages()
+      @UsernameTextBox(id: @GetTextValue(&quot;usernameId&quot;), saveId: @GetTextValue(&quot;usernameSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:UsernameLabel&quot;, initialValueName: &quot;InitialUsername&quot;, assistiveTextKey: @GetTextValue(&quot;AssistiveTextValue&quot;), secret: false, readOnly: false)
+      @PasswordTextBox(id: @GetTextValue(&quot;passwordId&quot;), saveId: @GetTextValue(&quot;passwordSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:PasswordLabel&quot;, initialValueName: &quot;dummy&quot;, readOnly: false)
+      @if (ControlValue(&quot;DisplayDomainText&quot;)) {
+      @DomainTextBox(id: @GetTextValue(&quot;domainId&quot;), saveId: @GetTextValue(&quot;domainSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:DomainLabel&quot;, readOnly: false)
+      } else if (ControlValue(&quot;DisplayDomainCombo&quot;)) {
+      @DomainComboBox(id: @GetTextValue(&quot;domainId&quot;), saveId: @GetTextValue(&quot;domainSaveId&quot;), displayItemsValueName: &quot;DomainValues&quot;, initialSelectionValueName: &quot;InitialDomain&quot;, labelKey: &quot;ExplicitFormsCommon:DomainLabel&quot;)
+      }
+      @SaveCredential(id: @GetTextValue(&quot;saveCredentialsId&quot;), labelKey: &quot;ExplicitFormsCommon:SaveCredentialsLabel&quot;, initiallyChecked: ControlValue(&quot;SaveCredentials&quot;))
+      @ErrorMessages()
+      @Button(id: @GetTextValue(&quot;loginButtonId&quot;), buttonKey: &quot;ExplicitFormsCommon:LoginButtonText&quot;)
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<p>Source Code:</p>
+<pre class="codehilite"><code>//------------------------------------------------------------------------------
+// &lt;auto-generated&gt;
+//     This code was generated by a tool.
+//     Runtime Version:4.0.30319.18449
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// &lt;/auto-generated&gt;
+//------------------------------------------------------------------------------
+
+namespace Citrix.CompiledForms {
+    using System;
+    using Citrix.DeliveryServices.Authentication.Forms.Template.Requirements;
+    using Citrix.DeliveryServices.Authentication.Forms.Template;    
+
+    public class UsernamePassword : Citrix.DeliveryServices.Authentication.Forms.Template.FormsTemplateBase {
+
+#line hidden
+
+        public UsernamePassword() {
+        }
+
+        public override void Execute() {
+WriteLiteral(&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;\r\n&lt;AuthenticateResponse&quot;);
+
+WriteLiteral(&quot; xmlns=\&quot;http://citrix.com/authentication/response/1\&quot;&quot;);
+WriteLiteral(&quot;&gt;\r\n&quot;);
+WriteLiteral(&quot;\r\n&quot;);
+
+            #line 4 &quot;UsernamePassword.tfrm&quot;
+Write(ControlHeaders(status: StatusSuccess, result: ResultMoreInfo, stateContext: GetValue(&quot;StateContext&quot;)));
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;\r\n  &lt;AuthenticationRequirements&gt;\r\n    &lt;PostBack&gt;&quot;);
+
+            #line 6 &quot;UsernamePassword.tfrm&quot;
+         Write(GetTextValue2(&quot;PostBackUrl&quot;));
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;&lt;/PostBack&gt;\r\n    &lt;CancelPostBack&gt;&quot;);
+
+            #line 7 &quot;UsernamePassword.tfrm&quot;
+               Write(GetTextValue(&quot;CancelPostBackUrl&quot;));
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;&lt;/CancelPostBack&gt;\r\n    &lt;CancelButtonText&gt;&quot;);
+
+            #line 8 &quot;UsernamePassword.tfrm&quot;
+                 Write(GetLocalisedTextValue(&quot;ExplicitFormsCommon:CancelButtonText&quot;));
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;&lt;/CancelButtonText&gt;\r\n    &lt;Requirements&gt;\r\n      &quot;);
+WriteLiteral(&quot;\r\n&quot;);
+WriteLiteral(&quot;      &quot;);
+
+            #line 11 &quot;UsernamePassword.tfrm&quot;
+ Write(InfoMessages());
+
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;\r\n&quot;);
+WriteLiteral(&quot;      &quot;);
+
+            #line 12 &quot;UsernamePassword.tfrm&quot;
+Write(WarningMessages());
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;\r\n&quot;);
+WriteLiteral(&quot;      &quot;);
+
+            #line 13 &quot;UsernamePassword.tfrm&quot;
+Write(UsernameTextBox(id: @GetTextValue(&quot;usernameId&quot;), saveId: @GetTextValue(&quot;usernameSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:UsernameLabel&quot;, initialValueName: &quot;InitialUsername&quot;, assistiveTextKey: @GetTextValue(&quot;AssistiveTextValue&quot;), secret: false, readOnly: false));
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;\r\n&quot;);
+WriteLiteral(&quot;      &quot;);
+
+            #line 14 &quot;UsernamePassword.tfrm&quot;
+Write(PasswordTextBox(id: @GetTextValue(&quot;passwordId&quot;), saveId: @GetTextValue(&quot;passwordSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:PasswordLabel&quot;, initialValueName: &quot;dummy&quot;, readOnly: false));
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;\r\n&quot;);
+
+            #line 15 &quot;UsernamePassword.tfrm&quot;
+
+            #line default
+            #line hidden
+
+            #line 15 &quot;UsernamePassword.tfrm&quot;
+       if (ControlValue(&quot;DisplayDomainText&quot;)) {
+
+            #line default
+            #line hidden
+
+            #line 16 &quot;UsernamePassword.tfrm&quot;
+Write(DomainTextBox(id: @GetTextValue(&quot;domainId&quot;), saveId: @GetTextValue(&quot;domainSaveId&quot;), labelKey: &quot;ExplicitFormsCommon:DomainLabel&quot;, readOnly: false));
+
+            #line default
+            #line hidden
+
+            #line 16 &quot;UsernamePassword.tfrm&quot;
+
+      } else if (ControlValue(&quot;DisplayDomainCombo&quot;)) {    
+
+            #line default
+            #line hidden
+
+            #line 18 &quot;UsernamePassword.tfrm&quot;
+Write(DomainComboBox(id: @GetTextValue(&quot;domainId&quot;), saveId: @GetTextValue(&quot;domainSaveId&quot;), displayItemsValueName: &quot;DomainValues&quot;, initialSelectionValueName: &quot;InitialDomain&quot;, labelKey: &quot;ExplicitFormsCommon:DomainLabel&quot;));
+
+            #line default
+            #line hidden
+
+            #line 18 &quot;UsernamePassword.tfrm&quot;
+
+      }
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;      &quot;);
+
+            #line 20 &quot;UsernamePassword.tfrm&quot;
+Write(SaveCredential(id: @GetTextValue(&quot;saveCredentialsId&quot;), labelKey: &quot;ExplicitFormsCommon:SaveCredentialsLabel&quot;, initiallyChecked: ControlValue(&quot;SaveCredentials&quot;)));
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;\r\n&quot;);
+WriteLiteral(&quot;      &quot;);
+
+            #line 21 &quot;UsernamePassword.tfrm&quot;
+Write(ErrorMessages());
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;\r\n&quot;);
+WriteLiteral(&quot;      &quot;);
+
+
+            #line 22 &quot;UsernamePassword.tfrm&quot;
+Write(Button(id: @GetTextValue(&quot;loginButtonId&quot;), buttonKey: &quot;ExplicitFormsCommon:LoginButtonText&quot;));
+
+            #line default
+            #line hidden
+WriteLiteral(&quot;\r\n    &lt;/Requirements&gt;\r\n  &lt;/AuthenticationRequirements&gt;\r\n&lt;/AuthenticateResponse&gt;&quot;);
+
+        }
+    }
+}</code></pre>
+
+
+<p>Errors:</p>
+<p><code>The name 'GetTextValue2' does not exist in the current context at line:6</code></p>
+<h2 id="invalid-reciever-common-form-xml-event-id-4"><a class="toclink" href="#invalid-reciever-common-form-xml-event-id-4">Invalid Reciever Common Form Xml: Event Id 4</a></h2>
+<p>The Forms template generated invalid Xml:</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+
+
+
+            &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;username&lt;/ID&gt;
+          &lt;SaveID&gt;UsernamePasswordForm-Username&lt;/SaveID&gt;
+          &lt;Type&gt;username&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;User name:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;AssistiveText&gt;domain\user or user@domain.com&lt;/AssistiveText&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;false&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;password&lt;/ID&gt;
+          &lt;SaveID&gt;UsernamePasswordForm-Password&lt;/SaveID&gt;
+          &lt;Type&gt;password&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Password:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Text&gt;
+            &lt;Secret&gt;true&lt;/Secret&gt;
+            &lt;ReadOnly&gt;false&lt;/ReadOnly&gt;
+            &lt;InitialValue&gt;&lt;/InitialValue&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+            &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;saveCredentials&lt;/ID&gt;
+          &lt;Type&gt;savecredentials&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;Remember my password&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;CheckBox&gt;
+            &lt;InitialValue&gt;false&lt;/InitialValue&gt;
+          &lt;/CheckBox&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+
+            &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;loginBtn&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;Log On&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<pre class="codehilite"><code>System.Xml.XmlException, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+The 'AuthenticateResponse' start tag on line 2 position 2 does not match the end tag of 'Requirements'. Line 73, position 7.
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   at System.Xml.XmlTextReaderImpl.ParseEndElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.LoadXml(String xml)
+   at Citrix.DeliveryServices.Authentication.Forms.Template.FormsTemplateBase.Render(IDictionary`2 renderValues, ILocaliser localiser, IEnumerable`1 messages)</code></pre>
+
+
+<h1 id="appendix-b-form-template-language-examples"><a class="toclink" href="#appendix-b-form-template-language-examples">Appendix B: Form Template Language Examples</a></h1>
+<p>The following templates all generate the same Receiver Common Forms XML:</p>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext&gt;0x12345678&lt;/StateContext&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Postback&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Cancel&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;UsernameID&lt;/ID&gt;
+          &lt;SaveID&gt;SaveUsernameID&lt;/SaveID&gt;
+          &lt;Type&gt;username&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;User name:&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;AssistiveText&gt;domain\user or user@domain.com&lt;/AssistiveText&gt;
+          &lt;Text&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;loginBtn&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;Log On&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h2 id="low-level-api_1"><a class="toclink" href="#low-level-api_1">Low Level API</a></h2>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+  &lt;Status&gt;success&lt;/Status&gt;
+  &lt;Result&gt;more-info&lt;/Result&gt;
+  &lt;StateContext&gt;0x12345678&lt;/StateContext&gt;
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Postback&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Cancel&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;@GetLocalisedTextValue(&quot;CancelButtonText&quot;)&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;UsernameID&lt;/ID&gt;
+          &lt;SaveID&gt;SaveUsernameID&lt;/SaveID&gt;
+          &lt;Type&gt;username&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Text&gt;@GetLocalisedTextValue(&quot;UsernameLabelKey&quot;)&lt;/Text&gt;
+          &lt;Type&gt;plain&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;AssistiveText&gt;@GetLocalisedTextValue(&quot;UsernameAssistiveTextKey&quot;)&lt;/AssistiveText&gt;
+          &lt;Text&gt;
+            &lt;Constraint&gt;.+&lt;/Constraint&gt;
+          &lt;/Text&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+        &lt;Credential&gt;
+          &lt;ID&gt;loginBtn&lt;/ID&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Credential&gt;
+        &lt;Label&gt;
+          &lt;Type&gt;none&lt;/Type&gt;
+        &lt;/Label&gt;
+        &lt;Input&gt;
+          &lt;Button&gt;@GetLocalisedTextValue(&quot;LogonButtonKey&quot;)&lt;/Button&gt;
+        &lt;/Input&gt;
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h2 id="requirements-api"><a class="toclink" href="#requirements-api">Requirements API</a></h2>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+@ControlHeaders(status: StatusSuccess, result: ResultMoreInfo, stateContext: &quot;0x12345678&quot;)
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Postback&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Cancel&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+      &lt;Requirement&gt;
+@Credential(credentialType: &quot;username&quot;, id: &quot;UsernameID&quot;, saveId: &quot;SaveUsernameID&quot;)
+@TextLabel(labelKey: &quot;UsernameLabelKey&quot;)
+@InputTextBox(assistiveTextKey: &quot;UsernameAssistiveTextKey&quot;)
+      &lt;/Requirement&gt;
+      &lt;Requirement&gt;
+@Credential(credentialType: &quot;none&quot;, id: &quot;loginBtn&quot;)
+@TextLabel(labelKey: null, labelType: Label.LabelType.none)
+@InputButton(buttonKey: &quot;LogonButtonKey&quot;)
+      &lt;/Requirement&gt;
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+
+
+<h2 id="high-level-api_1"><a class="toclink" href="#high-level-api_1">High Level API</a></h2>
+<pre class="codehilite"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;AuthenticateResponse xmlns=&quot;http://citrix.com/authentication/response/1&quot;&gt;
+@ControlHeaders(status: StatusSuccess, result: ResultMoreInfo, stateContext: &quot;0x12345678&quot;)
+  &lt;AuthenticationRequirements&gt;
+    &lt;PostBack&gt;/Postback&lt;/PostBack&gt;
+    &lt;CancelPostBack&gt;/Cancel&lt;/CancelPostBack&gt;
+    &lt;CancelButtonText&gt;Cancel&lt;/CancelButtonText&gt;
+    &lt;Requirements&gt;
+@UsernameTextBox(id:&quot;UsernameID&quot;, saveId: &quot;SaveUsernameID&quot;, labelKey: &quot;UsernameLabelKey&quot;,
+                 assistiveTextKey: &quot;UsernameAssistiveTextKey&quot;)
+@Button(id:&quot;loginBtn&quot;, buttonKey: &quot;LogonButtonKey&quot;)
+    &lt;/Requirements&gt;
+  &lt;/AuthenticationRequirements&gt;
+&lt;/AuthenticateResponse&gt;</code></pre>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../security-token-services-api/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../known-issues-auth/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>

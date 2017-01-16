@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Using configuration elements - StoreFront SDK Documentation</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Using configuration elements";
+    var mkdocs_page_input_path = "using-configuration-elements.md";
+    var mkdocs_page_url = "/using-configuration-elements/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/custom.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://citrix.github.io" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+			<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs"><a class="fa fa-search errspan" onclick="getElementById('rtd-search-form').submit()"></a></li>
+			</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<a class="fa fa-search" onclick="getElementById('rtd-search-form').submit()"></a>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="..">Overview</a>
+			
+		
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Web API</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../overview/">Overview</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../how-the-api-works/">How the API works</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../requests/">Requests</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+
+		<a class="current" style="width:272px;" href="./">Using configuration elements</a>
+			
+		
+        
+            <ul style="display:none">
+            
+				
+                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#using-configuration-elements" style="display: inline-table;padding-left: 3px;width:240px;">Using configuration elements</a></li>
+				<ul style="display:none">
+                
+                    <li><a class="toctree-l4" href="#session">Session</a></li>
+                
+                    <li><a class="toctree-l4" href="#authentication-manager">Authentication Manager</a></li>
+                
+                    <li><a class="toctree-l4" href="#store-proxy">Store Proxy</a></li>
+                
+                    <li><a class="toctree-l4" href="#resources-proxy">Resources Proxy</a></li>
+                
+                    <li><a class="toctree-l4" href="#sessions-proxy">Sessions Proxy</a></li>
+                
+                    <li><a class="toctree-l4" href="#plugin-assistant">Plugin Assistant</a></li>
+                
+                    <li><a class="toctree-l4" href="#user-interface">User Interface</a></li>
+                
+				</ul>
+				
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Store Service SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-sdk/">StoreFront Customization SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../getting-started-with-the-sdk/">Getting started with the SDK</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../customization-interfaces/">Customization interfaces</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues/">Known issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../samples/">Samples</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span class="expul"><i class="fa fa-plus-square-o" aria-hidden="true"></i>StoreFront Authentication SDK</span></li>
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storefront-services-authentication-sdk/">Authentication Software Development Kit</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrix-common-forms-authentication-api/">Citrix Common Forms Authentication API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../citrixauth-authentication-scheme/">CitrixAuth Authentication Scheme</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../common-authentication-forms-language/">Citrix Common Authentication Forms Language</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../security-token-services-api/">Security Token Services API</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../authentication-form-generation/">StoreFront Authentication Form Generation</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../known-issues-auth/">Known Issues</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../storeFront-authentication-sdk-thirdparty/">Third Party Notices</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-certificate-identity-declaration/">Sample Certificate Identity Declaration</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../magic-word-sample/">Sample Magic Word</a>
+			
+		
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+
+		<a class="" style="width:272px;" href="../sample-test-forms/">Sample Test Forms</a>
+			
+		
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>StoreFront Web API &raquo;</li>
+        
+      
+    
+    <li>Using configuration elements</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <h1 id="using-configuration-elements"><a class="toclink" href="#using-configuration-elements">Using configuration elements</a></h1>
+<p>This topic describes the elements and attributes of the XML document that is returned following a successful request to /Home/Configuration. These settings specify the behavior of the client and provide Web Proxy URLs for subsequent operations.</p>
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<p>Default values appear in bold. </p>
+</div>
+<h2 id="session"><a class="toclink" href="#session">Session</a></h2>
+<p>XPath: /clientSettings/session</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timeout</td>
+<td>Time in minutes (<strong>20</strong>)</td>
+<td>The number of minutes of idle time before the web session times out and the user must re-authenticate.</td>
+</tr>
+<tr>
+<td>userLanguages</td>
+<td><strong>The value of the Accept-Language header sent by the browser</strong></td>
+<td>The list of languages supported by the client (typically browser).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="authentication-manager"><a class="toclink" href="#authentication-manager">Authentication Manager</a></h2>
+<p>XPath: /clientSettings/authManager</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getUsernameURL</td>
+<td><strong>Authentication/ GetUserName</strong></td>
+<td>URL to obtain the full user name.</td>
+</tr>
+<tr>
+<td>changeCredentialsURL</td>
+<td><strong>ExplicitAuth/ GetChangeCredentialFor m</strong></td>
+<td>URL to initiate a change password operation.</td>
+</tr>
+<tr>
+<td>logoffURL</td>
+<td><strong>Authentication/Logoff</strong></td>
+<td>URL to log off the Citrix Receiver for Web session.</td>
+</tr>
+<tr>
+<td>loginFormTimeout</td>
+<td>Time in minutes (<strong>5</strong>)</td>
+<td>How long Citrix Receiver for Web displays the logon form for.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="store-proxy"><a class="toclink" href="#store-proxy">Store Proxy</a></h2>
+<p>XPath: /clientSettings/storeProxy</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values (default in bold)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keepAliveURL</td>
+<td><strong>Home/KeepAlive</strong></td>
+<td>URL to keep the session alive.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources-proxy"><a class="toclink" href="#resources-proxy">Resources Proxy</a></h2>
+<p>XPath: /clientSettings/storeProxy/resourcesProxy</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values (default in bold)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>listURL</td>
+<td><strong>Resources/List</strong></td>
+<td>URL to enumerate the user's available resources.</td>
+</tr>
+<tr>
+<td>resourceDetails</td>
+<td><strong>default</strong></td>
+<td>full</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sessions-proxy"><a class="toclink" href="#sessions-proxy">Sessions Proxy</a></h2>
+<p>XPath: /clientSettings/storeProxy/sessionsProxy</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values (default in bold)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>listAvailableURL</td>
+<td><strong>Sessions/ListAvailable</strong></td>
+<td>URL to enumerate the user's available sessions.</td>
+</tr>
+<tr>
+<td>disconnectURL</td>
+<td><strong>Sessions/Disconnect</strong></td>
+<td>URL to disconnect the user's sessions.</td>
+</tr>
+<tr>
+<td>logoffURL</td>
+<td><strong>Sessions/Logoff</strong></td>
+<td>URL to log off the user's sessions.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="plugin-assistant"><a class="toclink" href="#plugin-assistant">Plugin Assistant</a></h2>
+<p>XPath: /clientSettings/pluginAssistant</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enabled</td>
+<td><strong>true</strong></td>
+<td>false</td>
+</tr>
+<tr>
+<td>upgradeAtLogin</td>
+<td>true</td>
+<td><strong>false</strong></td>
+</tr>
+</tbody>
+</table>
+<p>XPath: /configuration/citrix.deliveryservices/webReceiver/clientSettings/ pluginAssistant/win32</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>Relative or absolute url</td>
+<td>The location for downloading Citrix Receiver for Windows.</td>
+</tr>
+</tbody>
+</table>
+<p>XPath: /configuration/citrix.deliveryservices/webReceiver/clientSettings/ pluginAssistant/macOS</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>Relative or absolute url</td>
+<td>The location for downloading Citrix Receiver for MacOS.</td>
+</tr>
+<tr>
+<td>minimumSupportedOSVersi on</td>
+<td>Version number (<strong>10.6</strong>)</td>
+<td>The minimum MacOS version required for Citrix Receiver for MacOS.</td>
+</tr>
+</tbody>
+</table>
+<p>XPath: /configuration/citrix.deliveryservices/webReceiver/clientSettings/ pluginAssistant/html5</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enabled</td>
+<td>Always/Fallback/Never</td>
+<td>Whether to enable Receiver for HTML5 or not.</td>
+</tr>
+<tr>
+<td>platforms</td>
+<td>Semi-column separated list of regular expressions. <strong>Firefox;Chrome;Version/ ([6-9]\d\d).*Safari;MSIE \d\d;Trident; Android;iPad;iPhone;iPod</strong> ;</td>
+<td>Regular expressions to search the UserAgent string to identify supported browsers.</td>
+</tr>
+<tr>
+<td>launchURL</td>
+<td>Relative URL</td>
+<td>Location of the Receiver for HTML5 launch page.</td>
+</tr>
+<tr>
+<td>singleTabLaunch</td>
+<td>true / <strong>false</strong></td>
+<td>Whether to launch applications on the same browser tab as the Citrix Receiver for Web home screen or not.</td>
+</tr>
+<tr>
+<td>chromeAppOrigins</td>
+<td><strong>chrome-extension:// bgiigkppjadidglloadcadeih lnbpagp</strong></td>
+<td>List of origin URLs identifying official releases of the Citrix Chrome App in the Google Chrome web store. Each URL is separated by a pipe (</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-interface"><a class="toclink" href="#user-interface">User Interface</a></h2>
+<p>XPath: /configuration/citrix.deliveryservices/webReceiver/clientSettings/userInterface</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>frameOptions</td>
+<td>allow/deny/sameorigin</td>
+<td>Whether or not to allow Citrix Receiver for Web to be displayed in a frame/ iframe.</td>
+</tr>
+<tr>
+<td>autoLaunchDesktop</td>
+<td>true/false</td>
+<td>Whether or not to auto- launch desktop at logon if there is only one desktop available for the user.</td>
+</tr>
+</tbody>
+</table>
+<p>XPath: /configuration/citrix.deliveryservices/webReceiver/clientSettings/ userInterface/workspaceControl</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enabled</td>
+<td>true/false</td>
+<td>Whether to enable workspace control or not.</td>
+</tr>
+<tr>
+<td>autoReconnectAtLogon</td>
+<td>true/false</td>
+<td>Whether to perform auto- reconnect at logon or not.</td>
+</tr>
+<tr>
+<td>logoffAction</td>
+<td>disconnect/terminate/none</td>
+<td>Whether to disconnect or terminate HDX sessions when actively logging off Citrix Receiver for Web.</td>
+</tr>
+<tr>
+<td>showReconnectButton</td>
+<td>true/false</td>
+<td>Whether to show the reconnect button/link or not.</td>
+</tr>
+<tr>
+<td>showDisconnectButton</td>
+<td>true/false</td>
+<td>Whether to show the disconnect button/link or not.</td>
+</tr>
+</tbody>
+</table>
+<p>XPath: /configuration/citrix.deliveryservices/webReceiver/clientSettings/ userInterface/receiverConfiguration</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enabled</td>
+<td>true/false</td>
+<td>Whether to enable Receiver provisioning file download or not.</td>
+</tr>
+</tbody>
+</table>
+<p>XPath: /configuration/citrix.deliveryservices/webReceiver/clientSettings/ userInterface/appShortcuts</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enabled</td>
+<td>true/false</td>
+<td>Whether to enable app shortcuts or not.</td>
+</tr>
+<tr>
+<td>allowSessionReconnect</td>
+<td>true/false</td>
+<td>Whether to enable session reconnect or not when Citrix Receiver for Web is launched by an app shortcut.</td>
+</tr>
+</tbody>
+</table>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span class="prev"><a href="../requests/"><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../customization-sdk/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>
