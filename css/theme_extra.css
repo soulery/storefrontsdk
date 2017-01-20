@@ -178,7 +178,7 @@ nav.stickynav {background-image: url('../img/grey_calm.png');background-repeat:n
 .wy-side-nav-search {margin:0;background:#cdcece;}
 #rtd-search-form i {position:absolute;top:17px;left:30px;color: #B9C1C1}
 .header-top {width:100%;position:fixed;top:0;left:0;height:70px;border-bottom:2px solid #2A5B8C;background:#ffffff;z-index:400}
-.header-top-left {float:left;padding:3px 0 3px 25px;width:270px}
+.header-top-left {float:left;padding:3px 0 3px 25px;width:300px}
 .header-top-left img{padding: 0}
 .header-top-right {float:left;padding-left:30px ; padding-top: 30px}
 .wy-grid-for-nav {top:70px} 
@@ -242,6 +242,7 @@ li.nochildli{
 img {padding: 20px 0}
 @media screen and (max-width:768px){
 .header-top-left {width: auto}
+.wy-nav-side.stickynav {display:None}
 .header-top-left img{height: 60px; width: auto}
 .header-top-right {float: right; padding-left: 0; padding-right:10px}
 .wy-nav-content-wrap {margin-left: 0;width: 100%}
