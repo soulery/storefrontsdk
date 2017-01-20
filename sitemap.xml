@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,25 +13,25 @@
         
     <url>
      <loc>/overview/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/how-the-api-works/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/requests/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/using-configuration-elements/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -41,31 +41,31 @@
         
     <url>
      <loc>/customization-sdk/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/getting-started-with-the-sdk/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/customization-interfaces/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/known-issues/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/samples/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -75,67 +75,149 @@
         
     <url>
      <loc>/storefront-services-authentication-sdk/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/citrix-common-forms-authentication-api/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/citrixauth-authentication-scheme/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/common-authentication-forms-language/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/security-token-services-api/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/authentication-form-generation/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/known-issues-auth/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/storeFront-authentication-sdk-thirdparty/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/sample-certificate-identity-declaration/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/magic-word-sample/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/sample-test-forms/</loc>
-     <lastmod>2017-01-16</lastmod>
+     <lastmod>2017-01-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         

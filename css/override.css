@@ -122,12 +122,16 @@ nav.stickynav{
     left: -20px;
 }
 .wy-nav-side {
-    width: 300px;
+    width: 370px;
 }
 .wy-nav-content-wrap {
-    margin-left: 310px;
+    margin-left: 380px;
     max-width: none;
     background: #ffffff;
+}
+li.nochildli >a{
+	
+	font-size: 80%;
 }
 .searchdocs{
   border-radius: 5px !important;
